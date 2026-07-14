@@ -1,7 +1,7 @@
 import { chromium } from "playwright";
 import { writeFile } from "node:fs/promises";
 
-const seasonId = process.env.SEASON_ID || "24002";
+const seasonId = process.env.SEASON_ID || "28433";
 
 const standingsUrl =
   `https://www.simracerhub.com/season_standings.php?season_id=${seasonId}`;
