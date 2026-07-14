@@ -13,7 +13,8 @@ function cleanText(value = "") {
 function normalizeHeader(value = "") {
   return cleanText(value)
     .toUpperCase()
-    .replace(/[▲▼↕↑↓]/g, "")
+    .replace(/[^A-Z0-9#-]+/g, " ")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
