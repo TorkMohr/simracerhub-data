@@ -1,7 +1,7 @@
 {
   "seasonId": "28433",
   "source": "https://www.simracerhub.com/season_standings.php?season_id=28433",
-  "updatedAt": "2026-07-15T18:47:53.131Z",
+  "updatedAt": "2026-07-15T18:52:36.312Z",
   "driverCount": 47,
   "standings": [
     {
@@ -20,7 +20,7 @@
       "provisionals": 0,
       "incidents": 74,
       "team": "Aero Racing",
-      "lapsLed": 453
+      "lapsLed": 482
     },
     {
       "position": 2,
@@ -38,7 +38,7 @@
       "provisionals": 0,
       "incidents": 155,
       "team": "DIG Team 1",
-      "lapsLed": 646
+      "lapsLed": 709
     },
     {
       "position": 3,
@@ -56,7 +56,7 @@
       "provisionals": 0,
       "incidents": 124,
       "team": "Aero Racing",
-      "lapsLed": 80
+      "lapsLed": 86
     },
     {
       "position": 4,
@@ -74,7 +74,7 @@
       "provisionals": 0,
       "incidents": 142,
       "team": "DIG Team 2",
-      "lapsLed": 258
+      "lapsLed": 271
     },
     {
       "position": 5,
@@ -92,7 +92,7 @@
       "provisionals": 0,
       "incidents": 174,
       "team": "Blowin' Trannies",
-      "lapsLed": 407
+      "lapsLed": 418
     },
     {
       "position": 6,
@@ -290,7 +290,7 @@
       "provisionals": 0,
       "incidents": 86,
       "team": "Aero Racing",
-      "lapsLed": 386
+      "lapsLed": 402
     },
     {
       "position": 17,
@@ -344,7 +344,7 @@
       "provisionals": 0,
       "incidents": 144,
       "team": "ZeroX Sim Racing",
-      "lapsLed": 0
+      "lapsLed": 4
     },
     {
       "position": 20,
@@ -452,7 +452,7 @@
       "provisionals": 0,
       "incidents": 259,
       "team": "",
-      "lapsLed": 8
+      "lapsLed": 11
     },
     {
       "position": 26,
@@ -560,7 +560,7 @@
       "provisionals": 0,
       "incidents": 33,
       "team": "",
-      "lapsLed": 164
+      "lapsLed": 169
     },
     {
       "position": 32,
@@ -851,171 +851,11 @@
       "lapsLed": 44
     }
   ],
-  "standingsUpdatedAt": "2026-07-15T18:46:33.070Z",
-  "lapsLedUpdatedAt": "2026-07-15T18:47:53.131Z",
-  "lapsLedRaceCount": 19,
-  "lapsLedRacesIncluded": [
-    {
-      "simRacerHubRaceNumber": 2,
-      "scheduleId": "346265",
-      "raceDate": "2026-02-18",
-      "trackName": "Daytona",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=346265",
-      "driversRead": 32
-    },
-    {
-      "simRacerHubRaceNumber": 3,
-      "scheduleId": "346266",
-      "raceDate": "2026-02-25",
-      "trackName": "EchoPark",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=346266",
-      "driversRead": 35
-    },
-    {
-      "simRacerHubRaceNumber": 4,
-      "scheduleId": "346267",
-      "raceDate": "2026-03-04",
-      "trackName": "COTA",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=346267",
-      "driversRead": 32
-    },
-    {
-      "simRacerHubRaceNumber": 5,
-      "scheduleId": "346268",
-      "raceDate": "2026-03-11",
-      "trackName": "Phoenix",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=346268",
-      "driversRead": 34
-    },
-    {
-      "simRacerHubRaceNumber": 6,
-      "scheduleId": "354790",
-      "raceDate": "2026-03-18",
-      "trackName": "Las Vegas",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=354790",
-      "driversRead": 34
-    },
-    {
-      "simRacerHubRaceNumber": 7,
-      "scheduleId": "355080",
-      "raceDate": "2026-03-25",
-      "trackName": "Darlington",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355080",
-      "driversRead": 32
-    },
-    {
-      "simRacerHubRaceNumber": 8,
-      "scheduleId": "355081",
-      "raceDate": "2026-04-01",
-      "trackName": "Martinsville",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355081",
-      "driversRead": 32
-    },
-    {
-      "simRacerHubRaceNumber": 9,
-      "scheduleId": "355082",
-      "raceDate": "2026-04-15",
-      "trackName": "Bristol",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355082",
-      "driversRead": 33
-    },
-    {
-      "simRacerHubRaceNumber": 10,
-      "scheduleId": "355083",
-      "raceDate": "2026-04-22",
-      "trackName": "Kansas",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355083",
-      "driversRead": 31
-    },
-    {
-      "simRacerHubRaceNumber": 11,
-      "scheduleId": "355085",
-      "raceDate": "2026-04-29",
-      "trackName": "Talladega",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355085",
-      "driversRead": 34
-    },
-    {
-      "simRacerHubRaceNumber": 12,
-      "scheduleId": "355086",
-      "raceDate": "2026-05-06",
-      "trackName": "Texas",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355086",
-      "driversRead": 34
-    },
-    {
-      "simRacerHubRaceNumber": 13,
-      "scheduleId": "355087",
-      "raceDate": "2026-05-13",
-      "trackName": "Watkins Glen",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355087",
-      "driversRead": 31
-    },
-    {
-      "simRacerHubRaceNumber": 14,
-      "scheduleId": "355089",
-      "raceDate": "2026-05-27",
-      "trackName": "Charlotte",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355089",
-      "driversRead": 33
-    },
-    {
-      "simRacerHubRaceNumber": 15,
-      "scheduleId": "355090",
-      "raceDate": "2026-06-03",
-      "trackName": "Nashville",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355090",
-      "driversRead": 33
-    },
-    {
-      "simRacerHubRaceNumber": 16,
-      "scheduleId": "355091",
-      "raceDate": "2026-06-10",
-      "trackName": "Michigan",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355091",
-      "driversRead": 33
-    },
-    {
-      "simRacerHubRaceNumber": 17,
-      "scheduleId": "356644",
-      "raceDate": "2026-06-17",
-      "trackName": "Pocono",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356644",
-      "driversRead": 31
-    },
-    {
-      "simRacerHubRaceNumber": 18,
-      "scheduleId": "356645",
-      "raceDate": "2026-06-24",
-      "trackName": "San Diego",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356645",
-      "driversRead": 28
-    },
-    {
-      "simRacerHubRaceNumber": 19,
-      "scheduleId": "356646",
-      "raceDate": "2026-07-01",
-      "trackName": "Sonoma",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356646",
-      "driversRead": 29
-    },
-    {
-      "simRacerHubRaceNumber": 20,
-      "scheduleId": "356647",
-      "raceDate": "2026-07-08",
-      "trackName": "Chicagoland",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356647",
-      "driversRead": 32
-    }
-  ],
-  "lapsLedRacesSkipped": [
-    {
-      "simRacerHubRaceNumber": 21,
-      "scheduleId": "356648",
-      "raceDate": "2026-07-15",
-      "trackName": "EchoPark",
-      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356648",
-      "reason": "No completed results table found"
-    }
-  ]
+  "standingsUpdatedAt": "2026-07-15T18:52:34.493Z",
+  "lapsLedUpdatedAt": "2026-07-15T18:52:36.312Z",
+  "lapsLedSource": "https://www.simracerhub.com/league_stats.php?season_id=28433",
+  "lapsLedSourceColumn": "Led #",
+  "lapsLedStatsDriverCount": 47,
+  "lapsLedMatchedDriverCount": 47,
+  "lapsLedUnmatchedDrivers": []
 }
