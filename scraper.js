@@ -218,19 +218,80 @@ async function collectSeasonLapsLed(page) {
 
   await page.waitForTimeout(8000);
 
-  const scheduleLinks = await page
-    .locator(
-      'a[href*="season_race.php?schedule_id="]'
-    )
-    .evaluateAll((links) => {
-      return links.map((link) => ({
-        text: link.innerText
-          .replace(/\s+/g, " ")
-          .trim(),
+   /*
+   * SimRacerHub may present the race picker as
+   * links, dropdown options, or data attributes.
+   */
+  const scheduleLinks = await page.evaluate(() => {
+    const elements = Array.from(
+      document.querySelectorAll(
+        "a, option, [data-href], [data-url]"
+      )
+    );
 
-        href: link.href
-      }));
-    });
+    return elements
+      .map((element) => {
+        const text = (
+          element.innerText ||
+          element.textContent ||
+          ""
+        )
+          .replace(/\s+/g, " ")
+          .trim();
+
+        // Ignore anything that is not a numbered race.
+        if (!/Race\s+\d+/i.test(text)) {
+          return null;
+        }
+
+        const rawValue =
+          element.getAttribute("href") ||
+          element.getAttribute("value") ||
+          element.getAttribute("data-href") ||
+          element.getAttribute("data-url") ||
+          "";
+
+        if (!rawValue) {
+          return null;
+        }
+
+        let href = "";
+
+        try {
+          /*
+           * Some dropdowns store only the numeric
+           * schedule ID instead of a complete URL.
+           */
+          if (/^\d+$/.test(rawValue)) {
+            href = new URL(
+              `season_race.php?schedule_id=${rawValue}`,
+              window.location.href
+            ).href;
+          } else if (
+            rawValue.includes("schedule_id=")
+          ) {
+            href = new URL(
+              rawValue,
+              window.location.href
+            ).href;
+          } else {
+            return null;
+          }
+        } catch {
+          return null;
+        }
+
+        return {
+          text,
+          href
+        };
+      })
+      .filter(Boolean);
+  });
+
+  console.log(
+    `Found ${scheduleLinks.length} race-link candidates.`
+  );
 
   const uniqueLinks = Array.from(
     new Map(
