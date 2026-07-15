@@ -6,12 +6,28 @@ const seasonId = process.env.SEASON_ID || "28433";
 const standingsUrl =
   `https://www.simracerhub.com/season_standings.php?season_id=${seasonId}`;
 
+const raceResultsUrl =
+  `https://www.simracerhub.com/season_race.php?season_id=${seasonId}`;
+
 function cleanText(value = "") {
   return value.replace(/\s+/g, " ").trim();
 }
 
 function normalizeHeader(value = "") {
-  return cleanText(value).toUpperCase();
+  return cleanText(value)
+    .toUpperCase()
+    .replace(/[^A-Z0-9#-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeDriverName(value = "") {
+  return cleanText(value)
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function parseNumber(value = "") {
@@ -71,75 +87,43 @@ function parseChange(cell) {
   return parseNumber(text);
 }
 
-const browser = await chromium.launch({
-  headless: true
-});
+function parseRaceDateIso(value = "") {
+  const match = value.match(
+    /\b(\d{2})\/(\d{2})\/(\d{4})\b/
+  );
 
-try {
-  const page = await browser.newPage({
-    viewport: {
-      width: 1800,
-      height: 1200
-    }
-  });
-
-  console.log(`Opening ${standingsUrl}`);
-
-  await page.goto(standingsUrl, {
-    waitUntil: "domcontentloaded",
-    timeout: 90000
-  });
-
-  await page.waitForTimeout(12000);
-
-  let standingsTable = null;
-  let standingsFrameUrl = "";
-
-  for (const frame of page.frames()) {
-    const tables = frame.locator("table");
-    const tableCount = await tables.count();
-
-    console.log(
-      `Checking ${tableCount} tables in frame: ${frame.url()}`
-    );
-
-    for (let i = 0; i < tableCount; i++) {
-      const table = tables.nth(i);
-      const tableText = await table.innerText();
-
-      const normalizedText = tableText
-        .replace(/\s+/g, " ")
-        .toUpperCase();
-
-      if (
-        normalizedText.includes("DRIVER") &&
-        normalizedText.includes("TOT PTS") &&
-        normalizedText.includes("BEH CUT")
-      ) {
-        standingsTable = table;
-        standingsFrameUrl = frame.url();
-        break;
-      }
-    }
-
-    if (standingsTable) {
-      break;
-    }
+  if (!match) {
+    return null;
   }
 
-  if (!standingsTable) {
-    await page.screenshot({
-      path: "standings-debug.png",
-      fullPage: true
-    });
+  const [, month, day, year] = match;
 
-    throw new Error(
-      "Could not find the SimRacerHub standings table."
-    );
+  return `${year}-${month}-${day}`;
+}
+
+function findColumn(headers, ...possibleNames) {
+  return headers.findIndex((header) =>
+    possibleNames.includes(header)
+  );
+}
+
+function getCell(row, index) {
+  if (index < 0 || !row[index]) {
+    return {
+      text: "",
+      className: "",
+      html: ""
+    };
   }
 
-  const tableData = await standingsTable.evaluate((table) => {
-    return Array.from(table.querySelectorAll("tr"))
+  return row[index];
+}
+
+async function readTable(table) {
+  return table.evaluate((tableElement) => {
+    return Array.from(
+      tableElement.querySelectorAll("tr")
+    )
       .map((row) => {
         return Array.from(
           row.querySelectorAll("th, td")
@@ -158,6 +142,296 @@ try {
       })
       .filter((row) => row.length > 0);
   });
+}
+
+async function findStandingsTable(page) {
+  for (const frame of page.frames()) {
+    const tables = frame.locator("table");
+    const tableCount = await tables.count();
+
+    for (
+      let index = 0;
+      index < tableCount;
+      index++
+    ) {
+      const table = tables.nth(index);
+
+      const tableText = normalizeHeader(
+        await table.innerText()
+      );
+
+      if (
+        tableText.includes("DRIVER") &&
+        tableText.includes("TOT PTS") &&
+        tableText.includes("BEH CUT")
+      ) {
+        return {
+          table,
+          frameUrl: frame.url()
+        };
+      }
+    }
+  }
+
+  return null;
+}
+
+async function findRaceResultsTable(page) {
+  for (const frame of page.frames()) {
+    const tables = frame.locator("table");
+    const tableCount = await tables.count();
+
+    for (
+      let index = 0;
+      index < tableCount;
+      index++
+    ) {
+      const table = tables.nth(index);
+
+      const tableText = normalizeHeader(
+        await table.innerText()
+      );
+
+      if (
+        tableText.includes("DRIVER") &&
+        tableText.includes("TOT PTS") &&
+        tableText.includes("LAPS LED") &&
+        tableText.includes("FASTEST LAP")
+      ) {
+        return table;
+      }
+    }
+  }
+
+  return null;
+}
+
+async function collectSeasonLapsLed(page) {
+  console.log(
+    "Opening the season race-results page..."
+  );
+
+  await page.goto(raceResultsUrl, {
+    waitUntil: "domcontentloaded",
+    timeout: 90000
+  });
+
+  await page.waitForTimeout(8000);
+
+  const scheduleLinks = await page
+    .locator(
+      'a[href*="season_race.php?schedule_id="]'
+    )
+    .evaluateAll((links) => {
+      return links.map((link) => ({
+        text: link.innerText
+          .replace(/\s+/g, " ")
+          .trim(),
+
+        href: link.href
+      }));
+    });
+
+  const uniqueLinks = Array.from(
+    new Map(
+      scheduleLinks.map((link) => [
+        link.href,
+        link
+      ])
+    ).values()
+  );
+
+  const today = new Date()
+    .toISOString()
+    .slice(0, 10);
+
+  const pointRaces = uniqueLinks
+    .map((link) => {
+      const raceNumberMatch = link.text.match(
+        /Race\s+(\d+)/i
+      );
+
+      return {
+        ...link,
+
+        raceNumber: raceNumberMatch
+          ? Number(raceNumberMatch[1])
+          : null,
+
+        raceDate: parseRaceDateIso(link.text)
+      };
+    })
+    .filter((race) => {
+      return (
+        race.raceNumber !== null &&
+        race.raceNumber !== 1 &&
+        race.raceDate &&
+        race.raceDate <= today
+      );
+    })
+    .sort((first, second) =>
+      first.raceNumber - second.raceNumber
+    );
+
+  console.log(
+    `Found ${pointRaces.length} scheduled point races through ${today}.`
+  );
+
+  const lapsLedByDriver = new Map();
+  const includedRaces = [];
+
+  for (const race of pointRaces) {
+    console.log(
+      `Reading Race ${race.raceNumber}: ${race.text}`
+    );
+
+    try {
+      await page.goto(race.href, {
+        waitUntil: "domcontentloaded",
+        timeout: 90000
+      });
+
+      await page.waitForTimeout(2500);
+
+      const resultsTable =
+        await findRaceResultsTable(page);
+
+      if (!resultsTable) {
+        console.log(
+          `Skipping Race ${race.raceNumber}: no completed results table found.`
+        );
+
+        continue;
+      }
+
+      const tableData = await readTable(
+        resultsTable
+      );
+
+      if (tableData.length < 2) {
+        console.log(
+          `Skipping Race ${race.raceNumber}: no driver rows found.`
+        );
+
+        continue;
+      }
+
+      const headers = tableData[0].map(
+        (cell) => normalizeHeader(cell.text)
+      );
+
+      const driverColumn = findColumn(
+        headers,
+        "DRIVER"
+      );
+
+      const lapsLedColumn = findColumn(
+        headers,
+        "LAPS LED"
+      );
+
+      if (
+        driverColumn === -1 ||
+        lapsLedColumn === -1
+      ) {
+        console.log(
+          `Skipping Race ${race.raceNumber}: DRIVER or LAPS LED column missing.`
+        );
+
+        continue;
+      }
+
+      let driversRead = 0;
+
+      for (const row of tableData.slice(1)) {
+        const driver = cleanText(
+          getCell(row, driverColumn).text
+        );
+
+        if (!driver) {
+          continue;
+        }
+
+        const driverKey =
+          normalizeDriverName(driver);
+
+        const lapsLed = parseNumber(
+          getCell(row, lapsLedColumn).text
+        );
+
+        lapsLedByDriver.set(
+          driverKey,
+          (
+            lapsLedByDriver.get(driverKey) || 0
+          ) + lapsLed
+        );
+
+        driversRead++;
+      }
+
+      if (driversRead > 0) {
+        includedRaces.push({
+          simRacerHubRaceNumber:
+            race.raceNumber,
+
+          raceDate: race.raceDate,
+
+          label: race.text,
+
+          source: race.href
+        });
+      }
+    } catch (error) {
+      console.warn(
+        `Race ${race.raceNumber} could not be read: ${error.message}`
+      );
+    }
+  }
+
+  return {
+    lapsLedByDriver,
+    includedRaces
+  };
+}
+
+const browser = await chromium.launch({
+  headless: true
+});
+
+try {
+  const page = await browser.newPage({
+    viewport: {
+      width: 1900,
+      height: 1200
+    }
+  });
+
+  console.log(`Opening ${standingsUrl}`);
+
+  await page.goto(standingsUrl, {
+    waitUntil: "domcontentloaded",
+    timeout: 90000
+  });
+
+  await page.waitForTimeout(12000);
+
+  const standingsTableResult =
+    await findStandingsTable(page);
+
+  if (!standingsTableResult) {
+    await page.screenshot({
+      path: "standings-debug.png",
+      fullPage: true
+    });
+
+    throw new Error(
+      "Could not find the SimRacerHub standings table."
+    );
+  }
+
+  const tableData = await readTable(
+    standingsTableResult.table
+  );
 
   if (tableData.length < 2) {
     throw new Error(
@@ -167,10 +441,16 @@ try {
 
   const rawOutput = {
     seasonId,
+
     source: standingsUrl,
-    tableFrame: standingsFrameUrl,
+
+    tableFrame:
+      standingsTableResult.frameUrl,
+
     updatedAt: new Date().toISOString(),
+
     headers: tableData[0],
+
     rows: tableData.slice(1)
   };
 
@@ -183,28 +463,91 @@ try {
     normalizeHeader(cell.text)
   );
 
-  function findColumn(...possibleNames) {
-    return headers.findIndex((header) =>
-      possibleNames.includes(header)
-    );
-  }
-
   const columns = {
-    position: findColumn("POS", "POSITION"),
-    change: findColumn("CHG", "CHANGE"),
-    driver: findColumn("DRIVER"),
-    points: findColumn("TOT PTS", "TOTAL POINTS"),
-    behindCut: findColumn("BEH CUT", "BEHIND CUT"),
-    wins: findColumn("WINS"),
-    bonusPoints: findColumn("BNS PTS", "BONUS PTS"),
-    behindNext: findColumn("BEH NEXT", "BEHIND NEXT"),
-    starts: findColumn("STARTS"),
-    provisionals: findColumn("PROV", "PROVISIONALS"),
-    top5: findColumn("T-5", "TOP 5"),
-    top10: findColumn("T-10", "TOP 10"),
-    poles: findColumn("POLES"),
-    incidents: findColumn("INCS", "INCIDENTS"),
-    team: findColumn("TEAM")
+    position: findColumn(
+      headers,
+      "POS",
+      "POSITION"
+    ),
+
+    change: findColumn(
+      headers,
+      "CHG",
+      "CHANGE"
+    ),
+
+    driver: findColumn(
+      headers,
+      "DRIVER"
+    ),
+
+    points: findColumn(
+      headers,
+      "TOT PTS",
+      "TOTAL POINTS"
+    ),
+
+    behindCut: findColumn(
+      headers,
+      "BEH CUT",
+      "BEHIND CUT"
+    ),
+
+    wins: findColumn(
+      headers,
+      "WINS"
+    ),
+
+    bonusPoints: findColumn(
+      headers,
+      "BNS PTS",
+      "BONUS PTS"
+    ),
+
+    behindNext: findColumn(
+      headers,
+      "BEH NEXT",
+      "BEHIND NEXT"
+    ),
+
+    starts: findColumn(
+      headers,
+      "STARTS"
+    ),
+
+    provisionals: findColumn(
+      headers,
+      "PROV",
+      "PROVISIONALS"
+    ),
+
+    top5: findColumn(
+      headers,
+      "T-5",
+      "TOP 5"
+    ),
+
+    top10: findColumn(
+      headers,
+      "T-10",
+      "TOP 10"
+    ),
+
+    poles: findColumn(
+      headers,
+      "POLES"
+    ),
+
+    incidents: findColumn(
+      headers,
+      "INCS",
+      "INCIDENTS"
+    ),
+
+    team: findColumn(
+      headers,
+      "TEAM"
+    )
   };
 
   if (
@@ -213,31 +556,27 @@ try {
     columns.points === -1
   ) {
     throw new Error(
-      `Required columns were not found. Headers: ${headers.join(", ")}`
+      `Required standings columns were not found. Headers: ${headers.join(
+        ", "
+      )}`
     );
   }
 
-  function getCell(row, index) {
-    if (index < 0 || !row[index]) {
-      return {
-        text: "",
-        className: "",
-        html: ""
-      };
-    }
-
-    return row[index];
-  }
-
-  const standings = tableData
+  const baseStandings = tableData
     .slice(1)
     .map((row) => {
       const position = parseNumber(
-        getCell(row, columns.position).text
+        getCell(
+          row,
+          columns.position
+        ).text
       );
 
       const driver = cleanText(
-        getCell(row, columns.driver).text
+        getCell(
+          row,
+          columns.driver
+        ).text
       );
 
       return {
@@ -254,7 +593,10 @@ try {
         ),
 
         bonusPoints: parseNumber(
-          getCell(row, columns.bonusPoints).text
+          getCell(
+            row,
+            columns.bonusPoints
+          ).text
         ),
 
         top5: parseNumber(
@@ -278,19 +620,31 @@ try {
         ),
 
         behindCut: parseNumber(
-          getCell(row, columns.behindCut).text
+          getCell(
+            row,
+            columns.behindCut
+          ).text
         ),
 
         behindNext: parseOptionalNumber(
-          getCell(row, columns.behindNext).text
+          getCell(
+            row,
+            columns.behindNext
+          ).text
         ),
 
         provisionals: parseNumber(
-          getCell(row, columns.provisionals).text
+          getCell(
+            row,
+            columns.provisionals
+          ).text
         ),
 
         incidents: parseNumber(
-          getCell(row, columns.incidents).text
+          getCell(
+            row,
+            columns.incidents
+          ).text
         ),
 
         team: cleanText(
@@ -302,11 +656,55 @@ try {
       entry.position > 0 && entry.driver
     );
 
+  const lapsLedData =
+    await collectSeasonLapsLed(page);
+
+  const standings = baseStandings.map(
+    (entry) => {
+      const driverKey =
+        normalizeDriverName(entry.driver);
+
+      return {
+        position: entry.position,
+        change: entry.change,
+        driver: entry.driver,
+        wins: entry.wins,
+        bonusPoints: entry.bonusPoints,
+
+        lapsLed:
+          lapsLedData.lapsLedByDriver.get(
+            driverKey
+          ) || 0,
+
+        top5: entry.top5,
+        top10: entry.top10,
+        poles: entry.poles,
+        starts: entry.starts,
+        points: entry.points,
+        behindCut: entry.behindCut,
+        behindNext: entry.behindNext,
+        provisionals: entry.provisionals,
+        incidents: entry.incidents,
+        team: entry.team
+      };
+    }
+  );
+
   const cleanOutput = {
     seasonId,
+
     source: standingsUrl,
+
     updatedAt: new Date().toISOString(),
+
     driverCount: standings.length,
+
+    lapsLedRaceCount:
+      lapsLedData.includedRaces.length,
+
+    lapsLedRacesIncluded:
+      lapsLedData.includedRaces,
+
     standings
   };
 
@@ -317,6 +715,10 @@ try {
 
   console.log(
     `Success: saved ${standings.length} drivers to standings.json`
+  );
+
+  console.log(
+    `Laps led were totaled from ${lapsLedData.includedRaces.length} completed point races.`
   );
 } finally {
   await browser.close();
