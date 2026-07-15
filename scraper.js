@@ -6,236 +6,6 @@ const seasonId = process.env.SEASON_ID || "28433";
 const standingsUrl =
   `https://www.simracerhub.com/season_standings.php?season_id=${seasonId}`;
 
-/*
- * Permanent SimRacerHub schedule IDs for the
- * 2026 Moonshiners GMD Cup Series.
- *
- * Excluded from points-race laps-led totals:
- * - Daytona Duel: schedule_id 346264
- * - All-Star Race: schedule_id 355088
- *
- * The schedule IDs do not run in perfect numerical order,
- * so each race is listed individually.
- */
-const seasonPointRaces = [
-  {
-    raceNumber: 2,
-    raceDate: "2026-02-18",
-    scheduleId: "346265",
-    label: "Daytona International Speedway"
-  },
-  {
-    raceNumber: 3,
-    raceDate: "2026-02-25",
-    scheduleId: "346266",
-    label: "EchoPark Speedway"
-  },
-  {
-    raceNumber: 4,
-    raceDate: "2026-03-04",
-    scheduleId: "346267",
-    label: "Circuit of the Americas"
-  },
-  {
-    raceNumber: 5,
-    raceDate: "2026-03-11",
-    scheduleId: "346268",
-    label: "Phoenix Raceway"
-  },
-  {
-    raceNumber: 6,
-    raceDate: "2026-03-18",
-    scheduleId: "354790",
-    label: "Las Vegas Motor Speedway"
-  },
-  {
-    raceNumber: 7,
-    raceDate: "2026-03-25",
-    scheduleId: "355080",
-    label: "Darlington Raceway"
-  },
-  {
-    raceNumber: 8,
-    raceDate: "2026-04-01",
-    scheduleId: "355081",
-    label: "Martinsville Speedway"
-  },
-  {
-    raceNumber: 9,
-    raceDate: "2026-04-15",
-    scheduleId: "355082",
-    label: "Bristol Motor Speedway"
-  },
-  {
-    raceNumber: 10,
-    raceDate: "2026-04-22",
-    scheduleId: "355083",
-    label: "Kansas Speedway"
-  },
-  {
-    raceNumber: 11,
-    raceDate: "2026-04-29",
-    scheduleId: "355085",
-    label: "Talladega Superspeedway"
-  },
-  {
-    raceNumber: 12,
-    raceDate: "2026-05-06",
-    scheduleId: "355086",
-    label: "Texas Motor Speedway"
-  },
-  {
-    raceNumber: 13,
-    raceDate: "2026-05-13",
-    scheduleId: "355087",
-    label: "Watkins Glen International"
-  },
-  {
-    raceNumber: 14,
-    raceDate: "2026-05-27",
-    scheduleId: "355089",
-    label: "Charlotte Motor Speedway"
-  },
-  {
-    raceNumber: 15,
-    raceDate: "2026-06-03",
-    scheduleId: "355090",
-    label: "Nashville Superspeedway"
-  },
-  {
-    raceNumber: 16,
-    raceDate: "2026-06-10",
-    scheduleId: "355091",
-    label: "Michigan International Speedway"
-  },
-  {
-    raceNumber: 17,
-    raceDate: "2026-06-17",
-    scheduleId: "356644",
-    label: "Pocono Raceway"
-  },
-  {
-    raceNumber: 18,
-    raceDate: "2026-06-24",
-    scheduleId: "356645",
-    label: "San Diego"
-  },
-  {
-    raceNumber: 19,
-    raceDate: "2026-07-01",
-    scheduleId: "356646",
-    label: "Sonoma Raceway"
-  },
-  {
-    raceNumber: 20,
-    raceDate: "2026-07-08",
-    scheduleId: "356647",
-    label: "Chicagoland Speedway"
-  },
-  {
-    raceNumber: 21,
-    raceDate: "2026-07-15",
-    scheduleId: "356648",
-    label: "EchoPark Speedway"
-  },
-  {
-    raceNumber: 22,
-    raceDate: "2026-07-22",
-    scheduleId: "356649",
-    label: "North Wilkesboro Speedway"
-  },
-  {
-    raceNumber: 23,
-    raceDate: "2026-07-29",
-    scheduleId: "356650",
-    label: "Indianapolis Motor Speedway"
-  },
-  {
-    raceNumber: 24,
-    raceDate: "2026-08-12",
-    scheduleId: "356652",
-    label: "Iowa Speedway"
-  },
-  {
-    raceNumber: 25,
-    raceDate: "2026-08-19",
-    scheduleId: "356653",
-    label: "Richmond Raceway"
-  },
-  {
-    raceNumber: 26,
-    raceDate: "2026-08-26",
-    scheduleId: "356654",
-    label: "New Hampshire Motor Speedway"
-  },
-  {
-    raceNumber: 27,
-    raceDate: "2026-09-02",
-    scheduleId: "356655",
-    label: "Daytona International Speedway"
-  },
-  {
-    raceNumber: 28,
-    raceDate: "2026-09-09",
-    scheduleId: "356656",
-    label: "Darlington Raceway"
-  },
-  {
-    raceNumber: 29,
-    raceDate: "2026-09-16",
-    scheduleId: "356658",
-    label: "World Wide Technology Raceway"
-  },
-  {
-    raceNumber: 30,
-    raceDate: "2026-09-23",
-    scheduleId: "356659",
-    label: "Bristol Motor Speedway"
-  },
-  {
-    raceNumber: 31,
-    raceDate: "2026-09-30",
-    scheduleId: "356660",
-    label: "Kansas Speedway"
-  },
-  {
-    raceNumber: 32,
-    raceDate: "2026-10-07",
-    scheduleId: "356661",
-    label: "Las Vegas Motor Speedway"
-  },
-  {
-    raceNumber: 33,
-    raceDate: "2026-10-14",
-    scheduleId: "356663",
-    label: "Charlotte Motor Speedway"
-  },
-  {
-    raceNumber: 34,
-    raceDate: "2026-10-21",
-    scheduleId: "356664",
-    label: "Phoenix Raceway"
-  },
-  {
-    raceNumber: 35,
-    raceDate: "2026-10-28",
-    scheduleId: "356665",
-    label: "Talladega Superspeedway"
-  },
-  {
-    raceNumber: 36,
-    raceDate: "2026-11-04",
-    scheduleId: "356666",
-    label: "Martinsville Speedway"
-  },
-  {
-    raceNumber: 37,
-    raceDate: "2026-11-11",
-    scheduleId: "356667",
-    label: "Homestead-Miami Speedway"
-  }
-];
-
 function cleanText(value = "") {
   return value.replace(/\s+/g, " ").trim();
 }
@@ -244,15 +14,6 @@ function normalizeHeader(value = "") {
   return cleanText(value)
     .toUpperCase()
     .replace(/[^A-Z0-9#-]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function normalizeDriverName(value = "") {
-  return cleanText(value)
-    .toLowerCase()
-    .replace(/[’‘]/g, "'")
-    .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -362,16 +123,18 @@ async function findStandingsTable(page) {
     const tables = frame.locator("table");
     const tableCount = await tables.count();
 
-    for (
-      let index = 0;
-      index < tableCount;
-      index++
-    ) {
+    for (let index = 0; index < tableCount; index++) {
       const table = tables.nth(index);
 
-      const tableText = normalizeHeader(
-        await table.innerText()
-      );
+      let tableText = "";
+
+      try {
+        tableText = normalizeHeader(
+          await table.innerText()
+        );
+      } catch {
+        continue;
+      }
 
       if (
         tableText.includes("DRIVER") &&
@@ -389,180 +152,61 @@ async function findStandingsTable(page) {
   return null;
 }
 
-async function findRaceResultsTable(page) {
-  for (const frame of page.frames()) {
-    const tables = frame.locator("table");
-    const tableCount = await tables.count();
+async function loadStandingsTable(page) {
+  const maximumAttempts = 3;
 
-    for (
-      let index = 0;
-      index < tableCount;
-      index++
-    ) {
-      const table = tables.nth(index);
-
-      const tableText = normalizeHeader(
-        await table.innerText()
-      );
-
-      if (
-        tableText.includes("DRIVER") &&
-        tableText.includes("TOT PTS") &&
-        tableText.includes("LAPS LED") &&
-        tableText.includes("FASTEST LAP")
-      ) {
-        return table;
-      }
-    }
-  }
-
-  return null;
-}
-
-async function collectSeasonLapsLed(page) {
-  const today = new Date()
-    .toISOString()
-    .slice(0, 10);
-
-  /*
-   * Only attempt to read races scheduled for today
-   * or earlier. Future races are ignored.
-   */
-  const eligibleRaces = seasonPointRaces.filter(
-    (race) => race.raceDate <= today
-  );
-
-  console.log(
-    `Found ${eligibleRaces.length} scheduled point races through ${today}.`
-  );
-
-  const lapsLedByDriver = new Map();
-  const includedRaces = [];
-
-  for (const race of eligibleRaces) {
-    const raceUrl =
-      `https://www.simracerhub.com/season_race.php?schedule_id=${race.scheduleId}`;
-
+  for (
+    let attempt = 1;
+    attempt <= maximumAttempts;
+    attempt++
+  ) {
     console.log(
-      `Reading Race ${race.raceNumber}: ${race.label} (${race.raceDate})`
+      `Loading standings — attempt ${attempt} of ${maximumAttempts}`
     );
 
-    try {
-      await page.goto(raceUrl, {
-        waitUntil: "domcontentloaded",
-        timeout: 90000
-      });
+    await page.goto(standingsUrl, {
+      waitUntil: "domcontentloaded",
+      timeout: 90000
+    });
 
-      /*
-       * Give SimRacerHub time to render the results table.
-       */
-      await page.waitForTimeout(2500);
+    /*
+     * Poll for up to 60 seconds. This is more reliable
+     * than waiting a fixed number of seconds once.
+     */
+    for (let check = 1; check <= 20; check++) {
+      const standingsTable =
+        await findStandingsTable(page);
 
-      const resultsTable =
-        await findRaceResultsTable(page);
-
-      if (!resultsTable) {
+      if (standingsTable) {
         console.log(
-          `Skipping Race ${race.raceNumber}: no completed results table found.`
+          `Standings table found on check ${check}.`
         );
 
-        continue;
+        return standingsTable;
       }
 
-      const tableData = await readTable(
-        resultsTable
+      console.log(
+        `Standings table not ready — check ${check} of 20.`
       );
 
-      if (tableData.length < 2) {
-        console.log(
-          `Skipping Race ${race.raceNumber}: no driver rows found.`
-        );
+      await page.waitForTimeout(3000);
+    }
 
-        continue;
-      }
-
-      const headers = tableData[0].map(
-        (cell) => normalizeHeader(cell.text)
-      );
-
-      const driverColumn = findColumn(
-        headers,
-        "DRIVER"
-      );
-
-      const lapsLedColumn = findColumn(
-        headers,
-        "LAPS LED"
-      );
-
-      if (
-        driverColumn === -1 ||
-        lapsLedColumn === -1
-      ) {
-        console.log(
-          `Skipping Race ${race.raceNumber}: DRIVER or LAPS LED column missing.`
-        );
-
-        continue;
-      }
-
-      let driversRead = 0;
-
-      for (const row of tableData.slice(1)) {
-        const driver = cleanText(
-          getCell(row, driverColumn).text
-        );
-
-        if (!driver) {
-          continue;
-        }
-
-        const driverKey =
-          normalizeDriverName(driver);
-
-        const lapsLed = parseNumber(
-          getCell(row, lapsLedColumn).text
-        );
-
-        lapsLedByDriver.set(
-          driverKey,
-          (
-            lapsLedByDriver.get(driverKey) || 0
-          ) + lapsLed
-        );
-
-        driversRead++;
-      }
-
-      if (driversRead > 0) {
-        includedRaces.push({
-          simRacerHubRaceNumber:
-            race.raceNumber,
-
-          raceDate: race.raceDate,
-
-          label: race.label,
-
-          scheduleId: race.scheduleId,
-
-          source: raceUrl
-        });
-
-        console.log(
-          `Included Race ${race.raceNumber}: read ${driversRead} drivers.`
-        );
-      }
-    } catch (error) {
-      console.warn(
-        `Race ${race.raceNumber} could not be read: ${error.message}`
+    if (attempt < maximumAttempts) {
+      console.log(
+        "Standings did not load. Retrying with a fresh page load."
       );
     }
   }
 
-  return {
-    lapsLedByDriver,
-    includedRaces
-  };
+  await page.screenshot({
+    path: "standings-debug.png",
+    fullPage: true
+  });
+
+  throw new Error(
+    "Could not find the SimRacerHub standings table after three attempts."
+  );
 }
 
 const browser = await chromium.launch({
@@ -570,38 +214,28 @@ const browser = await chromium.launch({
 });
 
 try {
-  const page = await browser.newPage({
+  const context = await browser.newContext({
     viewport: {
       width: 1900,
       height: 1200
-    }
+    },
+
+    locale: "en-US",
+
+    userAgent:
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+      "AppleWebKit/537.36 (KHTML, like Gecko) " +
+      "Chrome/126.0.0.0 Safari/537.36"
   });
+
+  const page = await context.newPage();
+
+  page.setDefaultTimeout(15000);
 
   console.log(`Opening ${standingsUrl}`);
 
-  await page.goto(standingsUrl, {
-    waitUntil: "domcontentloaded",
-    timeout: 90000
-  });
-
-  /*
-   * Give SimRacerHub time to render the standings.
-   */
-  await page.waitForTimeout(12000);
-
   const standingsTableResult =
-    await findStandingsTable(page);
-
-  if (!standingsTableResult) {
-    await page.screenshot({
-      path: "standings-debug.png",
-      fullPage: true
-    });
-
-    throw new Error(
-      "Could not find the SimRacerHub standings table."
-    );
-  }
+    await loadStandingsTable(page);
 
   const tableData = await readTable(
     standingsTableResult.table
@@ -613,18 +247,14 @@ try {
     );
   }
 
+  const updatedAt = new Date().toISOString();
+
   const rawOutput = {
     seasonId,
-
     source: standingsUrl,
-
-    tableFrame:
-      standingsTableResult.frameUrl,
-
-    updatedAt: new Date().toISOString(),
-
+    tableFrame: standingsTableResult.frameUrl,
+    updatedAt,
     headers: tableData[0],
-
     rows: tableData.slice(1)
   };
 
@@ -736,21 +366,15 @@ try {
     );
   }
 
-  const baseStandings = tableData
+  const standings = tableData
     .slice(1)
     .map((row) => {
       const position = parseNumber(
-        getCell(
-          row,
-          columns.position
-        ).text
+        getCell(row, columns.position).text
       );
 
       const driver = cleanText(
-        getCell(
-          row,
-          columns.driver
-        ).text
+        getCell(row, columns.driver).text
       );
 
       return {
@@ -832,72 +456,17 @@ try {
         entry.driver
     );
 
-  /*
-   * Open every completed points race and total
-   * each driver's season-long laps led.
-   */
-  const lapsLedData =
-    await collectSeasonLapsLed(page);
-
-  const standings = baseStandings.map(
-    (entry) => {
-      const driverKey =
-        normalizeDriverName(entry.driver);
-
-      return {
-        position: entry.position,
-
-        change: entry.change,
-
-        driver: entry.driver,
-
-        wins: entry.wins,
-
-        bonusPoints: entry.bonusPoints,
-
-        lapsLed:
-          lapsLedData.lapsLedByDriver.get(
-            driverKey
-          ) || 0,
-
-        top5: entry.top5,
-
-        top10: entry.top10,
-
-        poles: entry.poles,
-
-        starts: entry.starts,
-
-        points: entry.points,
-
-        behindCut: entry.behindCut,
-
-        behindNext: entry.behindNext,
-
-        provisionals: entry.provisionals,
-
-        incidents: entry.incidents,
-
-        team: entry.team
-      };
-    }
-  );
+  if (standings.length === 0) {
+    throw new Error(
+      "No driver standings were read."
+    );
+  }
 
   const cleanOutput = {
     seasonId,
-
     source: standingsUrl,
-
-    updatedAt: new Date().toISOString(),
-
+    updatedAt,
     driverCount: standings.length,
-
-    lapsLedRaceCount:
-      lapsLedData.includedRaces.length,
-
-    lapsLedRacesIncluded:
-      lapsLedData.includedRaces,
-
     standings
   };
 
@@ -908,10 +477,6 @@ try {
 
   console.log(
     `Success: saved ${standings.length} drivers to standings.json`
-  );
-
-  console.log(
-    `Laps led were totaled from ${lapsLedData.includedRaces.length} completed point races.`
   );
 } finally {
   await browser.close();
