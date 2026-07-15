@@ -1,0 +1,90 @@
+{
+  "seasonId": "28433",
+  "events": [
+    {
+      "websiteSlug": "20",
+      "raceDate": "2026-07-15",
+      "trackName": "EchoPark Speedway"
+    },
+    {
+      "websiteSlug": "21",
+      "raceDate": "2026-07-22",
+      "trackName": "North Wilkesboro Speedway"
+    },
+    {
+      "websiteSlug": "22",
+      "raceDate": "2026-07-29",
+      "trackName": "Indianapolis Motor Speedway"
+    },
+    {
+      "websiteSlug": "23",
+      "raceDate": "2026-08-12",
+      "trackName": "Iowa Speedway"
+    },
+    {
+      "websiteSlug": "24",
+      "raceDate": "2026-08-19",
+      "trackName": "Richmond Raceway"
+    },
+    {
+      "websiteSlug": "25",
+      "raceDate": "2026-08-26",
+      "trackName": "New Hampshire Motor Speedway"
+    },
+    {
+      "websiteSlug": "26",
+      "raceDate": "2026-09-02",
+      "trackName": "Daytona International Speedway"
+    },
+    {
+      "websiteSlug": "27",
+      "raceDate": "2026-09-09",
+      "trackName": "Darlington Raceway"
+    },
+    {
+      "websiteSlug": "28",
+      "raceDate": "2026-09-16",
+      "trackName": "World Wide Technology Raceway"
+    },
+    {
+      "websiteSlug": "29",
+      "raceDate": "2026-09-23",
+      "trackName": "Bristol Motor Speedway"
+    },
+    {
+      "websiteSlug": "30",
+      "raceDate": "2026-09-30",
+      "trackName": "Kansas Speedway"
+    },
+    {
+      "websiteSlug": "31",
+      "raceDate": "2026-10-07",
+      "trackName": "Las Vegas Motor Speedway"
+    },
+    {
+      "websiteSlug": "32",
+      "raceDate": "2026-10-14",
+      "trackName": "Charlotte Motor Speedway"
+    },
+    {
+      "websiteSlug": "33",
+      "raceDate": "2026-10-21",
+      "trackName": "Phoenix Raceway"
+    },
+    {
+      "websiteSlug": "34",
+      "raceDate": "2026-10-28",
+      "trackName": "Talladega Superspeedway"
+    },
+    {
+      "websiteSlug": "35",
+      "raceDate": "2026-11-04",
+      "trackName": "Martinsville Speedway"
+    },
+    {
+      "websiteSlug": "36",
+      "raceDate": "2026-11-11",
+      "trackName": "Homestead-Miami Speedway"
+    }
+  ]
+}
