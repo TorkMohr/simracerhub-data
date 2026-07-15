@@ -1,5 +1,9 @@
 import { chromium } from "playwright";
-import { writeFile } from "node:fs/promises";
+import {
+  mkdir,
+  readFile,
+  writeFile
+} from "node:fs/promises";
 
 const seasonId = process.env.SEASON_ID || "28433";
 
@@ -28,6 +32,125 @@ function parseNumber(value = "") {
   return match ? Number(match[0]) : 0;
 }
 
+/*
+ * Makes track-name comparisons more forgiving.
+ *
+ * Examples:
+ * "EchoPark Speedway (Atlanta)"
+ * becomes:
+ * "echopark speedway"
+ *
+ * "Homestead-Miami Speedway"
+ * becomes:
+ * "homestead miami speedway"
+ */
+function normalizeTrackName(value = "") {
+  return cleanText(value)
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tracksMatch(firstTrack, secondTrack) {
+  const first = normalizeTrackName(firstTrack);
+  const second = normalizeTrackName(secondTrack);
+
+  return (
+    first === second ||
+    first.includes(second) ||
+    second.includes(first)
+  );
+}
+
+async function readRaceMetadata(page) {
+  const bodyText = await page.locator("body").innerText();
+
+  /*
+   * Expected SimRacerHub format:
+   * Race 20: Chicagoland Speedway Wed 07/08/2026
+   */
+  const metadataMatch = bodyText.match(
+    /Race\s+(\d+)\s*:\s*(.+?)\s+(?:Sun|Mon|Tue|Wed|Thu|Fri|Sat)\s+(\d{2}\/\d{2}\/\d{4})/i
+  );
+
+  if (!metadataMatch) {
+    throw new Error(
+      "Could not identify the race number, track name, and race date."
+    );
+  }
+
+  const simRacerHubRaceNumber = Number(
+    metadataMatch[1]
+  );
+
+  const simRacerHubTrackName = cleanText(
+    metadataMatch[2]
+  );
+
+  const dateText = metadataMatch[3];
+
+  const [month, day, year] = dateText.split("/");
+
+  const raceDate = `${year}-${month}-${day}`;
+
+  /*
+   * Find the permanent schedule_id URL for this race.
+   * The generic season URL always points to the latest race.
+   */
+  const scheduleLinks = await page
+    .locator(
+      'a[href*="season_race.php?schedule_id="]'
+    )
+    .evaluateAll((links) => {
+      return links.map((link) => ({
+        text: link.innerText
+          .replace(/\s+/g, " ")
+          .trim(),
+
+        href: link.href
+      }));
+    });
+
+  const raceNumberPattern = new RegExp(
+    `Race\\s+${simRacerHubRaceNumber}\\s*:`,
+    "i"
+  );
+
+  const permanentLink = scheduleLinks.find((link) => {
+    return (
+      raceNumberPattern.test(link.text) &&
+      link.text.includes(dateText)
+    );
+  });
+
+  return {
+    simRacerHubRaceNumber,
+    simRacerHubTrackName,
+    raceDate,
+
+    raceSpecificUrl:
+      permanentLink?.href || resultsUrl
+  };
+}
+
+const eventMap = JSON.parse(
+  await readFile("event-map.json", "utf8")
+);
+
+if (String(eventMap.seasonId) !== String(seasonId)) {
+  throw new Error(
+    `event-map.json is for season ${eventMap.seasonId}, but the scraper is using season ${seasonId}.`
+  );
+}
+
+if (!Array.isArray(eventMap.events)) {
+  throw new Error(
+    "event-map.json does not contain a valid events list."
+  );
+}
+
 const browser = await chromium.launch({
   headless: true
 });
@@ -49,6 +172,75 @@ try {
 
   // Give SimRacerHub time to load the latest results.
   await page.waitForTimeout(12000);
+
+  const raceMetadata = await readRaceMetadata(page);
+
+  console.log(
+    `Latest race: ${raceMetadata.simRacerHubTrackName}`
+  );
+
+  console.log(
+    `Race date: ${raceMetadata.raceDate}`
+  );
+
+  console.log(
+    `SimRacerHub race number: ${raceMetadata.simRacerHubRaceNumber}`
+  );
+
+  /*
+   * Date is the primary mapping key.
+   */
+  const mappedEvent = eventMap.events.find((event) => {
+    return event.raceDate === raceMetadata.raceDate;
+  });
+
+  let websiteSlug = null;
+  let websiteTrackName =
+    raceMetadata.simRacerHubTrackName;
+
+  if (mappedEvent) {
+    /*
+     * Track is the secondary safety check.
+     */
+    if (
+      !tracksMatch(
+        mappedEvent.trackName,
+        raceMetadata.simRacerHubTrackName
+      )
+    ) {
+      throw new Error(
+        [
+          `The date ${raceMetadata.raceDate} matched website page`,
+          `/results/${mappedEvent.websiteSlug},`,
+          `but the track names did not match.`,
+          `Event map: ${mappedEvent.trackName}.`,
+          `SimRacerHub: ${raceMetadata.simRacerHubTrackName}.`
+        ].join(" ")
+      );
+    }
+
+    websiteSlug = String(
+      mappedEvent.websiteSlug
+    );
+
+    websiteTrackName = mappedEvent.trackName;
+
+    console.log(
+      `Matched website page: /results/${websiteSlug}`
+    );
+  } else {
+    /*
+     * This allows the latest feed to continue working
+     * when the current race is not included in event-map.json.
+     */
+    console.warn(
+      `No event-map entry was found for ${raceMetadata.raceDate}.`
+    );
+
+    console.warn(
+      "The latest feed will update, but no permanent numbered race file will be created."
+    );
+  }
 
   let resultsTable = null;
   let tableFrameUrl = "";
@@ -280,35 +472,117 @@ try {
     );
   }
 
+  const updatedAt = new Date().toISOString();
+
+  const cleanOutput = {
+    seasonId,
+
+    websiteSlug,
+
+    websitePath: websiteSlug
+      ? `/results/${websiteSlug}`
+      : "/results",
+
+    mappingStatus: websiteSlug
+      ? "matched"
+      : "unmapped",
+
+    simRacerHubRaceNumber:
+      raceMetadata.simRacerHubRaceNumber,
+
+    trackName: websiteTrackName,
+
+    simRacerHubTrackName:
+      raceMetadata.simRacerHubTrackName,
+
+    raceDate: raceMetadata.raceDate,
+
+    source: raceMetadata.raceSpecificUrl,
+
+    latestResultsSource: resultsUrl,
+
+    updatedAt,
+
+    resultCount: results.length,
+
+    results
+  };
+
   const rawOutput = {
     seasonId,
-    source: resultsUrl,
+
+    websiteSlug,
+
+    simRacerHubRaceNumber:
+      raceMetadata.simRacerHubRaceNumber,
+
+    trackName: websiteTrackName,
+
+    simRacerHubTrackName:
+      raceMetadata.simRacerHubTrackName,
+
+    raceDate: raceMetadata.raceDate,
+
+    source: raceMetadata.raceSpecificUrl,
+
     tableFrame: tableFrameUrl,
-    updatedAt: new Date().toISOString(),
+
+    updatedAt,
+
     headers: tableData[0],
+
     rows: tableData.slice(1)
   };
 
+  await mkdir("race-results", {
+    recursive: true
+  });
+
+  /*
+   * Keep the original files for compatibility.
+   */
   await writeFile(
     "results-raw.json",
     JSON.stringify(rawOutput, null, 2)
   );
-
-  const cleanOutput = {
-    seasonId,
-    source: resultsUrl,
-    updatedAt: new Date().toISOString(),
-    resultCount: results.length,
-    results
-  };
 
   await writeFile(
     "results.json",
     JSON.stringify(cleanOutput, null, 2)
   );
 
+  /*
+   * This file always contains the newest results.
+   */
+  await writeFile(
+    "race-results/latest.json",
+    JSON.stringify(cleanOutput, null, 2)
+  );
+
+  /*
+   * Only create a permanent numbered file when
+   * event-map.json provides a verified destination.
+   */
+  if (websiteSlug) {
+    const permanentFile =
+      `race-results/${websiteSlug}.json`;
+
+    await writeFile(
+      permanentFile,
+      JSON.stringify(cleanOutput, null, 2)
+    );
+
+    console.log(
+      `Saved permanent race file: ${permanentFile}`
+    );
+  }
+
   console.log(
-    `Success: saved ${results.length} drivers to results.json`
+    `Saved ${results.length} drivers to results.json`
+  );
+
+  console.log(
+    "Updated race-results/latest.json"
   );
 } finally {
   await browser.close();
