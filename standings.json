@@ -1,7 +1,7 @@
 {
   "seasonId": "28433",
   "source": "https://www.simracerhub.com/season_standings.php?season_id=28433",
-  "updatedAt": "2026-07-15T18:39:53.239Z",
+  "updatedAt": "2026-07-15T18:47:53.131Z",
   "driverCount": 47,
   "standings": [
     {
@@ -19,7 +19,8 @@
       "behindNext": null,
       "provisionals": 0,
       "incidents": 74,
-      "team": "Aero Racing"
+      "team": "Aero Racing",
+      "lapsLed": 453
     },
     {
       "position": 2,
@@ -36,7 +37,8 @@
       "behindNext": -195,
       "provisionals": 0,
       "incidents": 155,
-      "team": "DIG Team 1"
+      "team": "DIG Team 1",
+      "lapsLed": 646
     },
     {
       "position": 3,
@@ -53,7 +55,8 @@
       "behindNext": -36,
       "provisionals": 0,
       "incidents": 124,
-      "team": "Aero Racing"
+      "team": "Aero Racing",
+      "lapsLed": 80
     },
     {
       "position": 4,
@@ -70,7 +73,8 @@
       "behindNext": -8,
       "provisionals": 0,
       "incidents": 142,
-      "team": "DIG Team 2"
+      "team": "DIG Team 2",
+      "lapsLed": 258
     },
     {
       "position": 5,
@@ -87,7 +91,8 @@
       "behindNext": -55,
       "provisionals": 0,
       "incidents": 174,
-      "team": "Blowin' Trannies"
+      "team": "Blowin' Trannies",
+      "lapsLed": 407
     },
     {
       "position": 6,
@@ -104,7 +109,8 @@
       "behindNext": -67,
       "provisionals": 0,
       "incidents": 134,
-      "team": "Team Aero"
+      "team": "Team Aero",
+      "lapsLed": 57
     },
     {
       "position": 7,
@@ -121,7 +127,8 @@
       "behindNext": -29,
       "provisionals": 0,
       "incidents": 123,
-      "team": "DIG Team 1"
+      "team": "DIG Team 1",
+      "lapsLed": 90
     },
     {
       "position": 8,
@@ -138,7 +145,8 @@
       "behindNext": -9,
       "provisionals": 0,
       "incidents": 204,
-      "team": "Blowin' Trannies"
+      "team": "Blowin' Trannies",
+      "lapsLed": 137
     },
     {
       "position": 9,
@@ -155,7 +163,8 @@
       "behindNext": -1,
       "provisionals": 0,
       "incidents": 157,
-      "team": "Blowin' Trannies"
+      "team": "Blowin' Trannies",
+      "lapsLed": 3
     },
     {
       "position": 10,
@@ -172,7 +181,8 @@
       "behindNext": -25,
       "provisionals": 0,
       "incidents": 131,
-      "team": "Team Aero"
+      "team": "Team Aero",
+      "lapsLed": 40
     },
     {
       "position": 11,
@@ -189,7 +199,8 @@
       "behindNext": -13,
       "provisionals": 0,
       "incidents": 193,
-      "team": "DIG Team 2"
+      "team": "DIG Team 2",
+      "lapsLed": 56
     },
     {
       "position": 12,
@@ -206,7 +217,8 @@
       "behindNext": -23,
       "provisionals": 0,
       "incidents": 202,
-      "team": "DIG Team 1"
+      "team": "DIG Team 1",
+      "lapsLed": 6
     },
     {
       "position": 13,
@@ -223,7 +235,8 @@
       "behindNext": -2,
       "provisionals": 0,
       "incidents": 210,
-      "team": "Team Aero"
+      "team": "Team Aero",
+      "lapsLed": 41
     },
     {
       "position": 14,
@@ -240,7 +253,8 @@
       "behindNext": -39,
       "provisionals": 0,
       "incidents": 143,
-      "team": "Redline Racing"
+      "team": "Redline Racing",
+      "lapsLed": 58
     },
     {
       "position": 15,
@@ -257,7 +271,8 @@
       "behindNext": -1,
       "provisionals": 0,
       "incidents": 153,
-      "team": "Beast Mode Performance"
+      "team": "Beast Mode Performance",
+      "lapsLed": 16
     },
     {
       "position": 16,
@@ -274,7 +289,8 @@
       "behindNext": -2,
       "provisionals": 0,
       "incidents": 86,
-      "team": "Aero Racing"
+      "team": "Aero Racing",
+      "lapsLed": 386
     },
     {
       "position": 17,
@@ -291,7 +307,8 @@
       "behindNext": -13,
       "provisionals": 0,
       "incidents": 173,
-      "team": "First 2 Engage Motorsports"
+      "team": "First 2 Engage Motorsports",
+      "lapsLed": 9
     },
     {
       "position": 18,
@@ -308,7 +325,8 @@
       "behindNext": -19,
       "provisionals": 0,
       "incidents": 216,
-      "team": "DIG Team 2"
+      "team": "DIG Team 2",
+      "lapsLed": 9
     },
     {
       "position": 19,
@@ -325,7 +343,8 @@
       "behindNext": -8,
       "provisionals": 0,
       "incidents": 144,
-      "team": "ZeroX Sim Racing"
+      "team": "ZeroX Sim Racing",
+      "lapsLed": 0
     },
     {
       "position": 20,
@@ -342,7 +361,8 @@
       "behindNext": -2,
       "provisionals": 0,
       "incidents": 231,
-      "team": "First 2 Engage Motorsports"
+      "team": "First 2 Engage Motorsports",
+      "lapsLed": 4
     },
     {
       "position": 21,
@@ -359,7 +379,8 @@
       "behindNext": -11,
       "provisionals": 0,
       "incidents": 212,
-      "team": "DIG Team 1"
+      "team": "DIG Team 1",
+      "lapsLed": 0
     },
     {
       "position": 22,
@@ -376,7 +397,8 @@
       "behindNext": -5,
       "provisionals": 0,
       "incidents": 196,
-      "team": "First 2 Engage Motorsports"
+      "team": "First 2 Engage Motorsports",
+      "lapsLed": 5
     },
     {
       "position": 23,
@@ -393,7 +415,8 @@
       "behindNext": -12,
       "provisionals": 0,
       "incidents": 243,
-      "team": "ZeroX Sim Racing"
+      "team": "ZeroX Sim Racing",
+      "lapsLed": 52
     },
     {
       "position": 24,
@@ -410,7 +433,8 @@
       "behindNext": -15,
       "provisionals": 0,
       "incidents": 203,
-      "team": "Redline Racing"
+      "team": "Redline Racing",
+      "lapsLed": 18
     },
     {
       "position": 25,
@@ -427,7 +451,8 @@
       "behindNext": -3,
       "provisionals": 0,
       "incidents": 259,
-      "team": ""
+      "team": "",
+      "lapsLed": 8
     },
     {
       "position": 26,
@@ -444,7 +469,8 @@
       "behindNext": -13,
       "provisionals": 0,
       "incidents": 146,
-      "team": "Team Aero"
+      "team": "Team Aero",
+      "lapsLed": 50
     },
     {
       "position": 27,
@@ -461,7 +487,8 @@
       "behindNext": -44,
       "provisionals": 0,
       "incidents": 107,
-      "team": "ZeroX Sim Racing"
+      "team": "ZeroX Sim Racing",
+      "lapsLed": 1
     },
     {
       "position": 28,
@@ -478,7 +505,8 @@
       "behindNext": -32,
       "provisionals": 0,
       "incidents": 169,
-      "team": "ZeroX Sim Racing"
+      "team": "ZeroX Sim Racing",
+      "lapsLed": 1
     },
     {
       "position": 29,
@@ -495,7 +523,8 @@
       "behindNext": -17,
       "provisionals": 0,
       "incidents": 110,
-      "team": "Redline Racing"
+      "team": "Redline Racing",
+      "lapsLed": 2
     },
     {
       "position": 30,
@@ -512,7 +541,8 @@
       "behindNext": -21,
       "provisionals": 0,
       "incidents": 127,
-      "team": ""
+      "team": "",
+      "lapsLed": 3
     },
     {
       "position": 31,
@@ -529,7 +559,8 @@
       "behindNext": -13,
       "provisionals": 0,
       "incidents": 33,
-      "team": ""
+      "team": "",
+      "lapsLed": 164
     },
     {
       "position": 32,
@@ -546,7 +577,8 @@
       "behindNext": -25,
       "provisionals": 0,
       "incidents": 47,
-      "team": "Redline Racing"
+      "team": "Redline Racing",
+      "lapsLed": 10
     },
     {
       "position": 33,
@@ -563,7 +595,8 @@
       "behindNext": -5,
       "provisionals": 0,
       "incidents": 109,
-      "team": "Aero Racing"
+      "team": "Aero Racing",
+      "lapsLed": 12
     },
     {
       "position": 34,
@@ -580,7 +613,8 @@
       "behindNext": -42,
       "provisionals": 0,
       "incidents": 112,
-      "team": ""
+      "team": "",
+      "lapsLed": 0
     },
     {
       "position": 35,
@@ -597,7 +631,8 @@
       "behindNext": -9,
       "provisionals": 0,
       "incidents": 86,
-      "team": "Blowin' Trannies"
+      "team": "Blowin' Trannies",
+      "lapsLed": 0
     },
     {
       "position": 36,
@@ -614,7 +649,8 @@
       "behindNext": -4,
       "provisionals": 0,
       "incidents": 93,
-      "team": "Beast Mode Performance"
+      "team": "Beast Mode Performance",
+      "lapsLed": 3
     },
     {
       "position": 37,
@@ -631,7 +667,8 @@
       "behindNext": -19,
       "provisionals": 0,
       "incidents": 43,
-      "team": ""
+      "team": "",
+      "lapsLed": 19
     },
     {
       "position": 38,
@@ -648,7 +685,8 @@
       "behindNext": -1,
       "provisionals": 0,
       "incidents": 65,
-      "team": "Beast Mode Performance"
+      "team": "Beast Mode Performance",
+      "lapsLed": 0
     },
     {
       "position": 39,
@@ -665,7 +703,8 @@
       "behindNext": -5,
       "provisionals": 0,
       "incidents": 32,
-      "team": ""
+      "team": "",
+      "lapsLed": 9
     },
     {
       "position": 40,
@@ -682,7 +721,8 @@
       "behindNext": -17,
       "provisionals": 0,
       "incidents": 29,
-      "team": "MARSS"
+      "team": "MARSS",
+      "lapsLed": 1
     },
     {
       "position": 41,
@@ -699,7 +739,8 @@
       "behindNext": -5,
       "provisionals": 0,
       "incidents": 61,
-      "team": ""
+      "team": "",
+      "lapsLed": 2
     },
     {
       "position": 42,
@@ -716,7 +757,8 @@
       "behindNext": -17,
       "provisionals": 0,
       "incidents": 38,
-      "team": "MARSS"
+      "team": "MARSS",
+      "lapsLed": 35
     },
     {
       "position": 43,
@@ -733,7 +775,8 @@
       "behindNext": -30,
       "provisionals": 0,
       "incidents": 0,
-      "team": ""
+      "team": "",
+      "lapsLed": 0
     },
     {
       "position": 44,
@@ -750,7 +793,8 @@
       "behindNext": -2,
       "provisionals": 0,
       "incidents": 1,
-      "team": ""
+      "team": "",
+      "lapsLed": 0
     },
     {
       "position": 45,
@@ -767,7 +811,8 @@
       "behindNext": -5,
       "provisionals": 0,
       "incidents": 6,
-      "team": "Beast Mode Performance"
+      "team": "Beast Mode Performance",
+      "lapsLed": 0
     },
     {
       "position": 46,
@@ -784,7 +829,8 @@
       "behindNext": null,
       "provisionals": 0,
       "incidents": 15,
-      "team": ""
+      "team": "",
+      "lapsLed": 0
     },
     {
       "position": 46,
@@ -801,7 +847,175 @@
       "behindNext": -6,
       "provisionals": 0,
       "incidents": 130,
-      "team": ""
+      "team": "",
+      "lapsLed": 44
+    }
+  ],
+  "standingsUpdatedAt": "2026-07-15T18:46:33.070Z",
+  "lapsLedUpdatedAt": "2026-07-15T18:47:53.131Z",
+  "lapsLedRaceCount": 19,
+  "lapsLedRacesIncluded": [
+    {
+      "simRacerHubRaceNumber": 2,
+      "scheduleId": "346265",
+      "raceDate": "2026-02-18",
+      "trackName": "Daytona",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=346265",
+      "driversRead": 32
+    },
+    {
+      "simRacerHubRaceNumber": 3,
+      "scheduleId": "346266",
+      "raceDate": "2026-02-25",
+      "trackName": "EchoPark",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=346266",
+      "driversRead": 35
+    },
+    {
+      "simRacerHubRaceNumber": 4,
+      "scheduleId": "346267",
+      "raceDate": "2026-03-04",
+      "trackName": "COTA",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=346267",
+      "driversRead": 32
+    },
+    {
+      "simRacerHubRaceNumber": 5,
+      "scheduleId": "346268",
+      "raceDate": "2026-03-11",
+      "trackName": "Phoenix",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=346268",
+      "driversRead": 34
+    },
+    {
+      "simRacerHubRaceNumber": 6,
+      "scheduleId": "354790",
+      "raceDate": "2026-03-18",
+      "trackName": "Las Vegas",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=354790",
+      "driversRead": 34
+    },
+    {
+      "simRacerHubRaceNumber": 7,
+      "scheduleId": "355080",
+      "raceDate": "2026-03-25",
+      "trackName": "Darlington",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355080",
+      "driversRead": 32
+    },
+    {
+      "simRacerHubRaceNumber": 8,
+      "scheduleId": "355081",
+      "raceDate": "2026-04-01",
+      "trackName": "Martinsville",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355081",
+      "driversRead": 32
+    },
+    {
+      "simRacerHubRaceNumber": 9,
+      "scheduleId": "355082",
+      "raceDate": "2026-04-15",
+      "trackName": "Bristol",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355082",
+      "driversRead": 33
+    },
+    {
+      "simRacerHubRaceNumber": 10,
+      "scheduleId": "355083",
+      "raceDate": "2026-04-22",
+      "trackName": "Kansas",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355083",
+      "driversRead": 31
+    },
+    {
+      "simRacerHubRaceNumber": 11,
+      "scheduleId": "355085",
+      "raceDate": "2026-04-29",
+      "trackName": "Talladega",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355085",
+      "driversRead": 34
+    },
+    {
+      "simRacerHubRaceNumber": 12,
+      "scheduleId": "355086",
+      "raceDate": "2026-05-06",
+      "trackName": "Texas",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355086",
+      "driversRead": 34
+    },
+    {
+      "simRacerHubRaceNumber": 13,
+      "scheduleId": "355087",
+      "raceDate": "2026-05-13",
+      "trackName": "Watkins Glen",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355087",
+      "driversRead": 31
+    },
+    {
+      "simRacerHubRaceNumber": 14,
+      "scheduleId": "355089",
+      "raceDate": "2026-05-27",
+      "trackName": "Charlotte",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355089",
+      "driversRead": 33
+    },
+    {
+      "simRacerHubRaceNumber": 15,
+      "scheduleId": "355090",
+      "raceDate": "2026-06-03",
+      "trackName": "Nashville",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355090",
+      "driversRead": 33
+    },
+    {
+      "simRacerHubRaceNumber": 16,
+      "scheduleId": "355091",
+      "raceDate": "2026-06-10",
+      "trackName": "Michigan",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=355091",
+      "driversRead": 33
+    },
+    {
+      "simRacerHubRaceNumber": 17,
+      "scheduleId": "356644",
+      "raceDate": "2026-06-17",
+      "trackName": "Pocono",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356644",
+      "driversRead": 31
+    },
+    {
+      "simRacerHubRaceNumber": 18,
+      "scheduleId": "356645",
+      "raceDate": "2026-06-24",
+      "trackName": "San Diego",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356645",
+      "driversRead": 28
+    },
+    {
+      "simRacerHubRaceNumber": 19,
+      "scheduleId": "356646",
+      "raceDate": "2026-07-01",
+      "trackName": "Sonoma",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356646",
+      "driversRead": 29
+    },
+    {
+      "simRacerHubRaceNumber": 20,
+      "scheduleId": "356647",
+      "raceDate": "2026-07-08",
+      "trackName": "Chicagoland",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356647",
+      "driversRead": 32
+    }
+  ],
+  "lapsLedRacesSkipped": [
+    {
+      "simRacerHubRaceNumber": 21,
+      "scheduleId": "356648",
+      "raceDate": "2026-07-15",
+      "trackName": "EchoPark",
+      "source": "https://www.simracerhub.com/season_race.php?schedule_id=356648",
+      "reason": "No completed results table found"
     }
   ]
 }
