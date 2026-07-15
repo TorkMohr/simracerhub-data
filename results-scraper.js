@@ -65,40 +65,12 @@ function tracksMatch(firstTrack, secondTrack) {
 }
 
 async function readRaceMetadata(page) {
-  const bodyText = await page.locator("body").innerText();
+  const rawBodyText = await page
+    .locator("body")
+    .innerText();
 
-  /*
-   * Expected SimRacerHub format:
-   * Race 20: Chicagoland Speedway Wed 07/08/2026
-   */
-  const metadataMatch = bodyText.match(
-    /Race\s+(\d+)\s*:\s*(.+?)\s+(?:Sun|Mon|Tue|Wed|Thu|Fri|Sat)\s+(\d{2}\/\d{2}\/\d{4})/i
-  );
+  const bodyText = cleanText(rawBodyText);
 
-  if (!metadataMatch) {
-    throw new Error(
-      "Could not identify the race number, track name, and race date."
-    );
-  }
-
-  const simRacerHubRaceNumber = Number(
-    metadataMatch[1]
-  );
-
-  const simRacerHubTrackName = cleanText(
-    metadataMatch[2]
-  );
-
-  const dateText = metadataMatch[3];
-
-  const [month, day, year] = dateText.split("/");
-
-  const raceDate = `${year}-${month}-${day}`;
-
-  /*
-   * Find the permanent schedule_id URL for this race.
-   * The generic season URL always points to the latest race.
-   */
   const scheduleLinks = await page
     .locator(
       'a[href*="season_race.php?schedule_id="]'
@@ -113,28 +85,159 @@ async function readRaceMetadata(page) {
       }));
     });
 
-  const raceNumberPattern = new RegExp(
-    `Race\\s+${simRacerHubRaceNumber}\\s*:`,
-    "i"
+  /*
+   * First try the schedule-selector format:
+   * Race 20: Chicagoland Speedway Wed 07/08/2026
+   */
+  const combinedMatch = bodyText.match(
+    /Race\s+(\d+)\s*:?\s*(.+?)\s+(?:Sun|Mon|Tue|Wed|Thu|Fri|Sat)\s+(\d{2}\/\d{2}\/\d{4})/i
   );
 
-  const permanentLink = scheduleLinks.find((link) => {
-    return (
-      raceNumberPattern.test(link.text) &&
-      link.text.includes(dateText)
+  if (combinedMatch) {
+    const simRacerHubRaceNumber = Number(
+      combinedMatch[1]
     );
-  });
+
+    const simRacerHubTrackName = cleanText(
+      combinedMatch[2]
+    );
+
+    const dateText = combinedMatch[3];
+    const [month, day, year] = dateText.split("/");
+
+    const raceDate =
+      `${year}-${month}-${day}`;
+
+    const permanentLink = scheduleLinks.find(
+      (link) => {
+        const raceNumberMatches =
+          new RegExp(
+            `Race\\s+${simRacerHubRaceNumber}\\b`,
+            "i"
+          ).test(link.text);
+
+        return (
+          raceNumberMatches &&
+          link.text.includes(dateText)
+        );
+      }
+    );
+
+    return {
+      simRacerHubRaceNumber,
+      simRacerHubTrackName,
+      raceDate,
+      raceSpecificUrl:
+        permanentLink?.href || resultsUrl
+    };
+  }
+
+  /*
+   * Fallback:
+   * SimRacerHub may display the track heading and
+   * date separately, such as:
+   *
+   * Chicagoland Speedway
+   * Jul 8, 2026
+   */
+  const headingTexts = await page
+    .locator("h3")
+    .allInnerTexts();
+
+  const simRacerHubTrackName = headingTexts
+    .map((heading) => cleanText(heading))
+    .find((heading) => {
+      return (
+        heading &&
+        !/^(Driver Bonuses|Driver Penalties|Team Results)$/i.test(
+          heading
+        )
+      );
+    });
+
+  const displayedDateMatch = rawBodyText.match(
+    /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{1,2}),\s+(\d{4})\b/i
+  );
+
+  if (
+    !simRacerHubTrackName ||
+    !displayedDateMatch
+  ) {
+    throw new Error(
+      "Could not identify the displayed track name and race date."
+    );
+  }
+
+  const monthNumbers = {
+    jan: "01",
+    feb: "02",
+    mar: "03",
+    apr: "04",
+    may: "05",
+    jun: "06",
+    jul: "07",
+    aug: "08",
+    sep: "09",
+    oct: "10",
+    nov: "11",
+    dec: "12"
+  };
+
+  const monthKey = displayedDateMatch[1]
+    .slice(0, 3)
+    .toLowerCase();
+
+  const month = monthNumbers[monthKey];
+
+  const day = displayedDateMatch[2]
+    .padStart(2, "0");
+
+  const year = displayedDateMatch[3];
+
+  const raceDate = `${year}-${month}-${day}`;
+  const scheduleDate = `${month}/${day}/${year}`;
+
+  const normalizedDisplayedTrack =
+    normalizeTrackName(simRacerHubTrackName);
+
+  /*
+   * Match the displayed race to its permanent
+   * schedule_id link using track and date.
+   */
+  const permanentLink =
+    scheduleLinks.find((link) => {
+      const normalizedLinkText =
+        normalizeTrackName(link.text);
+
+      return (
+        normalizedLinkText.includes(
+          normalizedDisplayedTrack
+        ) &&
+        link.text.includes(scheduleDate)
+      );
+    }) ||
+    scheduleLinks.find((link) =>
+      link.text.includes(scheduleDate)
+    );
+
+  const raceNumberMatch =
+    permanentLink?.text.match(
+      /Race\s+(\d+)/i
+    );
+
+  const simRacerHubRaceNumber =
+    raceNumberMatch
+      ? Number(raceNumberMatch[1])
+      : null;
 
   return {
     simRacerHubRaceNumber,
     simRacerHubTrackName,
     raceDate,
-
     raceSpecificUrl:
       permanentLink?.href || resultsUrl
   };
 }
-
 const eventMap = JSON.parse(
   await readFile("event-map.json", "utf8")
 );
