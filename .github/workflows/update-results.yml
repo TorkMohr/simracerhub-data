@@ -3,6 +3,10 @@ name: Update SimRacerHub Race Results
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "30 23 * * 3"
+      timezone: "America/New_York"
+
 permissions:
   contents: write
 
