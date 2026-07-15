@@ -4,64 +4,10 @@ import {
   writeFile
 } from "node:fs/promises";
 
-const seasonId = "28433";
+const seasonId = process.env.SEASON_ID || "28433";
 
-/*
- * Points races only.
- *
- * Excluded:
- * - Daytona Duel: 346264
- * - All-Star Race: 355088
- */
-const raceEntries = [
-  ["346265", "2026-02-18", "Daytona"],
-  ["346266", "2026-02-25", "EchoPark"],
-  ["346267", "2026-03-04", "COTA"],
-  ["346268", "2026-03-11", "Phoenix"],
-  ["354790", "2026-03-18", "Las Vegas"],
-  ["355080", "2026-03-25", "Darlington"],
-  ["355081", "2026-04-01", "Martinsville"],
-  ["355082", "2026-04-15", "Bristol"],
-  ["355083", "2026-04-22", "Kansas"],
-  ["355085", "2026-04-29", "Talladega"],
-  ["355086", "2026-05-06", "Texas"],
-  ["355087", "2026-05-13", "Watkins Glen"],
-  ["355089", "2026-05-27", "Charlotte"],
-  ["355090", "2026-06-03", "Nashville"],
-  ["355091", "2026-06-10", "Michigan"],
-  ["356644", "2026-06-17", "Pocono"],
-  ["356645", "2026-06-24", "San Diego"],
-  ["356646", "2026-07-01", "Sonoma"],
-  ["356647", "2026-07-08", "Chicagoland"],
-  ["356648", "2026-07-15", "EchoPark"],
-  ["356649", "2026-07-22", "North Wilkesboro"],
-  ["356650", "2026-07-29", "Indianapolis"],
-  ["356652", "2026-08-12", "Iowa"],
-  ["356653", "2026-08-19", "Richmond"],
-  ["356654", "2026-08-26", "New Hampshire"],
-  ["356655", "2026-09-02", "Daytona"],
-  ["356656", "2026-09-09", "Darlington"],
-  ["356658", "2026-09-16", "World Wide Technology"],
-  ["356659", "2026-09-23", "Bristol"],
-  ["356660", "2026-09-30", "Kansas"],
-  ["356661", "2026-10-07", "Las Vegas"],
-  ["356663", "2026-10-14", "Charlotte"],
-  ["356664", "2026-10-21", "Phoenix"],
-  ["356665", "2026-10-28", "Talladega"],
-  ["356666", "2026-11-04", "Martinsville"],
-  ["356667", "2026-11-11", "Homestead-Miami"]
-];
-
-const seasonPointRaces = raceEntries.map(
-  ([scheduleId, raceDate, trackName], index) => ({
-    simRacerHubRaceNumber: index + 2,
-    scheduleId,
-    raceDate,
-    trackName,
-    source:
-      `https://www.simracerhub.com/season_race.php?schedule_id=${scheduleId}`
-  })
-);
+const statsUrl =
+  `https://www.simracerhub.com/league_stats.php?season_id=${seasonId}`;
 
 function cleanText(value = "") {
   return value.replace(/\s+/g, " ").trim();
@@ -94,22 +40,15 @@ function parseNumber(value = "") {
   return match ? Number(match[0]) : 0;
 }
 
-function findColumn(headers, ...possibleNames) {
-  return headers.findIndex((header) =>
-    possibleNames.includes(header)
+function isLapsLedHeader(header = "") {
+  const normalized = normalizeHeader(header);
+
+  return (
+    normalized === "LED #" ||
+    normalized === "LED" ||
+    normalized === "LAPS LED" ||
+    normalized === "LAPS LED #"
   );
-}
-
-function getCell(row, index) {
-  if (index < 0 || !row[index]) {
-    return {
-      text: "",
-      className: "",
-      html: ""
-    };
-  }
-
-  return row[index];
 }
 
 async function readTable(table) {
@@ -137,31 +76,50 @@ async function readTable(table) {
   });
 }
 
-async function findRaceResultsTable(page) {
+async function findStatsTable(page) {
   for (const frame of page.frames()) {
     const tables = frame.locator("table");
     const tableCount = await tables.count();
 
-    for (let index = 0; index < tableCount; index++) {
-      const table = tables.nth(index);
+    for (
+      let tableIndex = 0;
+      tableIndex < tableCount;
+      tableIndex++
+    ) {
+      const table = tables.nth(tableIndex);
 
-      let tableText = "";
+      let tableData;
 
       try {
-        tableText = normalizeHeader(
-          await table.innerText()
-        );
+        tableData = await readTable(table);
       } catch {
         continue;
       }
 
-      if (
-        tableText.includes("DRIVER") &&
-        tableText.includes("TOT PTS") &&
-        tableText.includes("LAPS LED") &&
-        tableText.includes("FASTEST LAP")
-      ) {
-        return table;
+      const headerRowIndex = tableData.findIndex(
+        (row) => {
+          const headers = row.map((cell) =>
+            normalizeHeader(cell.text)
+          );
+
+          const hasDriver =
+            headers.includes("DRIVER");
+
+          const hasLapsLed =
+            headers.some((header) =>
+              isLapsLedHeader(header)
+            );
+
+          return hasDriver && hasLapsLed;
+        }
+      );
+
+      if (headerRowIndex !== -1) {
+        return {
+          tableData,
+          headerRowIndex,
+          frameUrl: frame.url()
+        };
       }
     }
   }
@@ -169,8 +127,8 @@ async function findRaceResultsTable(page) {
   return null;
 }
 
-async function loadRaceResultsTable(page, race) {
-  const maximumAttempts = 2;
+async function loadStatsTable(page) {
+  const maximumAttempts = 3;
 
   for (
     let attempt = 1;
@@ -178,37 +136,56 @@ async function loadRaceResultsTable(page, race) {
     attempt++
   ) {
     console.log(
-      `Opening Race ${race.simRacerHubRaceNumber}: ` +
-      `${race.trackName} — attempt ${attempt}`
+      `Loading season stats — attempt ${attempt} of ${maximumAttempts}`
     );
 
-    await page.goto(race.source, {
+    await page.goto(statsUrl, {
       waitUntil: "domcontentloaded",
       timeout: 90000
     });
 
     /*
-     * Poll for up to about 24 seconds.
+     * Check every three seconds for up to one minute.
      */
-    for (let check = 1; check <= 12; check++) {
-      const table = await findRaceResultsTable(page);
+    for (let check = 1; check <= 20; check++) {
+      const statsTable =
+        await findStatsTable(page);
 
-      if (table) {
-        return table;
+      if (statsTable) {
+        console.log(
+          `Season stats table found on check ${check}.`
+        );
+
+        return statsTable;
       }
 
-      await page.waitForTimeout(2000);
+      console.log(
+        `Season stats table not ready — check ${check} of 20.`
+      );
+
+      await page.waitForTimeout(3000);
     }
 
-    console.log(
-      `Results table was not found for ${race.trackName} ` +
-      `on attempt ${attempt}.`
-    );
+    if (attempt < maximumAttempts) {
+      console.log(
+        "Season stats did not load. Retrying the page."
+      );
+    }
   }
 
-  return null;
+  await page.screenshot({
+    path: "stats-debug.png",
+    fullPage: true
+  });
+
+  throw new Error(
+    "Could not find a season statistics table containing DRIVER and LED #."
+  );
 }
 
+/*
+ * Read the standings file created by scraper.js.
+ */
 const standingsData = JSON.parse(
   await readFile("standings.json", "utf8")
 );
@@ -218,8 +195,8 @@ if (
   String(seasonId)
 ) {
   throw new Error(
-    `standings.json is for season ${standingsData.seasonId}, ` +
-    `but this script expects season ${seasonId}.`
+    `standings.json belongs to season ${standingsData.seasonId}, ` +
+    `but the stats scraper is using season ${seasonId}.`
   );
 }
 
@@ -252,189 +229,187 @@ try {
 
   page.setDefaultTimeout(15000);
 
-  const today = new Date()
-    .toISOString()
-    .slice(0, 10);
+  console.log(`Opening ${statsUrl}`);
 
-  const eligibleRaces = seasonPointRaces.filter(
-    (race) => race.raceDate <= today
+  const statsTableResult =
+    await loadStatsTable(page);
+
+  const tableData =
+    statsTableResult.tableData;
+
+  const headerRow =
+    tableData[
+      statsTableResult.headerRowIndex
+    ];
+
+  const headers = headerRow.map((cell) =>
+    normalizeHeader(cell.text)
   );
 
   console.log(
-    `Checking ${eligibleRaces.length} points races through ${today}.`
+    `Stats headers found: ${headers.join(", ")}`
   );
 
+  const driverColumn = headers.findIndex(
+    (header) => header === "DRIVER"
+  );
+
+  const lapsLedColumn = headers.findIndex(
+    (header) => isLapsLedHeader(header)
+  );
+
+  if (
+    driverColumn === -1 ||
+    lapsLedColumn === -1
+  ) {
+    throw new Error(
+      `Required stats columns were not found. Headers: ${headers.join(
+        ", "
+      )}`
+    );
+  }
+
   const lapsLedByDriver = new Map();
-  const includedRaces = [];
-  const skippedRaces = [];
 
-  for (const race of eligibleRaces) {
-    try {
-      const resultsTable =
-        await loadRaceResultsTable(page, race);
+  const dataRows = tableData.slice(
+    statsTableResult.headerRowIndex + 1
+  );
 
-      if (!resultsTable) {
-        skippedRaces.push({
-          ...race,
-          reason: "No completed results table found"
-        });
+  for (const row of dataRows) {
+    const driverCell = row[driverColumn];
+    const lapsLedCell = row[lapsLedColumn];
 
-        console.log(
-          `Skipping ${race.trackName}: no completed results found.`
-        );
+    if (!driverCell) {
+      continue;
+    }
 
-        continue;
-      }
+    const driver = cleanText(
+      driverCell.text
+    );
 
-      const tableData = await readTable(
-        resultsTable
-      );
+    if (!driver) {
+      continue;
+    }
 
-      if (tableData.length < 2) {
-        skippedRaces.push({
-          ...race,
-          reason: "Results table contained no driver rows"
-        });
+    const driverKey =
+      normalizeDriverName(driver);
 
-        continue;
-      }
+    const lapsLed = parseNumber(
+      lapsLedCell?.text || ""
+    );
 
-      const headers = tableData[0].map(
-        (cell) => normalizeHeader(cell.text)
-      );
+    /*
+     * Each driver should appear once. If SimRacerHub
+     * unexpectedly provides duplicates, keep the
+     * largest season total instead of adding twice.
+     */
+    const existingTotal =
+      lapsLedByDriver.get(driverKey);
 
-      const driverColumn = findColumn(
-        headers,
-        "DRIVER"
-      );
-
-      const lapsLedColumn = findColumn(
-        headers,
-        "LAPS LED"
-      );
-
-      if (
-        driverColumn === -1 ||
-        lapsLedColumn === -1
-      ) {
-        skippedRaces.push({
-          ...race,
-          reason: "Required columns were missing"
-        });
-
-        continue;
-      }
-
-      let driversRead = 0;
-
-      for (const row of tableData.slice(1)) {
-        const driver = cleanText(
-          getCell(row, driverColumn).text
-        );
-
-        if (!driver) {
-          continue;
-        }
-
-        const driverKey =
-          normalizeDriverName(driver);
-
-        const lapsLed = parseNumber(
-          getCell(row, lapsLedColumn).text
-        );
-
-        lapsLedByDriver.set(
-          driverKey,
-          (
-            lapsLedByDriver.get(driverKey) || 0
-          ) + lapsLed
-        );
-
-        driversRead++;
-      }
-
-      if (driversRead > 0) {
-        includedRaces.push({
-          ...race,
-          driversRead
-        });
-
-        console.log(
-          `Included ${race.trackName}: read ${driversRead} drivers.`
-        );
-      }
-    } catch (error) {
-      skippedRaces.push({
-        ...race,
-        reason: error.message
-      });
-
-      console.warn(
-        `${race.trackName} could not be read: ${error.message}`
+    if (
+      existingTotal === undefined ||
+      lapsLed > existingTotal
+    ) {
+      lapsLedByDriver.set(
+        driverKey,
+        lapsLed
       );
     }
   }
 
-  /*
-   * Do not overwrite standings.json with zero totals
-   * when no historical race was successfully read.
-   */
-  if (includedRaces.length === 0) {
+  if (lapsLedByDriver.size === 0) {
     throw new Error(
-      "No completed race results were successfully read. " +
-      "standings.json was not changed."
+      "The stats table was found, but no driver laps-led values were read."
     );
   }
 
   const totalLapsLed = Array.from(
     lapsLedByDriver.values()
   ).reduce(
-    (total, lapsLed) => total + lapsLed,
+    (total, value) => total + value,
     0
   );
 
   if (totalLapsLed === 0) {
     throw new Error(
-      "Race pages were read, but the total laps led was zero. " +
-      "standings.json was not changed."
+      "All season laps-led values were zero. standings.json was not changed."
     );
   }
+
+  let matchedDriverCount = 0;
+
+  const unmatchedDrivers = [];
 
   const enrichedStandings =
     standingsData.standings.map((entry) => {
       const driverKey =
         normalizeDriverName(entry.driver);
 
+      const hasStatsEntry =
+        lapsLedByDriver.has(driverKey);
+
+      if (hasStatsEntry) {
+        matchedDriverCount++;
+      } else {
+        unmatchedDrivers.push(
+          entry.driver
+        );
+      }
+
       return {
         ...entry,
 
-        lapsLed:
-          lapsLedByDriver.get(driverKey) || 0
+        lapsLed: hasStatsEntry
+          ? lapsLedByDriver.get(driverKey)
+          : 0
       };
     });
 
-  const lapsLedUpdatedAt =
+  if (matchedDriverCount === 0) {
+    throw new Error(
+      "No SimRacerHub statistics drivers matched the standings drivers."
+    );
+  }
+
+  const updatedAt =
     new Date().toISOString();
 
+  /*
+   * Remove metadata left by the older historical-race
+   * calculation method, if it exists.
+   */
+  const {
+    lapsLedRaceCount,
+    lapsLedRacesIncluded,
+    lapsLedRacesSkipped,
+    ...baseStandingsData
+  } = standingsData;
+
   const output = {
-    ...standingsData,
+    ...baseStandingsData,
 
     standingsUpdatedAt:
       standingsData.updatedAt,
 
-    updatedAt:
-      lapsLedUpdatedAt,
+    updatedAt,
 
-    lapsLedUpdatedAt,
+    lapsLedUpdatedAt:
+      updatedAt,
 
-    lapsLedRaceCount:
-      includedRaces.length,
+    lapsLedSource:
+      statsUrl,
 
-    lapsLedRacesIncluded:
-      includedRaces,
+    lapsLedSourceColumn:
+      "Led #",
 
-    lapsLedRacesSkipped:
-      skippedRaces,
+    lapsLedStatsDriverCount:
+      lapsLedByDriver.size,
+
+    lapsLedMatchedDriverCount:
+      matchedDriverCount,
+
+    lapsLedUnmatchedDrivers:
+      unmatchedDrivers,
 
     standings:
       enrichedStandings
@@ -446,17 +421,25 @@ try {
   );
 
   console.log(
-    `Success: laps led totaled from ` +
-    `${includedRaces.length} completed points races.`
+    `Success: read laps led for ${lapsLedByDriver.size} drivers.`
   );
 
   console.log(
-    `Skipped ${skippedRaces.length} races.`
+    `Matched ${matchedDriverCount} of ` +
+    `${standingsData.standings.length} standings drivers.`
   );
 
   console.log(
-    `Season laps led total: ${totalLapsLed}.`
+    `Season laps-led total: ${totalLapsLed}.`
   );
+
+  if (unmatchedDrivers.length > 0) {
+    console.log(
+      `Drivers without a stats match: ${unmatchedDrivers.join(
+        ", "
+      )}`
+    );
+  }
 } finally {
   await browser.close();
 }
