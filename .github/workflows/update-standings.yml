@@ -28,6 +28,9 @@ jobs:
       - name: Run standings scraper
         run: npm run scrape
 
+      - name: Add season laps led
+        run: node laps-led-scraper.js
+
       - name: Save updated standings
         run: |
           git config user.name "github-actions[bot]"
