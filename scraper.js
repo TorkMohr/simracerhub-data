@@ -222,72 +222,67 @@ async function collectSeasonLapsLed(page) {
    * SimRacerHub may present the race picker as
    * links, dropdown options, or data attributes.
    */
-  const scheduleLinks = await page.evaluate(() => {
-    const elements = Array.from(
-      document.querySelectorAll(
-        "a, option, [data-href], [data-url]"
-      )
+    /*
+   * Read the original server HTML instead of relying
+   * on the rendered race-picker dropdown.
+   */
+  const scheduleResponse = await page.request.get(
+    raceResultsUrl
+  );
+
+  if (!scheduleResponse.ok()) {
+    throw new Error(
+      `Could not retrieve the race schedule page. HTTP ${scheduleResponse.status()}`
     );
+  }
 
-    return elements
-      .map((element) => {
-        const text = (
-          element.innerText ||
-          element.textContent ||
-          ""
+  const scheduleHtml =
+    await scheduleResponse.text();
+
+  const scheduleLinks = await page.evaluate(
+    ({ html, baseUrl }) => {
+      const parser = new DOMParser();
+
+      const documentFromHtml =
+        parser.parseFromString(
+          html,
+          "text/html"
+        );
+
+      return Array.from(
+        documentFromHtml.querySelectorAll(
+          'a[href*="season_race.php?schedule_id="]'
         )
-          .replace(/\s+/g, " ")
-          .trim();
+      )
+        .map((link) => {
+          const rawHref =
+            link.getAttribute("href") || "";
 
-        // Ignore anything that is not a numbered race.
-        if (!/Race\s+\d+/i.test(text)) {
-          return null;
-        }
+          return {
+            text: (
+              link.textContent || ""
+            )
+              .replace(/\s+/g, " ")
+              .trim(),
 
-        const rawValue =
-          element.getAttribute("href") ||
-          element.getAttribute("value") ||
-          element.getAttribute("data-href") ||
-          element.getAttribute("data-url") ||
-          "";
-
-        if (!rawValue) {
-          return null;
-        }
-
-        let href = "";
-
-        try {
-          /*
-           * Some dropdowns store only the numeric
-           * schedule ID instead of a complete URL.
-           */
-          if (/^\d+$/.test(rawValue)) {
-            href = new URL(
-              `season_race.php?schedule_id=${rawValue}`,
-              window.location.href
-            ).href;
-          } else if (
-            rawValue.includes("schedule_id=")
-          ) {
-            href = new URL(
-              rawValue,
-              window.location.href
-            ).href;
-          } else {
-            return null;
-          }
-        } catch {
-          return null;
-        }
-
-        return {
-          text,
-          href
-        };
-      })
-      .filter(Boolean);
-  });
+            href: new URL(
+              rawHref,
+              baseUrl
+            ).href
+          };
+        })
+        .filter((link) => {
+          return (
+            /Race\s+\d+/i.test(link.text) &&
+            link.href.includes("schedule_id=")
+          );
+        });
+    },
+    {
+      html: scheduleHtml,
+      baseUrl: raceResultsUrl
+    }
+  );
 
   console.log(
     `Found ${scheduleLinks.length} race-link candidates.`
