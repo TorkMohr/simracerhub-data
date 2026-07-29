@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "playlistId": "PLjydJbqa-gB6SKdCrgnkAoI4wZUbMjemU",
-  "lastUpdated": "2026-07-29T20:15:58.882Z",
+  "lastUpdated": "2026-07-29T20:36:09.837Z",
   "featured": {
     "videoId": "ca1UULUbrDI",
     "title": "🔴 GMD Janitorial 250 | Moonshiners Racing League | Indianapolis | iRacing",
@@ -319,6 +319,6 @@
   "diagnostics": {
     "playlistVideosFound": 25,
     "completedReplaysFound": 23,
-    "previousFeaturedVideoId": "TijUjJ7S8jA"
+    "previousFeaturedVideoId": "ca1UULUbrDI"
   }
 }
