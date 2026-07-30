@@ -2,7 +2,7 @@
   "seasonId": "28433",
   "source": "https://www.simracerhub.com/season_standings.php?season_id=28433",
   "tableFrame": "https://www.simracerhub.com/season_standings.php?season_id=28433",
-  "updatedAt": "2026-07-16T11:13:31.421Z",
+  "updatedAt": "2026-07-30T11:27:07.962Z",
   "headers": [
     {
       "text": "POS",
@@ -98,14 +98,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=5538\" title=\"Go to driver stats\">Brandon Buie</a>"
       },
       {
-        "text": "947",
+        "text": "1,053",
         "className": "rgt",
-        "html": "947"
+        "html": "1,053"
       },
       {
-        "text": "+527",
+        "text": "+593",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+527</span></span>"
+        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+593</span></span>"
       },
       {
         "text": "7",
@@ -113,9 +113,9 @@
         "html": "7"
       },
       {
-        "text": "224",
+        "text": "263",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">224</span>"
+        "html": "<span style=\"color: var(--status-success);\">263</span>"
       },
       {
         "text": "-",
@@ -123,9 +123,9 @@
         "html": "-"
       },
       {
-        "text": "20",
+        "text": "22",
         "className": "rgt",
-        "html": "20"
+        "html": "22"
       },
       {
         "text": "0",
@@ -133,19 +133,19 @@
         "html": "0"
       },
       {
-        "text": "11",
-        "className": "rgt",
-        "html": "11"
-      },
-      {
         "text": "13",
         "className": "rgt",
         "html": "13"
       },
       {
-        "text": "2",
+        "text": "15",
         "className": "rgt",
-        "html": "2"
+        "html": "15"
+      },
+      {
+        "text": "3",
+        "className": "rgt",
+        "html": "3"
       },
       {
         "text": "76",
@@ -175,14 +175,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=2634\" title=\"Go to driver stats\">Alex Coffey</a>"
       },
       {
-        "text": "765",
+        "text": "831",
         "className": "rgt",
-        "html": "765"
+        "html": "831"
       },
       {
-        "text": "+345",
+        "text": "+371",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+345</span></span>"
+        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+371</span></span>"
       },
       {
         "text": "1",
@@ -190,19 +190,19 @@
         "html": "1"
       },
       {
-        "text": "239",
+        "text": "263",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">239</span>"
+        "html": "<span style=\"color: var(--status-success);\">263</span>"
       },
       {
-        "text": "-182",
+        "text": "-222",
         "className": "rgt",
-        "html": "-182"
+        "html": "-222"
       },
       {
-        "text": "20",
+        "text": "22",
         "className": "rgt",
-        "html": "20"
+        "html": "22"
       },
       {
         "text": "0",
@@ -215,9 +215,9 @@
         "html": "8"
       },
       {
-        "text": "11",
+        "text": "12",
         "className": "rgt",
-        "html": "11"
+        "html": "12"
       },
       {
         "text": "3",
@@ -225,9 +225,9 @@
         "html": "3"
       },
       {
-        "text": "164",
+        "text": "179",
         "className": "rgt",
-        "html": "164"
+        "html": "179"
       },
       {
         "text": "DIG Team 1",
@@ -242,9 +242,9 @@
         "html": "3"
       },
       {
-        "text": "—",
+        "text": "1",
         "className": "pinned-left rgt",
-        "html": "—"
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
         "text": "BRANDON PHETTERPLACE",
@@ -252,14 +252,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=73690\" title=\"Go to driver stats\">Brandon Phetterplace</a>"
       },
       {
-        "text": "732",
+        "text": "775",
         "className": "rgt",
-        "html": "732"
+        "html": "775"
       },
       {
-        "text": "+312",
+        "text": "+315",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+312</span></span>"
+        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+315</span></span>"
       },
       {
         "text": "1",
@@ -267,34 +267,19 @@
         "html": "1"
       },
       {
-        "text": "177",
+        "text": "187",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">177</span>"
+        "html": "<span style=\"color: var(--status-success);\">187</span>"
       },
       {
-        "text": "-33",
+        "text": "-56",
         "className": "rgt",
-        "html": "-33"
+        "html": "-56"
       },
       {
-        "text": "20",
+        "text": "21",
         "className": "rgt",
-        "html": "20"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "8",
-        "className": "rgt",
-        "html": "8"
-      },
-      {
-        "text": "13",
-        "className": "rgt",
-        "html": "13"
+        "html": "21"
       },
       {
         "text": "0",
@@ -302,9 +287,24 @@
         "html": "0"
       },
       {
-        "text": "124",
+        "text": "9",
         "className": "rgt",
-        "html": "124"
+        "html": "9"
+      },
+      {
+        "text": "14",
+        "className": "rgt",
+        "html": "14"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "125",
+        "className": "rgt",
+        "html": "125"
       },
       {
         "text": "Aero Racing",
@@ -319,9 +319,9 @@
         "html": "4"
       },
       {
-        "text": "—",
+        "text": "1",
         "className": "pinned-left rgt",
-        "html": "—"
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
         "text": "ALEX MURRAY",
@@ -329,14 +329,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=8841\" title=\"Go to driver stats\">Alex Murray</a>"
       },
       {
-        "text": "703",
+        "text": "772",
         "className": "rgt",
-        "html": "703"
+        "html": "772"
       },
       {
-        "text": "+283",
+        "text": "+312",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+283</span></span>"
+        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+312</span></span>"
       },
       {
         "text": "3",
@@ -344,19 +344,19 @@
         "html": "3"
       },
       {
-        "text": "173",
+        "text": "175",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">173</span>"
+        "html": "<span style=\"color: var(--status-success);\">175</span>"
       },
       {
-        "text": "-29",
+        "text": "-3",
         "className": "rgt",
-        "html": "-29"
+        "html": "-3"
       },
       {
-        "text": "18",
+        "text": "20",
         "className": "rgt",
-        "html": "18"
+        "html": "20"
       },
       {
         "text": "0",
@@ -364,14 +364,14 @@
         "html": "0"
       },
       {
-        "text": "8",
+        "text": "10",
         "className": "rgt",
-        "html": "8"
+        "html": "10"
       },
       {
-        "text": "11",
+        "text": "13",
         "className": "rgt",
-        "html": "11"
+        "html": "13"
       },
       {
         "text": "4",
@@ -379,9 +379,9 @@
         "html": "4"
       },
       {
-        "text": "154",
+        "text": "163",
         "className": "rgt",
-        "html": "154"
+        "html": "163"
       },
       {
         "text": "DIG Team 2",
@@ -406,14 +406,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=75856\" title=\"Go to driver stats\">Matt L Cox</a>"
       },
       {
-        "text": "681",
+        "text": "746",
         "className": "rgt",
-        "html": "681"
+        "html": "746"
       },
       {
-        "text": "+261",
+        "text": "+286",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+261</span></span>"
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+286</span></span>"
       },
       {
         "text": "1",
@@ -421,19 +421,19 @@
         "html": "1"
       },
       {
-        "text": "159",
+        "text": "171",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">159</span>"
+        "html": "<span style=\"color: var(--status-success);\">171</span>"
       },
       {
-        "text": "-22",
+        "text": "-26",
         "className": "rgt",
-        "html": "-22"
+        "html": "-26"
       },
       {
-        "text": "20",
+        "text": "22",
         "className": "rgt",
-        "html": "20"
+        "html": "22"
       },
       {
         "text": "0",
@@ -446,9 +446,9 @@
         "html": "8"
       },
       {
-        "text": "9",
+        "text": "10",
         "className": "rgt",
-        "html": "9"
+        "html": "10"
       },
       {
         "text": "3",
@@ -456,9 +456,9 @@
         "html": "3"
       },
       {
-        "text": "178",
+        "text": "208",
         "className": "rgt",
-        "html": "178"
+        "html": "208"
       },
       {
         "text": "Blowin' Trannies",
@@ -473,9 +473,9 @@
         "html": "6"
       },
       {
-        "text": "3",
+        "text": "1",
         "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">3</span></span>"
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
         "text": "PAUL GALLIMORE",
@@ -483,14 +483,34 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=71745\" title=\"Go to driver stats\">Paul Gallimore</a>"
       },
       {
-        "text": "575",
+        "text": "694",
         "className": "rgt",
-        "html": "575"
+        "html": "694"
       },
       {
-        "text": "+155",
+        "text": "+234",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+155</span></span>"
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+234</span></span>"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "119",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">119</span>"
+      },
+      {
+        "text": "-52",
+        "className": "rgt",
+        "html": "-52"
+      },
+      {
+        "text": "22",
+        "className": "rgt",
+        "html": "22"
       },
       {
         "text": "0",
@@ -498,44 +518,24 @@
         "html": "0"
       },
       {
-        "text": "89",
+        "text": "6",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">89</span>"
+        "html": "6"
       },
       {
-        "text": "-106",
+        "text": "13",
         "className": "rgt",
-        "html": "-106"
+        "html": "13"
       },
       {
-        "text": "20",
+        "text": "3",
         "className": "rgt",
-        "html": "20"
+        "html": "3"
       },
       {
-        "text": "0",
+        "text": "174",
         "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "4",
-        "className": "rgt",
-        "html": "4"
-      },
-      {
-        "text": "11",
-        "className": "rgt",
-        "html": "11"
-      },
-      {
-        "text": "2",
-        "className": "rgt",
-        "html": "2"
-      },
-      {
-        "text": "170",
-        "className": "rgt",
-        "html": "170"
+        "html": "174"
       },
       {
         "text": "Blowin' Trannies",
@@ -555,19 +555,19 @@
         "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
-        "text": "KYLE HOLDEN2",
+        "text": "SEAN ROGERS4",
         "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=63855\" title=\"Go to driver stats\">Kyle Holden2</a>"
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=62760\" title=\"Go to driver stats\">Sean Rogers4</a>"
       },
       {
-        "text": "568",
+        "text": "671",
         "className": "rgt",
-        "html": "568"
+        "html": "671"
       },
       {
-        "text": "+148",
+        "text": "+211",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+148</span></span>"
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+211</span></span>"
       },
       {
         "text": "1",
@@ -575,19 +575,96 @@
         "html": "1"
       },
       {
-        "text": "84",
+        "text": "165",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">84</span>"
+        "html": "<span style=\"color: var(--status-success);\">165</span>"
       },
       {
-        "text": "-7",
+        "text": "-23",
         "className": "rgt",
-        "html": "-7"
+        "html": "-23"
       },
       {
-        "text": "19",
+        "text": "22",
         "className": "rgt",
-        "html": "19"
+        "html": "22"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "5",
+        "className": "rgt",
+        "html": "5"
+      },
+      {
+        "text": "11",
+        "className": "rgt",
+        "html": "11"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "216",
+        "className": "rgt",
+        "html": "216"
+      },
+      {
+        "text": "Blowin' Trannies",
+        "className": "wrap",
+        "html": "Blowin' Trannies"
+      }
+    ],
+    [
+      {
+        "text": "8",
+        "className": "pinned-left rgt",
+        "html": "8"
+      },
+      {
+        "text": "—",
+        "className": "pinned-left rgt",
+        "html": "—"
+      },
+      {
+        "text": "COREY MOHR",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=95721\" title=\"Go to driver stats\">Corey Mohr</a>"
+      },
+      {
+        "text": "620",
+        "className": "rgt",
+        "html": "620"
+      },
+      {
+        "text": "+160",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+160</span></span>"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "89",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">89</span>"
+      },
+      {
+        "text": "-51",
+        "className": "rgt",
+        "html": "-51"
+      },
+      {
+        "text": "21",
+        "className": "rgt",
+        "html": "21"
       },
       {
         "text": "0",
@@ -605,91 +682,14 @@
         "html": "12"
       },
       {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "138",
-        "className": "rgt",
-        "html": "138"
-      },
-      {
-        "text": "Team Aero",
-        "className": "wrap",
-        "html": "Team Aero"
-      }
-    ],
-    [
-      {
-        "text": "7",
-        "className": "pinned-left rgt",
-        "html": "7"
-      },
-      {
-        "text": "—",
-        "className": "pinned-left rgt",
-        "html": "—"
-      },
-      {
-        "text": "COREY MOHR",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=95721\" title=\"Go to driver stats\">Corey Mohr</a>"
-      },
-      {
-        "text": "568",
-        "className": "rgt",
-        "html": "568"
-      },
-      {
-        "text": "+148",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+148</span></span>"
-      },
-      {
         "text": "1",
         "className": "rgt",
         "html": "1"
       },
       {
-        "text": "77",
+        "text": "135",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">77</span>"
-      },
-      {
-        "text": "-",
-        "className": "rgt",
-        "html": "-"
-      },
-      {
-        "text": "19",
-        "className": "rgt",
-        "html": "19"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "5",
-        "className": "rgt",
-        "html": "5"
-      },
-      {
-        "text": "11",
-        "className": "rgt",
-        "html": "11"
-      },
-      {
-        "text": "1",
-        "className": "rgt",
-        "html": "1"
-      },
-      {
-        "text": "127",
-        "className": "rgt",
-        "html": "127"
+        "html": "135"
       },
       {
         "text": "DIG Team 1",
@@ -704,24 +704,44 @@
         "html": "9"
       },
       {
-        "text": "1",
+        "text": "—",
         "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
+        "html": "—"
       },
       {
-        "text": "SEAN ROGERS4",
+        "text": "KYLE HOLDEN2",
         "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=62760\" title=\"Go to driver stats\">Sean Rogers4</a>"
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=63855\" title=\"Go to driver stats\">Kyle Holden2</a>"
       },
       {
-        "text": "557",
+        "text": "619",
         "className": "rgt",
-        "html": "557"
+        "html": "619"
       },
       {
-        "text": "+137",
+        "text": "+159",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+137</span></span>"
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+159</span></span>"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "84",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">84</span>"
+      },
+      {
+        "text": "-1",
+        "className": "rgt",
+        "html": "-1"
+      },
+      {
+        "text": "21",
+        "className": "rgt",
+        "html": "21"
       },
       {
         "text": "0",
@@ -729,19 +749,14 @@
         "html": "0"
       },
       {
-        "text": "135",
+        "text": "6",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">135</span>"
+        "html": "6"
       },
       {
-        "text": "-11",
+        "text": "13",
         "className": "rgt",
-        "html": "-11"
-      },
-      {
-        "text": "20",
-        "className": "rgt",
-        "html": "20"
+        "html": "13"
       },
       {
         "text": "0",
@@ -749,29 +764,14 @@
         "html": "0"
       },
       {
-        "text": "4",
+        "text": "143",
         "className": "rgt",
-        "html": "4"
+        "html": "143"
       },
       {
-        "text": "9",
-        "className": "rgt",
-        "html": "9"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "208",
-        "className": "rgt",
-        "html": "208"
-      },
-      {
-        "text": "Blowin' Trannies",
+        "text": "Team Aero",
         "className": "wrap",
-        "html": "Blowin' Trannies"
+        "html": "Team Aero"
       }
     ],
     [
@@ -791,14 +791,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=72423\" title=\"Go to driver stats\">Chris Davis18</a>"
       },
       {
-        "text": "551",
+        "text": "590",
         "className": "rgt",
-        "html": "551"
+        "html": "590"
       },
       {
-        "text": "+131",
+        "text": "+130",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+131</span></span>"
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+130</span></span>"
       },
       {
         "text": "1",
@@ -806,19 +806,19 @@
         "html": "1"
       },
       {
-        "text": "64",
+        "text": "69",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">64</span>"
+        "html": "<span style=\"color: var(--status-success);\">69</span>"
       },
       {
-        "text": "-6",
+        "text": "-29",
         "className": "rgt",
-        "html": "-6"
+        "html": "-29"
       },
       {
-        "text": "18",
+        "text": "20",
         "className": "rgt",
-        "html": "18"
+        "html": "20"
       },
       {
         "text": "0",
@@ -841,9 +841,9 @@
         "html": "0"
       },
       {
-        "text": "131",
+        "text": "146",
         "className": "rgt",
-        "html": "131"
+        "html": "146"
       },
       {
         "text": "Team Aero",
@@ -858,44 +858,24 @@
         "html": "11"
       },
       {
-        "text": "2",
-        "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">2</span></span>"
-      },
-      {
-        "text": "BARRY SANDERS",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=58710\" title=\"Go to driver stats\">Barry Sanders</a>"
-      },
-      {
-        "text": "525",
-        "className": "rgt",
-        "html": "525"
-      },
-      {
-        "text": "+105",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+105</span></span>"
-      },
-      {
         "text": "1",
-        "className": "rgt",
-        "html": "1"
+        "className": "pinned-left rgt",
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
-        "text": "58",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">58</span>"
+        "text": "TIMOTHY HARPER",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=57727\" title=\"Go to driver stats\">Timothy Harper</a>"
       },
       {
-        "text": "-26",
+        "text": "567",
         "className": "rgt",
-        "html": "-26"
+        "html": "567"
       },
       {
-        "text": "20",
+        "text": "+107",
         "className": "rgt",
-        "html": "20"
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+107</span></span>"
       },
       {
         "text": "0",
@@ -903,29 +883,49 @@
         "html": "0"
       },
       {
-        "text": "1",
+        "text": "71",
         "className": "rgt",
-        "html": "1"
+        "html": "<span style=\"color: var(--status-success);\">71</span>"
       },
       {
-        "text": "7",
+        "text": "-23",
         "className": "rgt",
-        "html": "7"
+        "html": "-23"
       },
       {
-        "text": "1",
+        "text": "21",
         "className": "rgt",
-        "html": "1"
+        "html": "21"
       },
       {
-        "text": "210",
+        "text": "0",
         "className": "rgt",
-        "html": "210"
+        "html": "0"
       },
       {
-        "text": "Team Aero",
+        "text": "6",
+        "className": "rgt",
+        "html": "6"
+      },
+      {
+        "text": "11",
+        "className": "rgt",
+        "html": "11"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "223",
+        "className": "rgt",
+        "html": "223"
+      },
+      {
+        "text": "DIG Team 2",
         "className": "wrap",
-        "html": "Team Aero"
+        "html": "DIG Team 2"
       }
     ],
     [
@@ -940,270 +940,39 @@
         "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
-        "text": "TIMOTHY HARPER",
+        "text": "BARRY SANDERS",
         "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=57727\" title=\"Go to driver stats\">Timothy Harper</a>"
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=58710\" title=\"Go to driver stats\">Barry Sanders</a>"
       },
       {
-        "text": "506",
+        "text": "561",
         "className": "rgt",
-        "html": "506"
+        "html": "561"
       },
       {
-        "text": "+86",
+        "text": "+101",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+86</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "59",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">59</span>"
-      },
-      {
-        "text": "-19",
-        "className": "rgt",
-        "html": "-19"
-      },
-      {
-        "text": "19",
-        "className": "rgt",
-        "html": "19"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "6",
-        "className": "rgt",
-        "html": "6"
-      },
-      {
-        "text": "10",
-        "className": "rgt",
-        "html": "10"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "215",
-        "className": "rgt",
-        "html": "215"
-      },
-      {
-        "text": "DIG Team 2",
-        "className": "wrap",
-        "html": "DIG Team 2"
-      }
-    ],
-    [
-      {
-        "text": "13",
-        "className": "pinned-left rgt",
-        "html": "13"
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+101</span></span>"
       },
       {
         "text": "1",
-        "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
-      },
-      {
-        "text": "BLANE WILSON",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=73102\" title=\"Go to driver stats\">Blane Wilson</a>"
-      },
-      {
-        "text": "496",
         "className": "rgt",
-        "html": "496"
+        "html": "1"
       },
       {
-        "text": "+76",
+        "text": "60",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+76</span></span>"
+        "html": "<span style=\"color: var(--status-success);\">60</span>"
       },
       {
-        "text": "0",
+        "text": "-6",
         "className": "rgt",
-        "html": "0"
+        "html": "-6"
       },
       {
-        "text": "44",
+        "text": "22",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">44</span>"
-      },
-      {
-        "text": "-10",
-        "className": "rgt",
-        "html": "-10"
-      },
-      {
-        "text": "20",
-        "className": "rgt",
-        "html": "20"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "2",
-        "className": "rgt",
-        "html": "2"
-      },
-      {
-        "text": "8",
-        "className": "rgt",
-        "html": "8"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "210",
-        "className": "rgt",
-        "html": "210"
-      },
-      {
-        "text": "DIG Team 1",
-        "className": "wrap",
-        "html": "DIG Team 1"
-      }
-    ],
-    [
-      {
-        "text": "14",
-        "className": "pinned-left rgt",
-        "html": "14"
-      },
-      {
-        "text": "1",
-        "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
-      },
-      {
-        "text": "CHRIS VINSON2",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=76900\" title=\"Go to driver stats\">Chris Vinson2</a>"
-      },
-      {
-        "text": "430",
-        "className": "rgt",
-        "html": "430"
-      },
-      {
-        "text": "+10",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">+10</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "61",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">61</span>"
-      },
-      {
-        "text": "-66",
-        "className": "rgt",
-        "html": "-66"
-      },
-      {
-        "text": "19",
-        "className": "rgt",
-        "html": "19"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "3",
-        "className": "rgt",
-        "html": "3"
-      },
-      {
-        "text": "6",
-        "className": "rgt",
-        "html": "6"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "157",
-        "className": "rgt",
-        "html": "157"
-      },
-      {
-        "text": "Beast Mode Performance",
-        "className": "wrap",
-        "html": "Beast Mode Performance"
-      }
-    ],
-    [
-      {
-        "text": "15",
-        "className": "pinned-left rgt",
-        "html": "15"
-      },
-      {
-        "text": "1",
-        "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
-      },
-      {
-        "text": "KENNY REEL",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=76958\" title=\"Go to driver stats\">Kenny Reel</a>"
-      },
-      {
-        "text": "429",
-        "className": "rgt",
-        "html": "429"
-      },
-      {
-        "text": "+9",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">+9</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "34",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">34</span>"
-      },
-      {
-        "text": "-1",
-        "className": "rgt",
-        "html": "-1"
-      },
-      {
-        "text": "17",
-        "className": "rgt",
-        "html": "17"
+        "html": "22"
       },
       {
         "text": "0",
@@ -1221,14 +990,168 @@
         "html": "7"
       },
       {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "224",
+        "className": "rgt",
+        "html": "224"
+      },
+      {
+        "text": "Team Aero",
+        "className": "wrap",
+        "html": "Team Aero"
+      }
+    ],
+    [
+      {
+        "text": "13",
+        "className": "pinned-left rgt",
+        "html": "13"
+      },
+      {
+        "text": "—",
+        "className": "pinned-left rgt",
+        "html": "—"
+      },
+      {
+        "text": "BLANE WILSON",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=73102\" title=\"Go to driver stats\">Blane Wilson</a>"
+      },
+      {
+        "text": "550",
+        "className": "rgt",
+        "html": "550"
+      },
+      {
+        "text": "+90",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-in me-1\"><span class=\"std-status-label\">+90</span></span>"
+      },
+      {
         "text": "0",
         "className": "rgt",
         "html": "0"
       },
       {
-        "text": "147",
+        "text": "44",
         "className": "rgt",
-        "html": "147"
+        "html": "<span style=\"color: var(--status-success);\">44</span>"
+      },
+      {
+        "text": "-11",
+        "className": "rgt",
+        "html": "-11"
+      },
+      {
+        "text": "22",
+        "className": "rgt",
+        "html": "22"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "2",
+        "className": "rgt",
+        "html": "2"
+      },
+      {
+        "text": "9",
+        "className": "rgt",
+        "html": "9"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "214",
+        "className": "rgt",
+        "html": "214"
+      },
+      {
+        "text": "DIG Team 1",
+        "className": "wrap",
+        "html": "DIG Team 1"
+      }
+    ],
+    [
+      {
+        "text": "14",
+        "className": "pinned-left rgt",
+        "html": "14"
+      },
+      {
+        "text": "—",
+        "className": "pinned-left rgt",
+        "html": "—"
+      },
+      {
+        "text": "KENNY REEL",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=76958\" title=\"Go to driver stats\">Kenny Reel</a>"
+      },
+      {
+        "text": "479",
+        "className": "rgt",
+        "html": "479"
+      },
+      {
+        "text": "+19",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">+19</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "35",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">35</span>"
+      },
+      {
+        "text": "-71",
+        "className": "rgt",
+        "html": "-71"
+      },
+      {
+        "text": "19",
+        "className": "rgt",
+        "html": "19"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "8",
+        "className": "rgt",
+        "html": "8"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "167",
+        "className": "rgt",
+        "html": "167"
       },
       {
         "text": "Redline Racing",
@@ -1238,9 +1161,9 @@
     ],
     [
       {
-        "text": "16",
+        "text": "15",
         "className": "pinned-left rgt",
-        "html": "16"
+        "html": "15"
       },
       {
         "text": "—",
@@ -1248,19 +1171,96 @@
         "html": "—"
       },
       {
+        "text": "GREGG CARR",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=67242\" title=\"Go to driver stats\">Gregg Carr</a>"
+      },
+      {
+        "text": "467",
+        "className": "rgt",
+        "html": "467"
+      },
+      {
+        "text": "+7",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">+7</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "31",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">31</span>"
+      },
+      {
+        "text": "-12",
+        "className": "rgt",
+        "html": "-12"
+      },
+      {
+        "text": "21",
+        "className": "rgt",
+        "html": "21"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "2",
+        "className": "rgt",
+        "html": "2"
+      },
+      {
+        "text": "5",
+        "className": "rgt",
+        "html": "5"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "239",
+        "className": "rgt",
+        "html": "239"
+      },
+      {
+        "text": "First 2 Engage Motorsports",
+        "className": "wrap",
+        "html": "First 2 Engage Motorsports"
+      }
+    ],
+    [
+      {
+        "text": "16",
+        "className": "pinned-left rgt",
+        "html": "16"
+      },
+      {
+        "text": "3",
+        "className": "pinned-left rgt",
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">3</span></span>"
+      },
+      {
         "text": "NIIKO GARCIA",
         "className": "pinned-left wrap",
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=86630\" title=\"Go to driver stats\">Niiko Garcia</a>"
       },
       {
-        "text": "420",
+        "text": "461",
         "className": "rgt",
-        "html": "420"
+        "html": "461"
       },
       {
-        "text": "—",
+        "text": "+1",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">—</span></span>"
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">+1</span></span>"
       },
       {
         "text": "1",
@@ -1268,19 +1268,19 @@
         "html": "1"
       },
       {
-        "text": "134",
+        "text": "149",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">134</span>"
+        "html": "<span style=\"color: var(--status-success);\">149</span>"
       },
       {
-        "text": "-9",
+        "text": "-6",
         "className": "rgt",
-        "html": "-9"
+        "html": "-6"
       },
       {
-        "text": "13",
+        "text": "15",
         "className": "rgt",
-        "html": "13"
+        "html": "15"
       },
       {
         "text": "0",
@@ -1303,9 +1303,9 @@
         "html": "4"
       },
       {
-        "text": "86",
+        "text": "102",
         "className": "rgt",
-        "html": "86"
+        "html": "102"
       },
       {
         "text": "Aero Racing",
@@ -1325,96 +1325,19 @@
         "html": "—"
       },
       {
-        "text": "MARK SANCHEZ2",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=107125\" title=\"Go to driver stats\">Mark Sanchez2</a>"
-      },
-      {
-        "text": "420",
-        "className": "rgt",
-        "html": "420"
-      },
-      {
-        "text": "—",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">—</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">0</span>"
-      },
-      {
-        "text": "-",
-        "className": "rgt",
-        "html": "-"
-      },
-      {
-        "text": "20",
-        "className": "rgt",
-        "html": "20"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "1",
-        "className": "rgt",
-        "html": "1"
-      },
-      {
-        "text": "3",
-        "className": "rgt",
-        "html": "3"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "185",
-        "className": "rgt",
-        "html": "185"
-      },
-      {
-        "text": "First 2 Engage Motorsports",
-        "className": "wrap",
-        "html": "First 2 Engage Motorsports"
-      }
-    ],
-    [
-      {
-        "text": "18",
-        "className": "pinned-left rgt",
-        "html": "18"
-      },
-      {
-        "text": "3",
-        "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">3</span></span>"
-      },
-      {
         "text": "NIGEL CHRISTIANSON",
         "className": "pinned-left wrap",
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=59189\" title=\"Go to driver stats\">Nigel Christianson</a>"
       },
       {
-        "text": "415",
+        "text": "460",
         "className": "rgt",
-        "html": "415"
+        "html": "460"
       },
       {
-        "text": "-5",
+        "text": "-1",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-5</span></span>"
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-1</span></span>"
       },
       {
         "text": "0",
@@ -1422,19 +1345,19 @@
         "html": "0"
       },
       {
-        "text": "41",
+        "text": "43",
         "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">41</span>"
+        "html": "<span style=\"color: var(--status-success);\">43</span>"
       },
       {
-        "text": "-5",
+        "text": "-1",
         "className": "rgt",
-        "html": "-5"
+        "html": "-1"
       },
       {
-        "text": "19",
+        "text": "21",
         "className": "rgt",
-        "html": "19"
+        "html": "21"
       },
       {
         "text": "0",
@@ -1457,14 +1380,91 @@
         "html": "0"
       },
       {
-        "text": "220",
+        "text": "248",
         "className": "rgt",
-        "html": "220"
+        "html": "248"
       },
       {
         "text": "DIG Team 1",
         "className": "wrap",
         "html": "DIG Team 1"
+      }
+    ],
+    [
+      {
+        "text": "18",
+        "className": "pinned-left rgt",
+        "html": "18"
+      },
+      {
+        "text": "2",
+        "className": "pinned-left rgt",
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">2</span></span>"
+      },
+      {
+        "text": "MARK SANCHEZ2",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=107125\" title=\"Go to driver stats\">Mark Sanchez2</a>"
+      },
+      {
+        "text": "459",
+        "className": "rgt",
+        "html": "459"
+      },
+      {
+        "text": "-2",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-2</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">1</span>"
+      },
+      {
+        "text": "-1",
+        "className": "rgt",
+        "html": "-1"
+      },
+      {
+        "text": "22",
+        "className": "rgt",
+        "html": "22"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "3",
+        "className": "rgt",
+        "html": "3"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "206",
+        "className": "rgt",
+        "html": "206"
+      },
+      {
+        "text": "First 2 Engage Motorsports",
+        "className": "wrap",
+        "html": "First 2 Engage Motorsports"
       }
     ],
     [
@@ -1479,96 +1479,19 @@
         "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
-        "text": "GREGG CARR",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=67242\" title=\"Go to driver stats\">Gregg Carr</a>"
-      },
-      {
-        "text": "408",
-        "className": "rgt",
-        "html": "408"
-      },
-      {
-        "text": "-12",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-12</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "21",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">21</span>"
-      },
-      {
-        "text": "-7",
-        "className": "rgt",
-        "html": "-7"
-      },
-      {
-        "text": "19",
-        "className": "rgt",
-        "html": "19"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "1",
-        "className": "rgt",
-        "html": "1"
-      },
-      {
-        "text": "4",
-        "className": "rgt",
-        "html": "4"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "235",
-        "className": "rgt",
-        "html": "235"
-      },
-      {
-        "text": "First 2 Engage Motorsports",
-        "className": "wrap",
-        "html": "First 2 Engage Motorsports"
-      }
-    ],
-    [
-      {
-        "text": "20",
-        "className": "pinned-left rgt",
-        "html": "20"
-      },
-      {
-        "text": "2",
-        "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">2</span></span>"
-      },
-      {
         "text": "JOHNNY SHADE",
         "className": "pinned-left wrap",
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=41058\" title=\"Go to driver stats\">Johnny Shade</a>"
       },
       {
-        "text": "405",
+        "text": "455",
         "className": "rgt",
-        "html": "405"
+        "html": "455"
       },
       {
-        "text": "-15",
+        "text": "-6",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-15</span></span>"
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-6</span></span>"
       },
       {
         "text": "0",
@@ -1581,9 +1504,86 @@
         "html": "<span style=\"color: var(--status-success);\">16</span>"
       },
       {
-        "text": "-3",
+        "text": "-4",
         "className": "rgt",
-        "html": "-3"
+        "html": "-4"
+      },
+      {
+        "text": "22",
+        "className": "rgt",
+        "html": "22"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "257",
+        "className": "rgt",
+        "html": "257"
+      },
+      {
+        "text": "DIG Team 2",
+        "className": "wrap",
+        "html": "DIG Team 2"
+      }
+    ],
+    [
+      {
+        "text": "20",
+        "className": "pinned-left rgt",
+        "html": "20"
+      },
+      {
+        "text": "2",
+        "className": "pinned-left rgt",
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">2</span></span>"
+      },
+      {
+        "text": "CHRIS VINSON2",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=76900\" title=\"Go to driver stats\">Chris Vinson2</a>"
+      },
+      {
+        "text": "453",
+        "className": "rgt",
+        "html": "453"
+      },
+      {
+        "text": "-8",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-8</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "71",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">71</span>"
+      },
+      {
+        "text": "-2",
+        "className": "rgt",
+        "html": "-2"
       },
       {
         "text": "20",
@@ -1596,14 +1596,14 @@
         "html": "0"
       },
       {
-        "text": "1",
+        "text": "3",
         "className": "rgt",
-        "html": "1"
+        "html": "3"
       },
       {
-        "text": "1",
+        "text": "6",
         "className": "rgt",
-        "html": "1"
+        "html": "6"
       },
       {
         "text": "0",
@@ -1611,14 +1611,14 @@
         "html": "0"
       },
       {
-        "text": "230",
+        "text": "159",
         "className": "rgt",
-        "html": "230"
+        "html": "159"
       },
       {
-        "text": "DIG Team 2",
+        "text": "Beast Mode Performance",
         "className": "wrap",
-        "html": "DIG Team 2"
+        "html": "Beast Mode Performance"
       }
     ],
     [
@@ -1628,9 +1628,9 @@
         "html": "21"
       },
       {
-        "text": "2",
+        "text": "—",
         "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">2</span></span>"
+        "html": "—"
       },
       {
         "text": "WILLIAM OWENS2",
@@ -1638,14 +1638,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=108878\" title=\"Go to driver stats\">William Owens2</a>"
       },
       {
-        "text": "404",
+        "text": "449",
         "className": "rgt",
-        "html": "404"
+        "html": "449"
       },
       {
-        "text": "-16",
+        "text": "-12",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-16</span></span>"
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-12</span></span>"
       },
       {
         "text": "0",
@@ -1658,14 +1658,14 @@
         "html": "<span style=\"color: var(--status-success);\">20</span>"
       },
       {
-        "text": "-1",
+        "text": "-4",
         "className": "rgt",
-        "html": "-1"
+        "html": "-4"
       },
       {
-        "text": "18",
+        "text": "20",
         "className": "rgt",
-        "html": "18"
+        "html": "20"
       },
       {
         "text": "0",
@@ -1688,9 +1688,9 @@
         "html": "0"
       },
       {
-        "text": "156",
+        "text": "168",
         "className": "rgt",
-        "html": "156"
+        "html": "168"
       },
       {
         "text": "ZeroX Sim Racing",
@@ -1715,34 +1715,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=45533\" title=\"Go to driver stats\">Jose Medina3</a>"
       },
       {
-        "text": "374",
+        "text": "410",
         "className": "rgt",
-        "html": "374"
+        "html": "410"
       },
       {
-        "text": "-46",
+        "text": "-51",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-46</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "7",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">7</span>"
-      },
-      {
-        "text": "-30",
-        "className": "rgt",
-        "html": "-30"
-      },
-      {
-        "text": "19",
-        "className": "rgt",
-        "html": "19"
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-51</span></span>"
       },
       {
         "text": "0",
@@ -1750,14 +1730,34 @@
         "html": "0"
       },
       {
+        "text": "12",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">12</span>"
+      },
+      {
+        "text": "-39",
+        "className": "rgt",
+        "html": "-39"
+      },
+      {
+        "text": "20",
+        "className": "rgt",
+        "html": "20"
+      },
+      {
         "text": "0",
         "className": "rgt",
         "html": "0"
       },
       {
-        "text": "1",
+        "text": "0",
         "className": "rgt",
-        "html": "1"
+        "html": "0"
+      },
+      {
+        "text": "2",
+        "className": "rgt",
+        "html": "2"
       },
       {
         "text": "0",
@@ -1782,86 +1782,9 @@
         "html": "23"
       },
       {
-        "text": "—",
+        "text": "1",
         "className": "pinned-left rgt",
-        "html": "—"
-      },
-      {
-        "text": "CHRIS CORNETT",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=96865\" title=\"Go to driver stats\">Chris Cornett</a>"
-      },
-      {
-        "text": "365",
-        "className": "rgt",
-        "html": "365"
-      },
-      {
-        "text": "-55",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-55</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "43",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">43</span>"
-      },
-      {
-        "text": "-9",
-        "className": "rgt",
-        "html": "-9"
-      },
-      {
-        "text": "19",
-        "className": "rgt",
-        "html": "19"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "3",
-        "className": "rgt",
-        "html": "3"
-      },
-      {
-        "text": "5",
-        "className": "rgt",
-        "html": "5"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "247",
-        "className": "rgt",
-        "html": "247"
-      },
-      {
-        "text": "ZeroX Sim Racing",
-        "className": "wrap",
-        "html": "ZeroX Sim Racing"
-      }
-    ],
-    [
-      {
-        "text": "24",
-        "className": "pinned-left rgt",
-        "html": "24"
-      },
-      {
-        "text": "—",
-        "className": "pinned-left rgt",
-        "html": "—"
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
         "text": "RYAN CATALANO",
@@ -1869,14 +1792,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=100118\" title=\"Go to driver stats\">Ryan Catalano</a>"
       },
       {
-        "text": "355",
+        "text": "395",
         "className": "rgt",
-        "html": "355"
+        "html": "395"
       },
       {
-        "text": "-65",
+        "text": "-66",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-65</span></span>"
+        "html": "<span class=\"std-status-pill std-status-atrisk me-1\"><span class=\"std-status-label\">-66</span></span>"
       },
       {
         "text": "0",
@@ -1889,14 +1812,14 @@
         "html": "<span style=\"color: var(--status-success);\">25</span>"
       },
       {
-        "text": "-10",
+        "text": "-15",
         "className": "rgt",
-        "html": "-10"
+        "html": "-15"
       },
       {
-        "text": "19",
+        "text": "21",
         "className": "rgt",
-        "html": "19"
+        "html": "21"
       },
       {
         "text": "0",
@@ -1919,9 +1842,9 @@
         "html": "0"
       },
       {
-        "text": "211",
+        "text": "223",
         "className": "rgt",
-        "html": "211"
+        "html": "223"
       },
       {
         "text": "Redline Racing",
@@ -1931,9 +1854,163 @@
     ],
     [
       {
+        "text": "24",
+        "className": "pinned-left rgt",
+        "html": "24"
+      },
+      {
+        "text": "1",
+        "className": "pinned-left rgt",
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
+      },
+      {
+        "text": "CHRIS CORNETT",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=96865\" title=\"Go to driver stats\">Chris Cornett</a>"
+      },
+      {
+        "text": "379",
+        "className": "rgt",
+        "html": "379"
+      },
+      {
+        "text": "-82",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-82</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "43",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">43</span>"
+      },
+      {
+        "text": "-16",
+        "className": "rgt",
+        "html": "-16"
+      },
+      {
+        "text": "20",
+        "className": "rgt",
+        "html": "20"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "3",
+        "className": "rgt",
+        "html": "3"
+      },
+      {
+        "text": "5",
+        "className": "rgt",
+        "html": "5"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "255",
+        "className": "rgt",
+        "html": "255"
+      },
+      {
+        "text": "ZeroX Sim Racing",
+        "className": "wrap",
+        "html": "ZeroX Sim Racing"
+      }
+    ],
+    [
+      {
         "text": "25",
         "className": "pinned-left rgt",
         "html": "25"
+      },
+      {
+        "text": "—",
+        "className": "pinned-left rgt",
+        "html": "—"
+      },
+      {
+        "text": "NICK KING",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=47713\" title=\"Go to driver stats\">Nick King</a>"
+      },
+      {
+        "text": "370",
+        "className": "rgt",
+        "html": "370"
+      },
+      {
+        "text": "-91",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-91</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">0</span>"
+      },
+      {
+        "text": "-9",
+        "className": "rgt",
+        "html": "-9"
+      },
+      {
+        "text": "22",
+        "className": "rgt",
+        "html": "22"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "3",
+        "className": "rgt",
+        "html": "3"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "291",
+        "className": "rgt",
+        "html": "291"
+      },
+      {
+        "text": "",
+        "className": "wrap",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "26",
+        "className": "pinned-left rgt",
+        "html": "26"
       },
       {
         "text": "1",
@@ -1941,19 +2018,19 @@
         "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
-        "text": "AARON MATTHEWS",
+        "text": "BLAKE HAUSCHILD",
         "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=68776\" title=\"Go to driver stats\">Aaron Matthews</a>"
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=116337\" title=\"Go to driver stats\">Blake Hauschild</a>"
       },
       {
-        "text": "337",
+        "text": "346",
         "className": "rgt",
-        "html": "337"
+        "html": "346"
       },
       {
-        "text": "-83",
+        "text": "-115",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-83</span></span>"
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-115</span></span>"
       },
       {
         "text": "0",
@@ -1966,9 +2043,86 @@
         "html": "<span style=\"color: var(--status-success);\">13</span>"
       },
       {
-        "text": "-18",
+        "text": "-24",
         "className": "rgt",
-        "html": "-18"
+        "html": "-24"
+      },
+      {
+        "text": "17",
+        "className": "rgt",
+        "html": "17"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "3",
+        "className": "rgt",
+        "html": "3"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "119",
+        "className": "rgt",
+        "html": "119"
+      },
+      {
+        "text": "ZeroX Sim Racing",
+        "className": "wrap",
+        "html": "ZeroX Sim Racing"
+      }
+    ],
+    [
+      {
+        "text": "27",
+        "className": "pinned-left rgt",
+        "html": "27"
+      },
+      {
+        "text": "1",
+        "className": "pinned-left rgt",
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
+      },
+      {
+        "text": "AARON MATTHEWS",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=68776\" title=\"Go to driver stats\">Aaron Matthews</a>"
+      },
+      {
+        "text": "337",
+        "className": "rgt",
+        "html": "337"
+      },
+      {
+        "text": "-124",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-124</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "13",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">13</span>"
+      },
+      {
+        "text": "-9",
+        "className": "rgt",
+        "html": "-9"
       },
       {
         "text": "15",
@@ -2008,160 +2162,6 @@
     ],
     [
       {
-        "text": "26",
-        "className": "pinned-left rgt",
-        "html": "26"
-      },
-      {
-        "text": "1",
-        "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
-      },
-      {
-        "text": "NICK KING",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=47713\" title=\"Go to driver stats\">Nick King</a>"
-      },
-      {
-        "text": "337",
-        "className": "rgt",
-        "html": "337"
-      },
-      {
-        "text": "-83",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-83</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">0</span>"
-      },
-      {
-        "text": "-",
-        "className": "rgt",
-        "html": "-"
-      },
-      {
-        "text": "20",
-        "className": "rgt",
-        "html": "20"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "3",
-        "className": "rgt",
-        "html": "3"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "267",
-        "className": "rgt",
-        "html": "267"
-      },
-      {
-        "text": "",
-        "className": "wrap",
-        "html": ""
-      }
-    ],
-    [
-      {
-        "text": "27",
-        "className": "pinned-left rgt",
-        "html": "27"
-      },
-      {
-        "text": "—",
-        "className": "pinned-left rgt",
-        "html": "—"
-      },
-      {
-        "text": "BLAKE HAUSCHILD",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=116337\" title=\"Go to driver stats\">Blake Hauschild</a>"
-      },
-      {
-        "text": "300",
-        "className": "rgt",
-        "html": "300"
-      },
-      {
-        "text": "-120",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-120</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "13",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">13</span>"
-      },
-      {
-        "text": "-37",
-        "className": "rgt",
-        "html": "-37"
-      },
-      {
-        "text": "15",
-        "className": "rgt",
-        "html": "15"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "2",
-        "className": "rgt",
-        "html": "2"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "109",
-        "className": "rgt",
-        "html": "109"
-      },
-      {
-        "text": "ZeroX Sim Racing",
-        "className": "wrap",
-        "html": "ZeroX Sim Racing"
-      }
-    ],
-    [
-      {
         "text": "28",
         "className": "pinned-left rgt",
         "html": "28"
@@ -2177,14 +2177,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=100494\" title=\"Go to driver stats\">Jim Treat</a>"
       },
       {
-        "text": "264",
+        "text": "292",
         "className": "rgt",
-        "html": "264"
+        "html": "292"
       },
       {
-        "text": "-156",
+        "text": "-169",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-156</span></span>"
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-169</span></span>"
       },
       {
         "text": "0",
@@ -2197,14 +2197,14 @@
         "html": "<span style=\"color: var(--status-success);\">0</span>"
       },
       {
-        "text": "-36",
+        "text": "-45",
         "className": "rgt",
-        "html": "-36"
+        "html": "-45"
       },
       {
-        "text": "17",
+        "text": "19",
         "className": "rgt",
-        "html": "17"
+        "html": "19"
       },
       {
         "text": "0",
@@ -2227,9 +2227,9 @@
         "html": "0"
       },
       {
-        "text": "177",
+        "text": "199",
         "className": "rgt",
-        "html": "177"
+        "html": "199"
       },
       {
         "text": "ZeroX Sim Racing",
@@ -2244,9 +2244,9 @@
         "html": "29"
       },
       {
-        "text": "—",
+        "text": "1",
         "className": "pinned-left rgt",
-        "html": "—"
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
         "text": "MATT METTLER",
@@ -2254,14 +2254,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=50354\" title=\"Go to driver stats\">Matt Mettler</a>"
       },
       {
-        "text": "240",
+        "text": "256",
         "className": "rgt",
-        "html": "240"
+        "html": "256"
       },
       {
-        "text": "-180",
+        "text": "-205",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-180</span></span>"
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-205</span></span>"
       },
       {
         "text": "0",
@@ -2274,14 +2274,14 @@
         "html": "<span style=\"color: var(--status-success);\">3</span>"
       },
       {
-        "text": "-24",
+        "text": "-36",
         "className": "rgt",
-        "html": "-24"
+        "html": "-36"
       },
       {
-        "text": "19",
+        "text": "21",
         "className": "rgt",
-        "html": "19"
+        "html": "21"
       },
       {
         "text": "0",
@@ -2321,9 +2321,9 @@
         "html": "30"
       },
       {
-        "text": "—",
+        "text": "1",
         "className": "pinned-left rgt",
-        "html": "—"
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
         "text": "TREVOR ASWARNAUTH",
@@ -2331,14 +2331,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=10188\" title=\"Go to driver stats\">Trevor Aswarnauth</a>"
       },
       {
-        "text": "228",
+        "text": "253",
         "className": "rgt",
-        "html": "228"
+        "html": "253"
       },
       {
-        "text": "-192",
+        "text": "-208",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-192</span></span>"
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-208</span></span>"
       },
       {
         "text": "0",
@@ -2351,19 +2351,14 @@
         "html": "<span style=\"color: var(--status-success);\">16</span>"
       },
       {
-        "text": "-12",
+        "text": "-3",
         "className": "rgt",
-        "html": "-12"
+        "html": "-3"
       },
       {
-        "text": "13",
+        "text": "14",
         "className": "rgt",
-        "html": "13"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
+        "html": "14"
       },
       {
         "text": "0",
@@ -2381,9 +2376,14 @@
         "html": "0"
       },
       {
-        "text": "131",
+        "text": "0",
         "className": "rgt",
-        "html": "131"
+        "html": "0"
+      },
+      {
+        "text": "135",
+        "className": "rgt",
+        "html": "135"
       },
       {
         "text": "",
@@ -2413,9 +2413,9 @@
         "html": "192"
       },
       {
-        "text": "-228",
+        "text": "-269",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-228</span></span>"
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-269</span></span>"
       },
       {
         "text": "0",
@@ -2428,9 +2428,9 @@
         "html": "<span style=\"color: var(--status-success);\">59</span>"
       },
       {
-        "text": "-36",
+        "text": "-61",
         "className": "rgt",
-        "html": "-36"
+        "html": "-61"
       },
       {
         "text": "5",
@@ -2490,9 +2490,9 @@
         "html": "187"
       },
       {
-        "text": "-233",
+        "text": "-274",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-233</span></span>"
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-274</span></span>"
       },
       {
         "text": "1",
@@ -2567,9 +2567,9 @@
         "html": "162"
       },
       {
-        "text": "-258",
+        "text": "-299",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-258</span></span>"
+        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-299</span></span>"
       },
       {
         "text": "0",
@@ -2639,14 +2639,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=53215\" title=\"Go to driver stats\">Matt Mackin</a>"
       },
       {
-        "text": "130",
+        "text": "150",
         "className": "rgt",
-        "html": "130"
+        "html": "150"
       },
       {
-        "text": "-290",
+        "text": "-311",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-290</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-311</span></span>"
       },
       {
         "text": "0",
@@ -2659,19 +2659,14 @@
         "html": "<span style=\"color: var(--status-success);\">0</span>"
       },
       {
-        "text": "-32",
+        "text": "-12",
         "className": "rgt",
-        "html": "-32"
+        "html": "-12"
       },
       {
-        "text": "13",
+        "text": "15",
         "className": "rgt",
-        "html": "13"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
+        "html": "15"
       },
       {
         "text": "0",
@@ -2689,9 +2684,14 @@
         "html": "0"
       },
       {
-        "text": "128",
+        "text": "0",
         "className": "rgt",
-        "html": "128"
+        "html": "0"
+      },
+      {
+        "text": "140",
+        "className": "rgt",
+        "html": "140"
       },
       {
         "text": "",
@@ -2706,24 +2706,101 @@
         "html": "35"
       },
       {
-        "text": "—",
+        "text": "1",
         "className": "pinned-left rgt",
-        "html": "—"
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
       },
       {
-        "text": "DARREN MILLS",
+        "text": "SHANE P DAVIS",
         "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=66900\" title=\"Go to driver stats\">Darren Mills</a>"
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=72428\" title=\"Go to driver stats\">Shane P Davis</a>"
       },
       {
-        "text": "111",
+        "text": "138",
         "className": "rgt",
-        "html": "111"
+        "html": "138"
       },
       {
-        "text": "-309",
+        "text": "-323",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-309</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-323</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "9",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">9</span>"
+      },
+      {
+        "text": "-12",
+        "className": "rgt",
+        "html": "-12"
+      },
+      {
+        "text": "7",
+        "className": "rgt",
+        "html": "7"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "1",
+        "className": "rgt",
+        "html": "1"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "93",
+        "className": "rgt",
+        "html": "93"
+      },
+      {
+        "text": "Beast Mode Performance",
+        "className": "wrap",
+        "html": "Beast Mode Performance"
+      }
+    ],
+    [
+      {
+        "text": "36",
+        "className": "pinned-left rgt",
+        "html": "36"
+      },
+      {
+        "text": "1",
+        "className": "pinned-left rgt",
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
+      },
+      {
+        "text": "WAYNE BOWEN",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=45264\" title=\"Go to driver stats\">Wayne Bowen</a>"
+      },
+      {
+        "text": "114",
+        "className": "rgt",
+        "html": "114"
+      },
+      {
+        "text": "-347",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-347</span></span>"
       },
       {
         "text": "0",
@@ -2736,9 +2813,86 @@
         "html": "<span style=\"color: var(--status-success);\">0</span>"
       },
       {
-        "text": "-19",
+        "text": "-24",
         "className": "rgt",
-        "html": "-19"
+        "html": "-24"
+      },
+      {
+        "text": "9",
+        "className": "rgt",
+        "html": "9"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "77",
+        "className": "rgt",
+        "html": "77"
+      },
+      {
+        "text": "Beast Mode Performance",
+        "className": "wrap",
+        "html": "Beast Mode Performance"
+      }
+    ],
+    [
+      {
+        "text": "37",
+        "className": "pinned-left rgt",
+        "html": "37"
+      },
+      {
+        "text": "2",
+        "className": "pinned-left rgt",
+        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">2</span></span>"
+      },
+      {
+        "text": "DARREN MILLS",
+        "className": "pinned-left wrap",
+        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=66900\" title=\"Go to driver stats\">Darren Mills</a>"
+      },
+      {
+        "text": "111",
+        "className": "rgt",
+        "html": "111"
+      },
+      {
+        "text": "-350",
+        "className": "rgt",
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-350</span></span>"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "0"
+      },
+      {
+        "text": "0",
+        "className": "rgt",
+        "html": "<span style=\"color: var(--status-success);\">0</span>"
+      },
+      {
+        "text": "-3",
+        "className": "rgt",
+        "html": "-3"
       },
       {
         "text": "10",
@@ -2778,168 +2932,14 @@
     ],
     [
       {
-        "text": "36",
-        "className": "pinned-left rgt",
-        "html": "36"
-      },
-      {
-        "text": "—",
-        "className": "pinned-left rgt",
-        "html": "—"
-      },
-      {
-        "text": "SHANE P DAVIS",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=72428\" title=\"Go to driver stats\">Shane P Davis</a>"
-      },
-      {
-        "text": "107",
-        "className": "rgt",
-        "html": "107"
-      },
-      {
-        "text": "-313",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-313</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "9",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">9</span>"
-      },
-      {
-        "text": "-4",
-        "className": "rgt",
-        "html": "-4"
-      },
-      {
-        "text": "6",
-        "className": "rgt",
-        "html": "6"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "93",
-        "className": "rgt",
-        "html": "93"
-      },
-      {
-        "text": "Beast Mode Performance",
-        "className": "wrap",
-        "html": "Beast Mode Performance"
-      }
-    ],
-    [
-      {
-        "text": "37",
-        "className": "pinned-left rgt",
-        "html": "37"
-      },
-      {
-        "text": "1",
-        "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
-      },
-      {
-        "text": "WAYNE BOWEN",
-        "className": "pinned-left wrap",
-        "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=45264\" title=\"Go to driver stats\">Wayne Bowen</a>"
-      },
-      {
-        "text": "94",
-        "className": "rgt",
-        "html": "94"
-      },
-      {
-        "text": "-326",
-        "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-326</span></span>"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "<span style=\"color: var(--status-success);\">0</span>"
-      },
-      {
-        "text": "-13",
-        "className": "rgt",
-        "html": "-13"
-      },
-      {
-        "text": "7",
-        "className": "rgt",
-        "html": "7"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "0",
-        "className": "rgt",
-        "html": "0"
-      },
-      {
-        "text": "69",
-        "className": "rgt",
-        "html": "69"
-      },
-      {
-        "text": "Beast Mode Performance",
-        "className": "wrap",
-        "html": "Beast Mode Performance"
-      }
-    ],
-    [
-      {
         "text": "38",
         "className": "pinned-left rgt",
         "html": "38"
       },
       {
-        "text": "1",
+        "text": "—",
         "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
+        "html": "—"
       },
       {
         "text": "VICTOR PFLUGER",
@@ -2952,9 +2952,9 @@
         "html": "88"
       },
       {
-        "text": "-332",
+        "text": "-373",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-332</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-373</span></span>"
       },
       {
         "text": "1",
@@ -2967,9 +2967,9 @@
         "html": "<span style=\"color: var(--status-success);\">9</span>"
       },
       {
-        "text": "-6",
+        "text": "-23",
         "className": "rgt",
-        "html": "-6"
+        "html": "-23"
       },
       {
         "text": "3",
@@ -3029,9 +3029,9 @@
         "html": "82"
       },
       {
-        "text": "-338",
+        "text": "-379",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-338</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-379</span></span>"
       },
       {
         "text": "0",
@@ -3091,9 +3091,9 @@
         "html": "40"
       },
       {
-        "text": "1",
+        "text": "—",
         "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-up\"><i class=\"bi bi-caret-up-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
+        "html": "—"
       },
       {
         "text": "CADEN NORFREY11",
@@ -3106,9 +3106,9 @@
         "html": "69"
       },
       {
-        "text": "-351",
+        "text": "-392",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-351</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-392</span></span>"
       },
       {
         "text": "0",
@@ -3168,9 +3168,9 @@
         "html": "41"
       },
       {
-        "text": "1",
+        "text": "—",
         "className": "pinned-left rgt",
-        "html": "<span class=\"std-status-pill std-status-chg std-status-chg-down\"><i class=\"bi bi-caret-down-fill std-chg-caret\"></i><span class=\"std-status-label\">1</span></span>"
+        "html": "—"
       },
       {
         "text": "SHANE PARISH",
@@ -3183,9 +3183,9 @@
         "html": "65"
       },
       {
-        "text": "-355",
+        "text": "-396",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-355</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-396</span></span>"
       },
       {
         "text": "0",
@@ -3260,9 +3260,9 @@
         "html": "43"
       },
       {
-        "text": "-377",
+        "text": "-418",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-377</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-418</span></span>"
       },
       {
         "text": "0",
@@ -3337,9 +3337,9 @@
         "html": "13"
       },
       {
-        "text": "-407",
+        "text": "-448",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-407</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-448</span></span>"
       },
       {
         "text": "0",
@@ -3414,9 +3414,9 @@
         "html": "11"
       },
       {
-        "text": "-409",
+        "text": "-450",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-409</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-450</span></span>"
       },
       {
         "text": "0",
@@ -3491,9 +3491,9 @@
         "html": "6"
       },
       {
-        "text": "-414",
+        "text": "-455",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-414</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-455</span></span>"
       },
       {
         "text": "0",
@@ -3568,9 +3568,9 @@
         "html": "0"
       },
       {
-        "text": "-420",
+        "text": "-461",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-420</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-461</span></span>"
       },
       {
         "text": "0",
@@ -3645,9 +3645,9 @@
         "html": "0"
       },
       {
-        "text": "-420",
+        "text": "-461",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-alive me-1\"><span class=\"std-status-label\">-420</span></span>"
+        "html": "<span class=\"std-status-pill std-status-out me-1\"><span class=\"std-status-label\">-461</span></span>"
       },
       {
         "text": "0",
