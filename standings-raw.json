@@ -2,7 +2,7 @@
   "seasonId": "28433",
   "source": "https://www.simracerhub.com/season_standings.php?season_id=28433",
   "tableFrame": "https://www.simracerhub.com/season_standings.php?season_id=28433",
-  "updatedAt": "2026-07-30T11:27:07.962Z",
+  "updatedAt": "2026-08-13T08:49:36.205Z",
   "headers": [
     {
       "text": "POS",
@@ -98,14 +98,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=5538\" title=\"Go to driver stats\">Brandon Buie</a>"
       },
       {
-        "text": "1,053",
+        "text": "1,001",
         "className": "rgt",
-        "html": "1,053"
+        "html": "1,001"
       },
       {
-        "text": "+593",
+        "text": "+541",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+593</span></span>"
+        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+541</span></span>"
       },
       {
         "text": "7",
@@ -195,9 +195,9 @@
         "html": "<span style=\"color: var(--status-success);\">263</span>"
       },
       {
-        "text": "-222",
+        "text": "-170",
         "className": "rgt",
-        "html": "-222"
+        "html": "-170"
       },
       {
         "text": "22",
@@ -252,14 +252,14 @@
         "html": "<a class=\"nowrap\" href=\"driver_stats.php?driver_id=73690\" title=\"Go to driver stats\">Brandon Phetterplace</a>"
       },
       {
-        "text": "775",
+        "text": "774",
         "className": "rgt",
-        "html": "775"
+        "html": "774"
       },
       {
-        "text": "+315",
+        "text": "+314",
         "className": "rgt",
-        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+315</span></span>"
+        "html": "<span class=\"std-status-pill std-status-locked me-1\"><span class=\"std-status-label\">+314</span></span>"
       },
       {
         "text": "1",
@@ -272,9 +272,9 @@
         "html": "<span style=\"color: var(--status-success);\">187</span>"
       },
       {
-        "text": "-56",
+        "text": "-57",
         "className": "rgt",
-        "html": "-56"
+        "html": "-57"
       },
       {
         "text": "21",
@@ -349,9 +349,9 @@
         "html": "<span style=\"color: var(--status-success);\">175</span>"
       },
       {
-        "text": "-3",
+        "text": "-2",
         "className": "rgt",
-        "html": "-3"
+        "html": "-2"
       },
       {
         "text": "20",
