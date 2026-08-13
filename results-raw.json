@@ -7,7 +7,7 @@
   "raceDate": "2026-07-29",
   "source": "https://www.simracerhub.com/season_race.php?season_id=28433",
   "tableFrame": "https://www.simracerhub.com/season_race.php?season_id=28433",
-  "updatedAt": "2026-08-06T11:51:08.701Z",
+  "updatedAt": "2026-08-13T08:09:45.724Z",
   "headers": [
     {
       "text": "FIN›",
@@ -359,14 +359,14 @@
         "html": "-1.066"
       },
       {
-        "text": "43",
+        "text": "42",
         "className": "data ",
-        "html": "43"
+        "html": "42"
       },
       {
-        "text": "33",
+        "text": "32",
         "className": "data ",
-        "html": "33"
+        "html": "32"
       },
       {
         "text": "10",
@@ -441,9 +441,9 @@
         "html": "-1.117"
       },
       {
-        "text": "52",
+        "text": "0",
         "className": "data ",
-        "html": "52"
+        "html": "0"
       },
       {
         "text": "32",
