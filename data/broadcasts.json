@@ -1,21 +1,34 @@
 {
   "schemaVersion": 1,
   "playlistId": "PLjydJbqa-gB6SKdCrgnkAoI4wZUbMjemU",
-  "lastUpdated": "2026-08-20T02:45:16.838Z",
+  "lastUpdated": "2026-08-20T03:12:52.604Z",
   "featured": {
     "videoId": "UqcS_MJuEc4",
     "title": "🔴 PayRVA 300 | Moonshiners Racing League | Richmond | iRacing",
     "description": "🏁 LIVE at 8:00 PM ET! The GMD Janitorial Cup Series, part of the Moonshiners Racing League, heads to Richmond Raceway for the PayRVA 300! Who will take home the checkered flag at Richmond?\n\n-- EVENT DETAILS --\n🔹 League: Moonshiners Racing League (MRL)\n🔹 Series: GMD Janitorial Cup Series\n🔹 Event: PayRVA 300\n🔹 Track: Richmond Raceway\n🔹 Game: iRacing\n🔹 Start Time: 8:00 PM ET\n\n-- ABOUT US --\nPrecision Entertainment (PE) is where broadcast-quality esports meets race-craft. We provide full event coverage with professional commentary and graphics for sim racing leagues. Whether you're here to watch your favorite drivers, improve your own race-craft, or just enjoy the action, you're in the right paddock.\n\nWatch. Learn. Go faster.\n\n-- CONNECT WITH US --\n🌐 Website: https://watchprecision.live\n➡️ SUBSCRIBE for more live sim racing action: @watchpes\n👍 LIKE the video to help support the channel and the league!\n💬 COMMENT below with your favorite moment from the race!\n\nLearn more about the Moonshiners Racing League: https://discord.gg/pq7g2vGbwK\n\n#iRacing #SimRacing #Esports #MoonshinersRacingLeague #VirtualRacing #NASCARiRacing",
-    "status": "live",
+    "status": "replay",
     "thumbnail": "https://i.ytimg.com/vi/UqcS_MJuEc4/maxresdefault_live.jpg",
     "publishedAt": "2026-08-19T15:48:26Z",
     "scheduledStartTime": "2026-08-20T00:00:00Z",
     "actualStartTime": "2026-08-20T00:17:53Z",
-    "actualEndTime": null,
+    "actualEndTime": "2026-08-20T02:47:28Z",
     "embedUrl": "https://www.youtube.com/embed/UqcS_MJuEc4",
     "watchUrl": "https://www.youtube.com/watch?v=UqcS_MJuEc4"
   },
   "recentReplays": [
+    {
+      "videoId": "UqcS_MJuEc4",
+      "title": "🔴 PayRVA 300 | Moonshiners Racing League | Richmond | iRacing",
+      "description": "🏁 LIVE at 8:00 PM ET! The GMD Janitorial Cup Series, part of the Moonshiners Racing League, heads to Richmond Raceway for the PayRVA 300! Who will take home the checkered flag at Richmond?\n\n-- EVENT DETAILS --\n🔹 League: Moonshiners Racing League (MRL)\n🔹 Series: GMD Janitorial Cup Series\n🔹 Event: PayRVA 300\n🔹 Track: Richmond Raceway\n🔹 Game: iRacing\n🔹 Start Time: 8:00 PM ET\n\n-- ABOUT US --\nPrecision Entertainment (PE) is where broadcast-quality esports meets race-craft. We provide full event coverage with professional commentary and graphics for sim racing leagues. Whether you're here to watch your favorite drivers, improve your own race-craft, or just enjoy the action, you're in the right paddock.\n\nWatch. Learn. Go faster.\n\n-- CONNECT WITH US --\n🌐 Website: https://watchprecision.live\n➡️ SUBSCRIBE for more live sim racing action: @watchpes\n👍 LIKE the video to help support the channel and the league!\n💬 COMMENT below with your favorite moment from the race!\n\nLearn more about the Moonshiners Racing League: https://discord.gg/pq7g2vGbwK\n\n#iRacing #SimRacing #Esports #MoonshinersRacingLeague #VirtualRacing #NASCARiRacing",
+      "status": "replay",
+      "thumbnail": "https://i.ytimg.com/vi/UqcS_MJuEc4/maxresdefault_live.jpg",
+      "publishedAt": "2026-08-19T15:48:26Z",
+      "scheduledStartTime": "2026-08-20T00:00:00Z",
+      "actualStartTime": "2026-08-20T00:17:53Z",
+      "actualEndTime": "2026-08-20T02:47:28Z",
+      "embedUrl": "https://www.youtube.com/embed/UqcS_MJuEc4",
+      "watchUrl": "https://www.youtube.com/watch?v=UqcS_MJuEc4"
+    },
     {
       "videoId": "uzBllH_7ACc",
       "title": "🔴 Corridor Automotive 250 | Moonshiners Racing League | Iowa | iRacing",
@@ -344,7 +357,7 @@
   ],
   "diagnostics": {
     "playlistVideosFound": 27,
-    "completedReplaysFound": 25,
+    "completedReplaysFound": 26,
     "previousFeaturedVideoId": "UqcS_MJuEc4"
   }
 }
