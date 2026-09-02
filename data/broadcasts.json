@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
   "playlistId": "PLjydJbqa-gB6SKdCrgnkAoI4wZUbMjemU",
-  "lastUpdated": "2026-08-27T10:47:48.289Z",
+  "lastUpdated": "2026-09-02T19:13:05.634Z",
   "featured": {
-    "videoId": "zh7-6KLg0Ew",
-    "title": "🔴 GMD Janitorial 200 | Moonshiners Racing League | New Hampshire | iRacing",
-    "description": "🏁 LIVE at 8:00 PM ET! The GMD Janitorial Cup Series, part of the Moonshiners Racing League, heads to New Hampshire Motor Speedway for the GMD Janitorial 200! Who will take home the checkered flag at The Magic Mile?\n\n-- EVENT DETAILS --\n🔹 League: Moonshiners Racing League (MRL)\n🔹 Series: GMD Janitorial Cup Series\n🔹 Event: GMD Janitorial 200\n🔹 Track: New Hampshire Motor Speedway\n🔹 Game: iRacing\n🔹 Start Time: 8:00 PM ET\n\n-- ABOUT US --\nPrecision Entertainment (PE) is where broadcast-quality esports meets race-craft. We provide full event coverage with professional commentary and graphics for sim racing leagues. Whether you're here to watch your favorite drivers, improve your own race-craft, or just enjoy the action, you're in the right paddock.\n\nWatch. Learn. Go faster.\n\n-- CONNECT WITH US --\n🌐 Website: https://watchprecision.live\n➡️ SUBSCRIBE for more live sim racing action: @watchpes\n👍 LIKE the video to help support the channel and the league!\n💬 COMMENT below with your favorite moment from the race!\n\nLearn more about the Moonshiners Racing League: https://discord.gg/pq7g2vGbwK\n\n#iRacing #SimRacing #Esports #MoonshinersRacingLeague #VirtualRacing #NASCARiRacing",
-    "status": "replay",
-    "thumbnail": "https://i.ytimg.com/vi/zh7-6KLg0Ew/maxresdefault.jpg",
-    "publishedAt": "2026-08-27T02:49:33Z",
-    "scheduledStartTime": "2026-08-27T00:00:00Z",
-    "actualStartTime": "2026-08-27T00:02:03Z",
-    "actualEndTime": "2026-08-27T02:39:33Z",
-    "embedUrl": "https://www.youtube.com/embed/zh7-6KLg0Ew",
-    "watchUrl": "https://www.youtube.com/watch?v=zh7-6KLg0Ew"
+    "videoId": "TYGrtTrpZnw",
+    "title": "🔴 GMD Janitorial 250 | Moonshiners Racing League | Daytona | iRacing",
+    "description": "🏁 LIVE at 8:00 PM ET! The GMD Janitorial Cup Series, part of the Moonshiners Racing League, heads to Daytona International Speedway! Who will take home the checkered flag at The World Center of Racing?\n\n-- EVENT DETAILS --\n🔹 League: Moonshiners Racing League (MRL)\n🔹 Series: GMD Janitorial Cup Series\n🔹 Event: GMD Janitorial 250\n🔹 Track: Daytona International Speedway\n🔹 Game: iRacing\n🔹 Start Time: 8:00 PM ET\n\n-- ABOUT US --\nPrecision Entertainment (PE) is where broadcast-quality esports meets race-craft. We provide full event coverage with professional commentary and graphics for sim racing leagues. Whether you're here to watch your favorite drivers, improve your own race-craft, or just enjoy the action, you're in the right paddock.\n\nWatch. Learn. Go faster.\n\n-- CONNECT WITH US --\n🌐 Website: https://watchprecision.live\n➡️ SUBSCRIBE for more live sim racing action: @watchpes\n👍 LIKE the video to help support the channel and the league!\n💬 COMMENT below with your favorite moment from the race!\n\nLearn more about the Moonshiners Racing League: https://discord.gg/pq7g2vGbwK\n\n#iRacing #SimRacing #Esports #MoonshinersRacingLeague #VirtualRacing #NASCARiRacing",
+    "status": "upcoming",
+    "thumbnail": "https://i.ytimg.com/vi/TYGrtTrpZnw/maxresdefault_live.jpg",
+    "publishedAt": "2026-08-29T00:48:30Z",
+    "scheduledStartTime": "2026-09-03T00:00:00Z",
+    "actualStartTime": null,
+    "actualEndTime": null,
+    "embedUrl": "https://www.youtube.com/embed/TYGrtTrpZnw",
+    "watchUrl": "https://www.youtube.com/watch?v=TYGrtTrpZnw"
   },
   "recentReplays": [
     {
@@ -369,7 +369,7 @@
     }
   ],
   "diagnostics": {
-    "playlistVideosFound": 28,
+    "playlistVideosFound": 29,
     "completedReplaysFound": 27,
     "previousFeaturedVideoId": "zh7-6KLg0Ew"
   }
