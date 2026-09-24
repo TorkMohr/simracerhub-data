@@ -1,21 +1,34 @@
 {
   "schemaVersion": 1,
   "playlistId": "PLjydJbqa-gB6SKdCrgnkAoI4wZUbMjemU",
-  "lastUpdated": "2026-09-24T01:37:57.262Z",
+  "lastUpdated": "2026-09-24T04:03:57.629Z",
   "featured": {
     "videoId": "kJE2d1NEgZQ",
     "title": "🔴 Off Axis 300 | Moonshiners Racing League | Bristol | iRacing",
     "description": "🏁 LIVE at 8:00 PM ET! The GMD Janitorial Cup Series, part of the Moonshiners Racing League, heads to Bristol Motor Speedway for the Off Axis 300! Who will take home the checkered flag at Bristol?\n-- EVENT DETAILS --\n🔹 League: Moonshiners Racing League (MRL)\n🔹 Series: GMD Janitorial Cup Series\n🔹 Event: Off Axis 300\n🔹 Track: Bristol Motor Speedway\n🔹 Game: iRacing\n🔹 Start Time: 8:00 PM ET\n\n-- ABOUT US --\nPrecision Entertainment (PE) is where broadcast-quality esports meets race-craft. We provide full event coverage with professional commentary and graphics for sim racing leagues. Whether you're here to watch your favorite drivers, improve your own race-craft, or just enjoy the action, you're in the right paddock.\n\nWatch. Learn. Go faster.\n\n-- CONNECT WITH US --\n🌐 Website: https://watchprecision.live\n➡️ SUBSCRIBE for more live sim racing action: @watchpes\n👍 LIKE the video to help support the channel and the league!\n💬 COMMENT below with your favorite moment from the race!\n\nLearn more about the Moonshiners Racing League: https://discord.gg/pq7g2vGbwK\n\n#iRacing #SimRacing #Esports #MoonshinersRacingLeague #VirtualRacing #NASCARiRacing",
-    "status": "live",
-    "thumbnail": "https://i.ytimg.com/vi/kJE2d1NEgZQ/maxresdefault_live.jpg",
-    "publishedAt": "2026-09-23T11:57:08Z",
+    "status": "replay",
+    "thumbnail": "https://i.ytimg.com/vi/kJE2d1NEgZQ/maxresdefault.jpg",
+    "publishedAt": "2026-09-24T02:14:33Z",
     "scheduledStartTime": "2026-09-24T00:00:00Z",
     "actualStartTime": "2026-09-24T00:01:12Z",
-    "actualEndTime": null,
+    "actualEndTime": "2026-09-24T02:04:38Z",
     "embedUrl": "https://www.youtube.com/embed/kJE2d1NEgZQ",
     "watchUrl": "https://www.youtube.com/watch?v=kJE2d1NEgZQ"
   },
   "recentReplays": [
+    {
+      "videoId": "kJE2d1NEgZQ",
+      "title": "🔴 Off Axis 300 | Moonshiners Racing League | Bristol | iRacing",
+      "description": "🏁 LIVE at 8:00 PM ET! The GMD Janitorial Cup Series, part of the Moonshiners Racing League, heads to Bristol Motor Speedway for the Off Axis 300! Who will take home the checkered flag at Bristol?\n-- EVENT DETAILS --\n🔹 League: Moonshiners Racing League (MRL)\n🔹 Series: GMD Janitorial Cup Series\n🔹 Event: Off Axis 300\n🔹 Track: Bristol Motor Speedway\n🔹 Game: iRacing\n🔹 Start Time: 8:00 PM ET\n\n-- ABOUT US --\nPrecision Entertainment (PE) is where broadcast-quality esports meets race-craft. We provide full event coverage with professional commentary and graphics for sim racing leagues. Whether you're here to watch your favorite drivers, improve your own race-craft, or just enjoy the action, you're in the right paddock.\n\nWatch. Learn. Go faster.\n\n-- CONNECT WITH US --\n🌐 Website: https://watchprecision.live\n➡️ SUBSCRIBE for more live sim racing action: @watchpes\n👍 LIKE the video to help support the channel and the league!\n💬 COMMENT below with your favorite moment from the race!\n\nLearn more about the Moonshiners Racing League: https://discord.gg/pq7g2vGbwK\n\n#iRacing #SimRacing #Esports #MoonshinersRacingLeague #VirtualRacing #NASCARiRacing",
+      "status": "replay",
+      "thumbnail": "https://i.ytimg.com/vi/kJE2d1NEgZQ/maxresdefault.jpg",
+      "publishedAt": "2026-09-24T02:14:33Z",
+      "scheduledStartTime": "2026-09-24T00:00:00Z",
+      "actualStartTime": "2026-09-24T00:01:12Z",
+      "actualEndTime": "2026-09-24T02:04:38Z",
+      "embedUrl": "https://www.youtube.com/embed/kJE2d1NEgZQ",
+      "watchUrl": "https://www.youtube.com/watch?v=kJE2d1NEgZQ"
+    },
     {
       "videoId": "oVcMPWZ_GV8",
       "title": "🔴 GMD Janitorial 250 | Moonshiners Racing League | WWT Raceway | iRacing",
@@ -409,7 +422,7 @@
   ],
   "diagnostics": {
     "playlistVideosFound": 32,
-    "completedReplaysFound": 30,
+    "completedReplaysFound": 31,
     "previousFeaturedVideoId": "kJE2d1NEgZQ"
   }
 }
