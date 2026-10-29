@@ -1,13 +1,13 @@
 {
   "seasonId": "28433",
-  "websiteSlug": "32",
-  "simRacerHubRaceNumber": 33,
-  "trackName": "Charlotte Motor Speedway",
-  "simRacerHubTrackName": "CHARLOTTE MOTOR SPEEDWAY",
-  "raceDate": "2026-10-14",
+  "websiteSlug": "34",
+  "simRacerHubRaceNumber": 35,
+  "trackName": "Talladega Superspeedway",
+  "simRacerHubTrackName": "TALLADEGA SUPERSPEEDWAY",
+  "raceDate": "2026-10-28",
   "source": "https://www.simracerhub.com/season_race.php?season_id=28433",
   "tableFrame": "https://www.simracerhub.com/season_race.php?season_id=28433",
-  "updatedAt": "2026-10-22T08:53:35.124Z",
+  "updatedAt": "2026-10-29T10:21:47.591Z",
   "headers": [
     {
       "text": "FIN›",
@@ -98,14 +98,14 @@
         "html": "1"
       },
       {
-        "text": "35",
+        "text": "22",
         "className": "data pinned-left",
-        "html": "35"
+        "html": "22"
       },
       {
-        "text": "BRANDON BUIE",
+        "text": "ALEX MURRAY",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=5538&amp;season_id=28433\">Brandon <span>Buie</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=8841&amp;season_id=28433\">Alex <span>Murray</span></a>"
       },
       {
         "text": "",
@@ -113,9 +113,9 @@
         "html": ""
       },
       {
-        "text": "75",
+        "text": "71",
         "className": "data ",
-        "html": "75"
+        "html": "71"
       },
       {
         "text": "55",
@@ -123,24 +123,24 @@
         "html": "55"
       },
       {
-        "text": "20",
+        "text": "16",
         "className": "bns rgt ",
-        "html": "20"
+        "html": "16"
       },
       {
-        "text": "77",
+        "text": "7",
         "className": "data ",
-        "html": "<span class=\"best\">77</span>"
+        "html": "7"
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.220",
+        "text": "48.519",
         "className": "data ",
-        "html": "29.220"
+        "html": "48.519"
       },
       {
         "text": "0",
@@ -153,19 +153,19 @@
         "html": "Running"
       },
       {
-        "text": "5",
+        "text": "3",
         "className": "data ",
-        "html": "5"
+        "html": "3"
       },
       {
-        "text": "28.884",
+        "text": "53.222",
         "className": "data ",
-        "html": "28.884"
+        "html": "53.222"
       },
       {
-        "text": "Aero Racing",
+        "text": "DIG Team 2",
         "className": " ",
-        "html": "Aero Racing"
+        "html": "DIG Team 2"
       },
       {
         "text": "",
@@ -180,24 +180,24 @@
         "html": "2"
       },
       {
-        "text": "34",
+        "text": "19",
         "className": "data pinned-left",
-        "html": "34"
+        "html": "19"
       },
       {
-        "text": "BRANDON PHETTERPLACE",
+        "text": "COREY MOHR",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=73690&amp;season_id=28433\">Brandon <span>Phetterplace</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=95721&amp;season_id=28433\">Corey <span>Mohr</span></a>"
       },
       {
-        "text": "-0.813",
+        "text": "-0.054",
         "className": "data ",
-        "html": "-0.813"
+        "html": "-0.054"
       },
       {
-        "text": "49",
+        "text": "36",
         "className": "data ",
-        "html": "49"
+        "html": "36"
       },
       {
         "text": "35",
@@ -205,29 +205,29 @@
         "html": "35"
       },
       {
-        "text": "14",
-        "className": "bns rgt ",
-        "html": "14"
-      },
-      {
-        "text": "13",
-        "className": "data ",
-        "html": "13"
-      },
-      {
-        "text": "200",
-        "className": "data ",
-        "html": "200"
-      },
-      {
-        "text": "29.211",
-        "className": "data ",
-        "html": "29.211"
-      },
-      {
         "text": "1",
-        "className": "data ",
+        "className": "bns rgt ",
         "html": "1"
+      },
+      {
+        "text": "",
+        "className": "data ",
+        "html": ""
+      },
+      {
+        "text": "113",
+        "className": "data ",
+        "html": "113"
+      },
+      {
+        "text": "48.559",
+        "className": "data ",
+        "html": "48.559"
+      },
+      {
+        "text": "8",
+        "className": "data ",
+        "html": "8"
       },
       {
         "text": "Running",
@@ -235,19 +235,19 @@
         "html": "Running"
       },
       {
-        "text": "10",
+        "text": "5",
         "className": "data ",
-        "html": "10"
+        "html": "5"
       },
       {
-        "text": "28.956",
+        "text": "53.241",
         "className": "data ",
-        "html": "28.956"
+        "html": "53.241"
       },
       {
-        "text": "Aero Racing",
+        "text": "DIG Team 1",
         "className": " ",
-        "html": "Aero Racing"
+        "html": "DIG Team 1"
       },
       {
         "text": "",
@@ -262,24 +262,19 @@
         "html": "3"
       },
       {
-        "text": "00",
+        "text": "38",
         "className": "data pinned-left",
-        "html": "00"
+        "html": "38"
       },
       {
-        "text": "MATT L COX",
+        "text": "BLAKE HAUSCHILD",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=75856&amp;season_id=28433\">Matt L <span>Cox</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=116337&amp;season_id=28433\">Blake <span>Hauschild</span></a>"
       },
       {
-        "text": "-3.139",
+        "text": "-0.131",
         "className": "data ",
-        "html": "-3.139"
-      },
-      {
-        "text": "48",
-        "className": "data ",
-        "html": "48"
+        "html": "-0.131"
       },
       {
         "text": "34",
@@ -287,29 +282,34 @@
         "html": "34"
       },
       {
-        "text": "14",
+        "text": "34",
+        "className": "data ",
+        "html": "34"
+      },
+      {
+        "text": "",
         "className": "bns rgt ",
-        "html": "14"
+        "html": ""
       },
       {
-        "text": "28",
+        "text": "",
         "className": "data ",
-        "html": "28"
+        "html": ""
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.199",
+        "text": "48.377",
         "className": "data ",
-        "html": "29.199"
+        "html": "48.377"
       },
       {
-        "text": "13",
+        "text": "4",
         "className": "data ",
-        "html": "13"
+        "html": "4"
       },
       {
         "text": "Running",
@@ -317,19 +317,19 @@
         "html": "Running"
       },
       {
-        "text": "7",
+        "text": "19",
         "className": "data ",
-        "html": "7"
+        "html": "19"
       },
       {
-        "text": "28.893",
+        "text": "53.348",
         "className": "data ",
-        "html": "28.893"
+        "html": "53.348"
       },
       {
-        "text": "Blowin' Trannies",
+        "text": "ZeroX Sim Racing",
         "className": " ",
-        "html": "Blowin' Trannies"
+        "html": "ZeroX Sim Racing"
       },
       {
         "text": "",
@@ -344,24 +344,24 @@
         "html": "4"
       },
       {
-        "text": "12",
+        "text": "54",
         "className": "data pinned-left",
-        "html": "12"
+        "html": "54"
       },
       {
-        "text": "NICK KING",
+        "text": "ALEX COFFEY",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=47713&amp;season_id=28433\">Nick <span>King</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=2634&amp;season_id=28433\">Alex <span>Coffey</span></a>"
       },
       {
-        "text": "-3.738",
+        "text": "-0.136",
         "className": "data ",
-        "html": "-3.738"
+        "html": "-0.136"
       },
       {
-        "text": "34",
+        "text": "41",
         "className": "data ",
-        "html": "34"
+        "html": "41"
       },
       {
         "text": "33",
@@ -369,29 +369,29 @@
         "html": "33"
       },
       {
-        "text": "1",
+        "text": "8",
         "className": "bns rgt ",
-        "html": "1"
+        "html": "8"
       },
       {
-        "text": "38",
+        "text": "28",
         "className": "data ",
-        "html": "38"
+        "html": "<span class=\"best\">28</span>"
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.125",
+        "text": "48.364",
         "className": "data ",
-        "html": "29.125"
+        "html": "48.364"
       },
       {
-        "text": "0",
+        "text": "8",
         "className": "data ",
-        "html": "0"
+        "html": "8"
       },
       {
         "text": "Running",
@@ -399,19 +399,19 @@
         "html": "Running"
       },
       {
-        "text": "14",
+        "text": "6",
         "className": "data ",
-        "html": "14"
+        "html": "6"
       },
       {
-        "text": "28.996",
+        "text": "53.250",
         "className": "data ",
-        "html": "28.996"
+        "html": "53.250"
       },
       {
-        "text": "",
+        "text": "DIG Team 1",
         "className": " ",
-        "html": ""
+        "html": "DIG Team 1"
       },
       {
         "text": "",
@@ -426,24 +426,24 @@
         "html": "5"
       },
       {
-        "text": "97",
+        "text": "44",
         "className": "data pinned-left",
-        "html": "97"
+        "html": "44"
       },
       {
-        "text": "KYLE HOLDEN2",
+        "text": "SEAN ROGERS4",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=63855&amp;season_id=28433\">Kyle <span>Holden2</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=62760&amp;season_id=28433\">Sean <span>Rogers4</span></a>"
       },
       {
-        "text": "-3.891",
+        "text": "-0.158",
         "className": "data ",
-        "html": "-3.891"
+        "html": "-0.158"
       },
       {
-        "text": "39",
+        "text": "40",
         "className": "data ",
-        "html": "39"
+        "html": "40"
       },
       {
         "text": "32",
@@ -451,9 +451,9 @@
         "html": "32"
       },
       {
-        "text": "7",
+        "text": "8",
         "className": "bns rgt ",
-        "html": "7"
+        "html": "8"
       },
       {
         "text": "",
@@ -461,19 +461,19 @@
         "html": ""
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.205",
+        "text": "48.584",
         "className": "data ",
-        "html": "29.205"
+        "html": "48.584"
       },
       {
-        "text": "12",
+        "text": "18",
         "className": "data ",
-        "html": "12"
+        "html": "18"
       },
       {
         "text": "Running",
@@ -481,19 +481,19 @@
         "html": "Running"
       },
       {
-        "text": "6",
+        "text": "7",
         "className": "data ",
-        "html": "6"
+        "html": "7"
       },
       {
-        "text": "28.888",
+        "text": "53.253",
         "className": "data ",
-        "html": "28.888"
+        "html": "53.253"
       },
       {
-        "text": "Team Aero",
+        "text": "Blowin' Trannies",
         "className": " ",
-        "html": "Team Aero"
+        "html": "Blowin' Trannies"
       },
       {
         "text": "",
@@ -508,24 +508,24 @@
         "html": "6"
       },
       {
-        "text": "25",
+        "text": "35",
         "className": "data pinned-left",
-        "html": "25"
+        "html": "35"
       },
       {
-        "text": "GREGG CARR",
+        "text": "BRANDON BUIE",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=67242&amp;season_id=28433\">Gregg <span>Carr</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=5538&amp;season_id=28433\">Brandon <span>Buie</span></a>"
       },
       {
-        "text": "-4.027",
+        "text": "-0.186",
         "className": "data ",
-        "html": "-4.027"
+        "html": "-0.186"
       },
       {
-        "text": "32",
+        "text": "45",
         "className": "data ",
-        "html": "32"
+        "html": "45"
       },
       {
         "text": "31",
@@ -533,29 +533,29 @@
         "html": "31"
       },
       {
-        "text": "1",
+        "text": "14",
         "className": "bns rgt ",
-        "html": "1"
+        "html": "14"
       },
       {
-        "text": "",
+        "text": "9",
         "className": "data ",
-        "html": ""
+        "html": "9"
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.312",
+        "text": "48.590",
         "className": "data ",
-        "html": "29.312"
+        "html": "48.590"
       },
       {
-        "text": "5",
+        "text": "4",
         "className": "data ",
-        "html": "5"
+        "html": "4"
       },
       {
         "text": "Running",
@@ -568,14 +568,14 @@
         "html": "15"
       },
       {
-        "text": "29.003",
+        "text": "53.289",
         "className": "data ",
-        "html": "29.003"
+        "html": "53.289"
       },
       {
-        "text": "First 2 Engage Motorsports",
+        "text": "Aero Racing",
         "className": " ",
-        "html": "First 2 Engage Motorsports"
+        "html": "Aero Racing"
       },
       {
         "text": "",
@@ -590,24 +590,24 @@
         "html": "7"
       },
       {
-        "text": "18",
+        "text": "12",
         "className": "data pinned-left",
-        "html": "18"
+        "html": "12"
       },
       {
-        "text": "BLANE WILSON",
+        "text": "NICK KING",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=73102&amp;season_id=28433\">Blane <span>Wilson</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=47713&amp;season_id=28433\">Nick <span>King</span></a>"
       },
       {
-        "text": "-4.358",
+        "text": "-0.212",
         "className": "data ",
-        "html": "-4.358"
+        "html": "-0.212"
       },
       {
-        "text": "37",
+        "text": "32",
         "className": "data ",
-        "html": "37"
+        "html": "32"
       },
       {
         "text": "30",
@@ -615,29 +615,29 @@
         "html": "30"
       },
       {
-        "text": "7",
+        "text": "2",
         "className": "bns rgt ",
-        "html": "7"
+        "html": "2"
       },
       {
-        "text": "9",
+        "text": "1",
         "className": "data ",
-        "html": "9"
+        "html": "1"
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.088",
+        "text": "48.624",
         "className": "data ",
-        "html": "29.088"
+        "html": "48.624"
       },
       {
-        "text": "5",
+        "text": "8",
         "className": "data ",
-        "html": "5"
+        "html": "8"
       },
       {
         "text": "Running",
@@ -645,19 +645,19 @@
         "html": "Running"
       },
       {
-        "text": "18",
+        "text": "20",
         "className": "data ",
-        "html": "18"
+        "html": "20"
       },
       {
-        "text": "29.133",
+        "text": "53.356",
         "className": "data ",
-        "html": "29.133"
+        "html": "53.356"
       },
       {
-        "text": "DIG Team 1",
+        "text": "",
         "className": " ",
-        "html": "DIG Team 1"
+        "html": ""
       },
       {
         "text": "",
@@ -672,24 +672,19 @@
         "html": "8"
       },
       {
-        "text": "54",
+        "text": "34",
         "className": "data pinned-left",
-        "html": "54"
+        "html": "34"
       },
       {
-        "text": "ALEX COFFEY",
+        "text": "BRANDON PHETTERPLACE",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=2634&amp;season_id=28433\">Alex <span>Coffey</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=73690&amp;season_id=28433\">Brandon <span>Phetterplace</span></a>"
       },
       {
-        "text": "-5.817",
+        "text": "-0.254",
         "className": "data ",
-        "html": "-5.817"
-      },
-      {
-        "text": "39",
-        "className": "data ",
-        "html": "39"
+        "html": "-0.254"
       },
       {
         "text": "29",
@@ -697,29 +692,34 @@
         "html": "29"
       },
       {
-        "text": "10",
-        "className": "bns rgt ",
-        "html": "10"
+        "text": "29",
+        "className": "data ",
+        "html": "29"
       },
       {
         "text": "",
-        "className": "data ",
+        "className": "bns rgt ",
         "html": ""
       },
       {
-        "text": "200",
+        "text": "2",
         "className": "data ",
-        "html": "200"
+        "html": "2"
       },
       {
-        "text": "29.167",
+        "text": "113",
         "className": "data ",
-        "html": "29.167"
+        "html": "113"
       },
       {
-        "text": "5",
+        "text": "48.307",
         "className": "data ",
-        "html": "5"
+        "html": "48.307"
+      },
+      {
+        "text": "14",
+        "className": "data ",
+        "html": "14"
       },
       {
         "text": "Running",
@@ -727,19 +727,19 @@
         "html": "Running"
       },
       {
-        "text": "1",
+        "text": "10",
         "className": "data ",
-        "html": "1"
+        "html": "10"
       },
       {
-        "text": "28.800",
+        "text": "53.258",
         "className": "data ",
-        "html": "<span class=\"best\">28.800</span>"
+        "html": "53.258"
       },
       {
-        "text": "DIG Team 1",
+        "text": "Aero Racing",
         "className": " ",
-        "html": "DIG Team 1"
+        "html": "Aero Racing"
       },
       {
         "text": "",
@@ -754,19 +754,19 @@
         "html": "9"
       },
       {
-        "text": "84",
+        "text": "20",
         "className": "data pinned-left",
-        "html": "84"
+        "html": "20"
       },
       {
-        "text": "CHRIS CORNETT",
+        "text": "NIGEL CHRISTIANSON",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=96865&amp;season_id=28433\">Chris <span>Cornett</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=59189&amp;season_id=28433\">Nigel <span>Christianson</span></a>"
       },
       {
-        "text": "-7.635",
+        "text": "-0.407",
         "className": "data ",
-        "html": "-7.635"
+        "html": "-0.407"
       },
       {
         "text": "28",
@@ -789,19 +789,19 @@
         "html": ""
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.308",
+        "text": "48.484",
         "className": "data ",
-        "html": "29.308"
+        "html": "48.484"
       },
       {
-        "text": "7",
+        "text": "10",
         "className": "data ",
-        "html": "7"
+        "html": "10"
       },
       {
         "text": "Running",
@@ -809,9 +809,91 @@
         "html": "Running"
       },
       {
-        "text": "24",
+        "text": "18",
         "className": "data ",
-        "html": "24"
+        "html": "18"
+      },
+      {
+        "text": "53.325",
+        "className": "data ",
+        "html": "53.325"
+      },
+      {
+        "text": "DIG Team 1",
+        "className": " ",
+        "html": "DIG Team 1"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "10",
+        "className": "data pinned-left",
+        "html": "10"
+      },
+      {
+        "text": "42",
+        "className": "data pinned-left",
+        "html": "42"
+      },
+      {
+        "text": "JIM TREAT",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=100494&amp;season_id=28433\">Jim <span>Treat</span></a>"
+      },
+      {
+        "text": "-11.886",
+        "className": "data ",
+        "html": "-11.886"
+      },
+      {
+        "text": "27",
+        "className": "data ",
+        "html": "27"
+      },
+      {
+        "text": "27",
+        "className": "data ",
+        "html": "27"
+      },
+      {
+        "text": "",
+        "className": "bns rgt ",
+        "html": ""
+      },
+      {
+        "text": "",
+        "className": "data ",
+        "html": ""
+      },
+      {
+        "text": "113",
+        "className": "data ",
+        "html": "113"
+      },
+      {
+        "text": "48.295",
+        "className": "data ",
+        "html": "48.295"
+      },
+      {
+        "text": "18",
+        "className": "data ",
+        "html": "18"
+      },
+      {
+        "text": "Running",
+        "className": " ",
+        "html": "Running"
+      },
+      {
+        "text": "23",
+        "className": "data ",
+        "html": "23"
       },
       {
         "text": "-",
@@ -831,106 +913,29 @@
     ],
     [
       {
-        "text": "10",
-        "className": "data pinned-left",
-        "html": "10"
-      },
-      {
-        "text": "33",
-        "className": "data pinned-left",
-        "html": "33"
-      },
-      {
-        "text": "CHRIS VINSON2",
-        "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=76900&amp;season_id=28433\">Chris <span>Vinson2</span></a>"
-      },
-      {
-        "text": "-8.014",
-        "className": "data ",
-        "html": "-8.014"
-      },
-      {
-        "text": "27",
-        "className": "data ",
-        "html": "27"
-      },
-      {
-        "text": "27",
-        "className": "data ",
-        "html": "27"
-      },
-      {
-        "text": "",
-        "className": "bns rgt ",
-        "html": ""
-      },
-      {
-        "text": "",
-        "className": "data ",
-        "html": ""
-      },
-      {
-        "text": "200",
-        "className": "data ",
-        "html": "200"
-      },
-      {
-        "text": "29.127",
-        "className": "data ",
-        "html": "29.127"
-      },
-      {
-        "text": "6",
-        "className": "data ",
-        "html": "6"
-      },
-      {
-        "text": "Running",
-        "className": " ",
-        "html": "Running"
-      },
-      {
-        "text": "22",
-        "className": "data ",
-        "html": "22"
-      },
-      {
-        "text": "-",
-        "className": "data ",
-        "html": "-"
-      },
-      {
-        "text": "Beast Mode Performance",
-        "className": " ",
-        "html": "Beast Mode Performance"
-      },
-      {
-        "text": "",
-        "className": "ctr ",
-        "html": ""
-      }
-    ],
-    [
-      {
         "text": "11",
         "className": "data pinned-left",
         "html": "11"
       },
       {
-        "text": "31",
+        "text": "88",
         "className": "data pinned-left",
-        "html": "31"
+        "html": "88"
       },
       {
-        "text": "JEFF CHANDLER",
+        "text": "BARRY SANDERS",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=199&amp;season_id=28433\">Jeff <span>Chandler</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=58710&amp;season_id=28433\">Barry <span>Sanders</span></a>"
       },
       {
-        "text": "-8.178",
+        "text": "-12.747",
         "className": "data ",
-        "html": "-8.178"
+        "html": "-12.747"
+      },
+      {
+        "text": "28",
+        "className": "data ",
+        "html": "28"
       },
       {
         "text": "26",
@@ -938,34 +943,29 @@
         "html": "26"
       },
       {
-        "text": "26",
-        "className": "data ",
-        "html": "26"
-      },
-      {
-        "text": "",
+        "text": "2",
         "className": "bns rgt ",
-        "html": ""
+        "html": "2"
       },
       {
-        "text": "",
+        "text": "9",
         "className": "data ",
-        "html": ""
+        "html": "9"
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.113",
+        "text": "48.372",
         "className": "data ",
-        "html": "29.113"
+        "html": "48.372"
       },
       {
-        "text": "7",
+        "text": "16",
         "className": "data ",
-        "html": "7"
+        "html": "16"
       },
       {
         "text": "Running",
@@ -973,9 +973,9 @@
         "html": "Running"
       },
       {
-        "text": "23",
+        "text": "26",
         "className": "data ",
-        "html": "23"
+        "html": "26"
       },
       {
         "text": "-",
@@ -983,9 +983,9 @@
         "html": "-"
       },
       {
-        "text": "",
+        "text": "Team Aero",
         "className": " ",
-        "html": ""
+        "html": "Team Aero"
       },
       {
         "text": "",
@@ -1010,14 +1010,9 @@
         "html": "<a href=\"driver_stats.php?driver_id=107125&amp;season_id=28433\">Mark <span>Sanchez2</span></a>"
       },
       {
-        "text": "-8.271",
+        "text": "-13.235",
         "className": "data ",
-        "html": "-8.271"
-      },
-      {
-        "text": "27",
-        "className": "data ",
-        "html": "27"
+        "html": "-13.235"
       },
       {
         "text": "25",
@@ -1025,24 +1020,14 @@
         "html": "25"
       },
       {
-        "text": "2",
-        "className": "bns rgt ",
-        "html": "2"
+        "text": "25",
+        "className": "data ",
+        "html": "25"
       },
       {
         "text": "",
-        "className": "data ",
+        "className": "bns rgt ",
         "html": ""
-      },
-      {
-        "text": "200",
-        "className": "data ",
-        "html": "200"
-      },
-      {
-        "text": "29.260",
-        "className": "data ",
-        "html": "29.260"
       },
       {
         "text": "3",
@@ -1050,19 +1035,34 @@
         "html": "3"
       },
       {
+        "text": "113",
+        "className": "data ",
+        "html": "113"
+      },
+      {
+        "text": "48.348",
+        "className": "data ",
+        "html": "48.348"
+      },
+      {
+        "text": "4",
+        "className": "data ",
+        "html": "4"
+      },
+      {
         "text": "Running",
         "className": " ",
         "html": "Running"
       },
       {
-        "text": "8",
+        "text": "22",
         "className": "data ",
-        "html": "8"
+        "html": "22"
       },
       {
-        "text": "28.927",
+        "text": "1:02.271",
         "className": "data ",
-        "html": "28.927"
+        "html": "1:02.271"
       },
       {
         "text": "First 2 Engage Motorsports",
@@ -1082,19 +1082,19 @@
         "html": "13"
       },
       {
-        "text": "24",
+        "text": "25",
         "className": "data pinned-left",
-        "html": "24"
+        "html": "25"
       },
       {
-        "text": "JOSE MEDINA3",
+        "text": "GREGG CARR",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=45533&amp;season_id=28433\">Jose <span>Medina3</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=67242&amp;season_id=28433\">Gregg <span>Carr</span></a>"
       },
       {
-        "text": "-8.582",
+        "text": "-13.397",
         "className": "data ",
-        "html": "-8.582"
+        "html": "-13.397"
       },
       {
         "text": "24",
@@ -1117,19 +1117,19 @@
         "html": ""
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.420",
+        "text": "48.462",
         "className": "data ",
-        "html": "29.420"
+        "html": "48.462"
       },
       {
-        "text": "1",
+        "text": "12",
         "className": "data ",
-        "html": "1"
+        "html": "12"
       },
       {
         "text": "Running",
@@ -1137,14 +1137,14 @@
         "html": "Running"
       },
       {
-        "text": "4",
+        "text": "17",
         "className": "data ",
-        "html": "4"
+        "html": "17"
       },
       {
-        "text": "28.879",
+        "text": "53.300",
         "className": "data ",
-        "html": "28.879"
+        "html": "53.300"
       },
       {
         "text": "First 2 Engage Motorsports",
@@ -1164,19 +1164,24 @@
         "html": "14"
       },
       {
-        "text": "30",
+        "text": "45",
         "className": "data pinned-left",
-        "html": "30"
+        "html": "45"
       },
       {
-        "text": "WILLIAM OWENS2",
+        "text": "JOHNNY SHADE",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=108878&amp;season_id=28433\">William <span>Owens2</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=41058&amp;season_id=28433\">Johnny <span>Shade</span></a>"
       },
       {
-        "text": "-10.710",
+        "text": "-22.186",
         "className": "data ",
-        "html": "-10.710"
+        "html": "-22.186"
+      },
+      {
+        "text": "24",
+        "className": "data ",
+        "html": "24"
       },
       {
         "text": "23",
@@ -1184,34 +1189,29 @@
         "html": "23"
       },
       {
-        "text": "23",
-        "className": "data ",
-        "html": "23"
-      },
-      {
-        "text": "",
+        "text": "1",
         "className": "bns rgt ",
-        "html": ""
+        "html": "1"
       },
       {
-        "text": "",
+        "text": "2",
         "className": "data ",
-        "html": ""
+        "html": "2"
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.198",
+        "text": "48.150",
         "className": "data ",
-        "html": "29.198"
+        "html": "<span class=\"best\">48.150</span>"
       },
       {
-        "text": "0",
+        "text": "20",
         "className": "data ",
-        "html": "0"
+        "html": "20"
       },
       {
         "text": "Running",
@@ -1219,19 +1219,19 @@
         "html": "Running"
       },
       {
-        "text": "12",
+        "text": "8",
         "className": "data ",
-        "html": "12"
+        "html": "8"
       },
       {
-        "text": "28.972",
+        "text": "53.256",
         "className": "data ",
-        "html": "28.972"
+        "html": "53.256"
       },
       {
-        "text": "ZeroX Sim Racing",
+        "text": "DIG Team 2",
         "className": " ",
-        "html": "ZeroX Sim Racing"
+        "html": "DIG Team 2"
       },
       {
         "text": "",
@@ -1246,59 +1246,19 @@
         "html": "15"
       },
       {
-        "text": "38",
+        "text": "97",
         "className": "data pinned-left",
-        "html": "38"
+        "html": "97"
       },
       {
-        "text": "BLAKE HAUSCHILD",
+        "text": "KYLE HOLDEN2",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=116337&amp;season_id=28433\">Blake <span>Hauschild</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=63855&amp;season_id=28433\">Kyle <span>Holden2</span></a>"
       },
       {
-        "text": "-12.351",
+        "text": "-25.152",
         "className": "data ",
-        "html": "-12.351"
-      },
-      {
-        "text": "22",
-        "className": "data ",
-        "html": "22"
-      },
-      {
-        "text": "22",
-        "className": "data ",
-        "html": "22"
-      },
-      {
-        "text": "",
-        "className": "bns rgt ",
-        "html": ""
-      },
-      {
-        "text": "",
-        "className": "data ",
-        "html": ""
-      },
-      {
-        "text": "200",
-        "className": "data ",
-        "html": "200"
-      },
-      {
-        "text": "29.187",
-        "className": "data ",
-        "html": "29.187"
-      },
-      {
-        "text": "1",
-        "className": "data ",
-        "html": "1"
-      },
-      {
-        "text": "Running",
-        "className": " ",
-        "html": "Running"
+        "html": "-25.152"
       },
       {
         "text": "25",
@@ -1306,292 +1266,29 @@
         "html": "25"
       },
       {
-        "text": "-",
+        "text": "22",
         "className": "data ",
-        "html": "-"
-      },
-      {
-        "text": "ZeroX Sim Racing",
-        "className": " ",
-        "html": "ZeroX Sim Racing"
-      },
-      {
-        "text": "",
-        "className": "ctr ",
-        "html": ""
-      }
-    ],
-    [
-      {
-        "text": "16",
-        "className": "data pinned-left",
-        "html": "16"
-      },
-      {
-        "text": "11",
-        "className": "data pinned-left",
-        "html": "11"
-      },
-      {
-        "text": "PAUL GALLIMORE",
-        "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=71745&amp;season_id=28433\">Paul <span>Gallimore</span></a>"
-      },
-      {
-        "text": "-13.984",
-        "className": "data ",
-        "html": "-13.984"
-      },
-      {
-        "text": "31",
-        "className": "data ",
-        "html": "31"
-      },
-      {
-        "text": "21",
-        "className": "data ",
-        "html": "21"
-      },
-      {
-        "text": "10",
-        "className": "bns rgt ",
-        "html": "10"
-      },
-      {
-        "text": "14",
-        "className": "data ",
-        "html": "14"
-      },
-      {
-        "text": "200",
-        "className": "data ",
-        "html": "200"
-      },
-      {
-        "text": "29.046",
-        "className": "data ",
-        "html": "<span class=\"best\">29.046</span>"
-      },
-      {
-        "text": "14",
-        "className": "data ",
-        "html": "14"
-      },
-      {
-        "text": "Running",
-        "className": " ",
-        "html": "Running"
+        "html": "22"
       },
       {
         "text": "3",
-        "className": "data ",
+        "className": "bns rgt ",
         "html": "3"
       },
       {
-        "text": "28.864",
-        "className": "data ",
-        "html": "28.864"
-      },
-      {
-        "text": "Blowin' Trannies",
-        "className": " ",
-        "html": "Blowin' Trannies"
-      },
-      {
-        "text": "",
-        "className": "ctr ",
-        "html": ""
-      }
-    ],
-    [
-      {
-        "text": "17",
-        "className": "data pinned-left",
-        "html": "17"
-      },
-      {
-        "text": "44",
-        "className": "data pinned-left",
-        "html": "44"
-      },
-      {
-        "text": "SEAN ROGERS4",
-        "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=62760&amp;season_id=28433\">Sean <span>Rogers4</span></a>"
-      },
-      {
-        "text": "-16.133",
-        "className": "data ",
-        "html": "-16.133"
-      },
-      {
-        "text": "26",
-        "className": "data ",
-        "html": "26"
-      },
-      {
-        "text": "20",
-        "className": "data ",
-        "html": "20"
-      },
-      {
-        "text": "6",
-        "className": "bns rgt ",
-        "html": "6"
-      },
-      {
-        "text": "21",
-        "className": "data ",
-        "html": "21"
-      },
-      {
-        "text": "200",
-        "className": "data ",
-        "html": "200"
-      },
-      {
-        "text": "29.195",
-        "className": "data ",
-        "html": "29.195"
-      },
-      {
-        "text": "10",
-        "className": "data ",
-        "html": "10"
-      },
-      {
-        "text": "Running",
-        "className": " ",
-        "html": "Running"
-      },
-      {
-        "text": "13",
-        "className": "data ",
-        "html": "13"
-      },
-      {
-        "text": "28.982",
-        "className": "data ",
-        "html": "28.982"
-      },
-      {
-        "text": "Blowin' Trannies",
-        "className": " ",
-        "html": "Blowin' Trannies"
-      },
-      {
-        "text": "",
-        "className": "ctr ",
-        "html": ""
-      }
-    ],
-    [
-      {
-        "text": "18",
-        "className": "data pinned-left",
-        "html": "18"
-      },
-      {
-        "text": "19",
-        "className": "data pinned-left",
-        "html": "19"
-      },
-      {
-        "text": "COREY MOHR",
-        "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=95721&amp;season_id=28433\">Corey <span>Mohr</span></a>"
-      },
-      {
-        "text": "-27.059",
-        "className": "data ",
-        "html": "-27.059"
-      },
-      {
-        "text": "19",
-        "className": "data ",
-        "html": "19"
-      },
-      {
-        "text": "19",
-        "className": "data ",
-        "html": "19"
-      },
-      {
-        "text": "",
-        "className": "bns rgt ",
-        "html": ""
-      },
-      {
         "text": "",
         "className": "data ",
         "html": ""
       },
       {
-        "text": "200",
+        "text": "113",
         "className": "data ",
-        "html": "200"
+        "html": "113"
       },
       {
-        "text": "29.462",
+        "text": "48.335",
         "className": "data ",
-        "html": "29.462"
-      },
-      {
-        "text": "4",
-        "className": "data ",
-        "html": "4"
-      },
-      {
-        "text": "Running",
-        "className": " ",
-        "html": "Running"
-      },
-      {
-        "text": "11",
-        "className": "data ",
-        "html": "11"
-      },
-      {
-        "text": "28.962",
-        "className": "data ",
-        "html": "28.962"
-      },
-      {
-        "text": "DIG Team 1",
-        "className": " ",
-        "html": "DIG Team 1"
-      },
-      {
-        "text": "",
-        "className": "ctr ",
-        "html": ""
-      }
-    ],
-    [
-      {
-        "text": "19",
-        "className": "data pinned-left",
-        "html": "19"
-      },
-      {
-        "text": "87",
-        "className": "data pinned-left",
-        "html": "87"
-      },
-      {
-        "text": "CHRIS DAVIS18",
-        "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=72423&amp;season_id=28433\">Chris <span>Davis18</span></a>"
-      },
-      {
-        "text": "-1L",
-        "className": "data ",
-        "html": "-1L"
-      },
-      {
-        "text": "20",
-        "className": "data ",
-        "html": "20"
+        "html": "48.335"
       },
       {
         "text": "18",
@@ -1599,31 +1296,6 @@
         "html": "18"
       },
       {
-        "text": "2",
-        "className": "bns rgt ",
-        "html": "2"
-      },
-      {
-        "text": "",
-        "className": "data ",
-        "html": ""
-      },
-      {
-        "text": "199",
-        "className": "data ",
-        "html": "199"
-      },
-      {
-        "text": "29.395",
-        "className": "data ",
-        "html": "29.395"
-      },
-      {
-        "text": "3",
-        "className": "data ",
-        "html": "3"
-      },
-      {
         "text": "Running",
         "className": " ",
         "html": "Running"
@@ -1634,9 +1306,9 @@
         "html": "21"
       },
       {
-        "text": "-",
+        "text": "53.416",
         "className": "data ",
-        "html": "-"
+        "html": "53.416"
       },
       {
         "text": "Team Aero",
@@ -1651,54 +1323,39 @@
     ],
     [
       {
-        "text": "20",
+        "text": "16",
         "className": "data pinned-left",
-        "html": "20"
+        "html": "16"
       },
       {
-        "text": "20",
+        "text": "00",
         "className": "data pinned-left",
-        "html": "20"
+        "html": "00"
       },
       {
-        "text": "NIGEL CHRISTIANSON",
+        "text": "MATT L COX",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=59189&amp;season_id=28433\">Nigel <span>Christianson</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=75856&amp;season_id=28433\">Matt L <span>Cox</span></a>"
       },
       {
-        "text": "-1L",
+        "text": "-30.111",
         "className": "data ",
-        "html": "-1L"
+        "html": "-30.111"
       },
       {
-        "text": "22",
+        "text": "34",
         "className": "data ",
-        "html": "22"
+        "html": "34"
       },
       {
-        "text": "17",
+        "text": "21",
         "className": "data ",
-        "html": "17"
+        "html": "21"
       },
       {
-        "text": "5",
+        "text": "13",
         "className": "bns rgt ",
-        "html": "5"
-      },
-      {
-        "text": "",
-        "className": "data ",
-        "html": ""
-      },
-      {
-        "text": "199",
-        "className": "data ",
-        "html": "199"
-      },
-      {
-        "text": "29.200",
-        "className": "data ",
-        "html": "29.200"
+        "html": "13"
       },
       {
         "text": "4",
@@ -1706,173 +1363,71 @@
         "html": "4"
       },
       {
-        "text": "Running",
-        "className": " ",
-        "html": "Running"
-      },
-      {
-        "text": "17",
+        "text": "113",
         "className": "data ",
-        "html": "17"
+        "html": "113"
       },
       {
-        "text": "29.101",
+        "text": "48.528",
         "className": "data ",
-        "html": "29.101"
-      },
-      {
-        "text": "DIG Team 1",
-        "className": " ",
-        "html": "DIG Team 1"
-      },
-      {
-        "text": "",
-        "className": "ctr ",
-        "html": ""
-      }
-    ],
-    [
-      {
-        "text": "21",
-        "className": "data pinned-left",
-        "html": "21"
-      },
-      {
-        "text": "23",
-        "className": "data pinned-left",
-        "html": "23"
-      },
-      {
-        "text": "TIMOTHY HARPER",
-        "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=57727&amp;season_id=28433\">Timothy <span>Harper</span></a>"
-      },
-      {
-        "text": "-39L",
-        "className": "data ",
-        "html": "-39L"
-      },
-      {
-        "text": "16",
-        "className": "data ",
-        "html": "16"
-      },
-      {
-        "text": "16",
-        "className": "data ",
-        "html": "16"
-      },
-      {
-        "text": "",
-        "className": "bns rgt ",
-        "html": ""
-      },
-      {
-        "text": "",
-        "className": "data ",
-        "html": ""
-      },
-      {
-        "text": "161",
-        "className": "data ",
-        "html": "161"
-      },
-      {
-        "text": "29.133",
-        "className": "data ",
-        "html": "29.133"
-      },
-      {
-        "text": "9",
-        "className": "data ",
-        "html": "9"
-      },
-      {
-        "text": "Running",
-        "className": " ",
-        "html": "Running"
-      },
-      {
-        "text": "2",
-        "className": "data ",
-        "html": "2"
-      },
-      {
-        "text": "28.849",
-        "className": "data ",
-        "html": "28.849"
-      },
-      {
-        "text": "DIG Team 2",
-        "className": " ",
-        "html": "DIG Team 2"
-      },
-      {
-        "text": "",
-        "className": "ctr ",
-        "html": ""
-      }
-    ],
-    [
-      {
-        "text": "22",
-        "className": "data pinned-left",
-        "html": "22"
-      },
-      {
-        "text": "22",
-        "className": "data pinned-left",
-        "html": "22"
-      },
-      {
-        "text": "ALEX MURRAY",
-        "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=8841&amp;season_id=28433\">Alex <span>Murray</span></a>"
-      },
-      {
-        "text": "-47L",
-        "className": "data ",
-        "html": "-47L"
-      },
-      {
-        "text": "27",
-        "className": "data ",
-        "html": "27"
-      },
-      {
-        "text": "15",
-        "className": "data ",
-        "html": "15"
+        "html": "48.528"
       },
       {
         "text": "12",
-        "className": "bns rgt ",
+        "className": "data ",
         "html": "12"
       },
       {
-        "text": "",
-        "className": "data ",
-        "html": ""
-      },
-      {
-        "text": "153",
-        "className": "data ",
-        "html": "153"
-      },
-      {
-        "text": "29.472",
-        "className": "data ",
-        "html": "29.472"
-      },
-      {
-        "text": "2",
-        "className": "data ",
-        "html": "2"
-      },
-      {
-        "text": "Disconnected",
+        "text": "Running",
         "className": " ",
-        "html": "Disconnected"
+        "html": "Running"
+      },
+      {
+        "text": "4",
+        "className": "data ",
+        "html": "4"
+      },
+      {
+        "text": "53.222",
+        "className": "data ",
+        "html": "53.222"
+      },
+      {
+        "text": "Blowin' Trannies",
+        "className": " ",
+        "html": "Blowin' Trannies"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "17",
+        "className": "data pinned-left",
+        "html": "17"
+      },
+      {
+        "text": "7",
+        "className": "data pinned-left",
+        "html": "7"
+      },
+      {
+        "text": "MATT METTLER",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=50354&amp;season_id=28433\">Matt <span>Mettler</span></a>"
+      },
+      {
+        "text": "-1L",
+        "className": "data ",
+        "html": "-1L"
+      },
+      {
+        "text": "21",
+        "className": "data ",
+        "html": "21"
       },
       {
         "text": "20",
@@ -1880,14 +1435,49 @@
         "html": "20"
       },
       {
+        "text": "1",
+        "className": "bns rgt ",
+        "html": "1"
+      },
+      {
+        "text": "2",
+        "className": "data ",
+        "html": "2"
+      },
+      {
+        "text": "112",
+        "className": "data ",
+        "html": "112"
+      },
+      {
+        "text": "48.384",
+        "className": "data ",
+        "html": "48.384"
+      },
+      {
+        "text": "8",
+        "className": "data ",
+        "html": "8"
+      },
+      {
+        "text": "Running",
+        "className": " ",
+        "html": "Running"
+      },
+      {
+        "text": "28",
+        "className": "data ",
+        "html": "28"
+      },
+      {
         "text": "-",
         "className": "data ",
         "html": "-"
       },
       {
-        "text": "DIG Team 2",
+        "text": "Redline Racing",
         "className": " ",
-        "html": "DIG Team 2"
+        "html": "Redline Racing"
       },
       {
         "text": "",
@@ -1897,34 +1487,198 @@
     ],
     [
       {
-        "text": "23",
+        "text": "18",
         "className": "data pinned-left",
-        "html": "23"
+        "html": "18"
       },
       {
-        "text": "42",
+        "text": "30",
         "className": "data pinned-left",
-        "html": "42"
+        "html": "30"
       },
       {
-        "text": "JIM TREAT",
+        "text": "WILLIAM OWENS2",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=100494&amp;season_id=28433\">Jim <span>Treat</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=108878&amp;season_id=28433\">William <span>Owens2</span></a>"
       },
       {
-        "text": "-89L",
+        "text": "-1L",
         "className": "data ",
-        "html": "-89L"
+        "html": "-1L"
+      },
+      {
+        "text": "19",
+        "className": "data ",
+        "html": "19"
+      },
+      {
+        "text": "19",
+        "className": "data ",
+        "html": "19"
+      },
+      {
+        "text": "",
+        "className": "bns rgt ",
+        "html": ""
+      },
+      {
+        "text": "",
+        "className": "data ",
+        "html": ""
+      },
+      {
+        "text": "112",
+        "className": "data ",
+        "html": "112"
+      },
+      {
+        "text": "48.459",
+        "className": "data ",
+        "html": "48.459"
+      },
+      {
+        "text": "12",
+        "className": "data ",
+        "html": "12"
+      },
+      {
+        "text": "Running",
+        "className": " ",
+        "html": "Running"
+      },
+      {
+        "text": "25",
+        "className": "data ",
+        "html": "25"
+      },
+      {
+        "text": "-",
+        "className": "data ",
+        "html": "-"
+      },
+      {
+        "text": "ZeroX Sim Racing",
+        "className": " ",
+        "html": "ZeroX Sim Racing"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "19",
+        "className": "data pinned-left",
+        "html": "19"
+      },
+      {
+        "text": "84",
+        "className": "data pinned-left",
+        "html": "84"
+      },
+      {
+        "text": "CHRIS CORNETT",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=96865&amp;season_id=28433\">Chris <span>Cornett</span></a>"
+      },
+      {
+        "text": "-1L",
+        "className": "data ",
+        "html": "-1L"
+      },
+      {
+        "text": "32",
+        "className": "data ",
+        "html": "32"
+      },
+      {
+        "text": "18",
+        "className": "data ",
+        "html": "18"
       },
       {
         "text": "14",
-        "className": "data ",
+        "className": "bns rgt ",
         "html": "14"
       },
       {
-        "text": "14",
+        "text": "7",
         "className": "data ",
-        "html": "14"
+        "html": "7"
+      },
+      {
+        "text": "112",
+        "className": "data ",
+        "html": "112"
+      },
+      {
+        "text": "48.337",
+        "className": "data ",
+        "html": "48.337"
+      },
+      {
+        "text": "16",
+        "className": "data ",
+        "html": "16"
+      },
+      {
+        "text": "Running",
+        "className": " ",
+        "html": "Running"
+      },
+      {
+        "text": "24",
+        "className": "data ",
+        "html": "24"
+      },
+      {
+        "text": "-",
+        "className": "data ",
+        "html": "-"
+      },
+      {
+        "text": "ZeroX Sim Racing",
+        "className": " ",
+        "html": "ZeroX Sim Racing"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "20",
+        "className": "data pinned-left",
+        "html": "20"
+      },
+      {
+        "text": "24",
+        "className": "data pinned-left",
+        "html": "24"
+      },
+      {
+        "text": "JOSE MEDINA3",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=45533&amp;season_id=28433\">Jose <span>Medina3</span></a>"
+      },
+      {
+        "text": "-2L",
+        "className": "data ",
+        "html": "-2L"
+      },
+      {
+        "text": "17",
+        "className": "data ",
+        "html": "17"
+      },
+      {
+        "text": "17",
+        "className": "data ",
+        "html": "17"
       },
       {
         "text": "",
@@ -1942,14 +1696,14 @@
         "html": "111"
       },
       {
-        "text": "29.327",
+        "text": "48.647",
         "className": "data ",
-        "html": "29.327"
+        "html": "48.647"
       },
       {
-        "text": "0",
+        "text": "4",
         "className": "data ",
-        "html": "0"
+        "html": "4"
       },
       {
         "text": "Running",
@@ -1957,19 +1711,265 @@
         "html": "Running"
       },
       {
-        "text": "9",
+        "text": "13",
         "className": "data ",
+        "html": "13"
+      },
+      {
+        "text": "53.267",
+        "className": "data ",
+        "html": "53.267"
+      },
+      {
+        "text": "First 2 Engage Motorsports",
+        "className": " ",
+        "html": "First 2 Engage Motorsports"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "21",
+        "className": "data pinned-left",
+        "html": "21"
+      },
+      {
+        "text": "33",
+        "className": "data pinned-left",
+        "html": "33"
+      },
+      {
+        "text": "CHRIS VINSON2",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=76900&amp;season_id=28433\">Chris <span>Vinson2</span></a>"
+      },
+      {
+        "text": "-15L",
+        "className": "data ",
+        "html": "-15L"
+      },
+      {
+        "text": "28",
+        "className": "data ",
+        "html": "28"
+      },
+      {
+        "text": "16",
+        "className": "data ",
+        "html": "16"
+      },
+      {
+        "text": "12",
+        "className": "bns rgt ",
+        "html": "12"
+      },
+      {
+        "text": "11",
+        "className": "data ",
+        "html": "11"
+      },
+      {
+        "text": "98",
+        "className": "data ",
+        "html": "98"
+      },
+      {
+        "text": "48.696",
+        "className": "data ",
+        "html": "48.696"
+      },
+      {
+        "text": "14",
+        "className": "data ",
+        "html": "14"
+      },
+      {
+        "text": "Running",
+        "className": " ",
+        "html": "Running"
+      },
+      {
+        "text": "16",
+        "className": "data ",
+        "html": "16"
+      },
+      {
+        "text": "53.290",
+        "className": "data ",
+        "html": "53.290"
+      },
+      {
+        "text": "Beast Mode Performance",
+        "className": " ",
+        "html": "Beast Mode Performance"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "22",
+        "className": "data pinned-left",
+        "html": "22"
+      },
+      {
+        "text": "99",
+        "className": "data pinned-left",
+        "html": "99"
+      },
+      {
+        "text": "KENNY REEL",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=76958&amp;season_id=28433\">Kenny <span>Reel</span></a>"
+      },
+      {
+        "text": "-26L",
+        "className": "data ",
+        "html": "-26L"
+      },
+      {
+        "text": "24",
+        "className": "data ",
+        "html": "24"
+      },
+      {
+        "text": "15",
+        "className": "data ",
+        "html": "15"
+      },
+      {
+        "text": "9",
+        "className": "bns rgt ",
         "html": "9"
       },
       {
-        "text": "28.935",
+        "text": "3",
         "className": "data ",
-        "html": "28.935"
+        "html": "3"
       },
       {
-        "text": "ZeroX Sim Racing",
+        "text": "87",
+        "className": "data ",
+        "html": "87"
+      },
+      {
+        "text": "48.506",
+        "className": "data ",
+        "html": "48.506"
+      },
+      {
+        "text": "12",
+        "className": "data ",
+        "html": "12"
+      },
+      {
+        "text": "Disconnected",
         "className": " ",
-        "html": "ZeroX Sim Racing"
+        "html": "Disconnected"
+      },
+      {
+        "text": "11",
+        "className": "data ",
+        "html": "11"
+      },
+      {
+        "text": "53.259",
+        "className": "data ",
+        "html": "53.259"
+      },
+      {
+        "text": "Redline Racing",
+        "className": " ",
+        "html": "Redline Racing"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "23",
+        "className": "data pinned-left",
+        "html": "23"
+      },
+      {
+        "text": "6",
+        "className": "data pinned-left",
+        "html": "6"
+      },
+      {
+        "text": "KODY NEAGLES",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=66005&amp;season_id=28433\">Kody <span>Neagles</span></a>"
+      },
+      {
+        "text": "-34L",
+        "className": "data ",
+        "html": "-34L"
+      },
+      {
+        "text": "14",
+        "className": "data ",
+        "html": "14"
+      },
+      {
+        "text": "14",
+        "className": "data ",
+        "html": "14"
+      },
+      {
+        "text": "",
+        "className": "bns rgt ",
+        "html": ""
+      },
+      {
+        "text": "23",
+        "className": "data ",
+        "html": "23"
+      },
+      {
+        "text": "79",
+        "className": "data ",
+        "html": "79"
+      },
+      {
+        "text": "48.231",
+        "className": "data ",
+        "html": "48.231"
+      },
+      {
+        "text": "8",
+        "className": "data ",
+        "html": "8"
+      },
+      {
+        "text": "Disconnected",
+        "className": " ",
+        "html": "Disconnected"
+      },
+      {
+        "text": "1",
+        "className": "data ",
+        "html": "1"
+      },
+      {
+        "text": "53.182",
+        "className": "data ",
+        "html": "<span class=\"best\">53.182</span>"
+      },
+      {
+        "text": "Redline Racing",
+        "className": " ",
+        "html": "Redline Racing"
       },
       {
         "text": "",
@@ -1994,9 +1994,9 @@
         "html": "<a href=\"driver_stats.php?driver_id=53215&amp;season_id=28433\">Matt <span>Mackin</span></a>"
       },
       {
-        "text": "-108L",
+        "text": "-36L",
         "className": "data ",
-        "html": "-108L"
+        "html": "-36L"
       },
       {
         "text": "13",
@@ -2019,19 +2019,19 @@
         "html": ""
       },
       {
-        "text": "92",
+        "text": "77",
         "className": "data ",
-        "html": "92"
+        "html": "77"
       },
       {
-        "text": "29.554",
+        "text": "48.371",
         "className": "data ",
-        "html": "29.554"
+        "html": "48.371"
       },
       {
-        "text": "7",
+        "text": "16",
         "className": "data ",
-        "html": "7"
+        "html": "16"
       },
       {
         "text": "Disconnected",
@@ -2039,14 +2039,14 @@
         "html": "Disconnected"
       },
       {
-        "text": "19",
+        "text": "27",
         "className": "data ",
-        "html": "19"
+        "html": "27"
       },
       {
-        "text": "29.441",
+        "text": "-",
         "className": "data ",
-        "html": "29.441"
+        "html": "-"
       },
       {
         "text": "",
@@ -2066,19 +2066,19 @@
         "html": "25"
       },
       {
-        "text": "7",
+        "text": "11",
         "className": "data pinned-left",
-        "html": "7"
+        "html": "11"
       },
       {
-        "text": "MATT METTLER",
+        "text": "PAUL GALLIMORE",
         "className": "bold nowrap driver_name pinned-left",
-        "html": "<a href=\"driver_stats.php?driver_id=50354&amp;season_id=28433\">Matt <span>Mettler</span></a>"
+        "html": "<a href=\"driver_stats.php?driver_id=71745&amp;season_id=28433\">Paul <span>Gallimore</span></a>"
       },
       {
-        "text": "-124L",
+        "text": "-50L",
         "className": "data ",
-        "html": "-124L"
+        "html": "-50L"
       },
       {
         "text": "12",
@@ -2096,24 +2096,188 @@
         "html": ""
       },
       {
+        "text": "1",
+        "className": "data ",
+        "html": "1"
+      },
+      {
+        "text": "63",
+        "className": "data ",
+        "html": "63"
+      },
+      {
+        "text": "48.399",
+        "className": "data ",
+        "html": "48.399"
+      },
+      {
+        "text": "8",
+        "className": "data ",
+        "html": "8"
+      },
+      {
+        "text": "Running",
+        "className": " ",
+        "html": "Running"
+      },
+      {
+        "text": "9",
+        "className": "data ",
+        "html": "9"
+      },
+      {
+        "text": "53.257",
+        "className": "data ",
+        "html": "53.257"
+      },
+      {
+        "text": "Blowin' Trannies",
+        "className": " ",
+        "html": "Blowin' Trannies"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "26",
+        "className": "data pinned-left",
+        "html": "26"
+      },
+      {
+        "text": "18",
+        "className": "data pinned-left",
+        "html": "18"
+      },
+      {
+        "text": "BLANE WILSON",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=73102&amp;season_id=28433\">Blane <span>Wilson</span></a>"
+      },
+      {
+        "text": "-70L",
+        "className": "data ",
+        "html": "-70L"
+      },
+      {
+        "text": "18",
+        "className": "data ",
+        "html": "18"
+      },
+      {
+        "text": "11",
+        "className": "data ",
+        "html": "11"
+      },
+      {
+        "text": "7",
+        "className": "bns rgt ",
+        "html": "7"
+      },
+      {
         "text": "",
         "className": "data ",
         "html": ""
       },
       {
-        "text": "76",
+        "text": "43",
         "className": "data ",
-        "html": "76"
+        "html": "43"
       },
       {
-        "text": "29.607",
+        "text": "48.264",
         "className": "data ",
-        "html": "29.607"
+        "html": "48.264"
       },
       {
-        "text": "5",
+        "text": "8",
         "className": "data ",
-        "html": "5"
+        "html": "8"
+      },
+      {
+        "text": "Running",
+        "className": " ",
+        "html": "Running"
+      },
+      {
+        "text": "14",
+        "className": "data ",
+        "html": "14"
+      },
+      {
+        "text": "53.288",
+        "className": "data ",
+        "html": "53.288"
+      },
+      {
+        "text": "DIG Team 1",
+        "className": " ",
+        "html": "DIG Team 1"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "27",
+        "className": "data pinned-left",
+        "html": "27"
+      },
+      {
+        "text": "23",
+        "className": "data pinned-left",
+        "html": "23"
+      },
+      {
+        "text": "TIMOTHY HARPER",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=57727&amp;season_id=28433\">Timothy <span>Harper</span></a>"
+      },
+      {
+        "text": "-70L",
+        "className": "data ",
+        "html": "-70L"
+      },
+      {
+        "text": "10",
+        "className": "data ",
+        "html": "10"
+      },
+      {
+        "text": "10",
+        "className": "data ",
+        "html": "10"
+      },
+      {
+        "text": "",
+        "className": "bns rgt ",
+        "html": ""
+      },
+      {
+        "text": "1",
+        "className": "data ",
+        "html": "1"
+      },
+      {
+        "text": "43",
+        "className": "data ",
+        "html": "43"
+      },
+      {
+        "text": "48.605",
+        "className": "data ",
+        "html": "48.605"
+      },
+      {
+        "text": "6",
+        "className": "data ",
+        "html": "6"
       },
       {
         "text": "Disconnected",
@@ -2121,19 +2285,101 @@
         "html": "Disconnected"
       },
       {
-        "text": "16",
+        "text": "12",
         "className": "data ",
-        "html": "16"
+        "html": "12"
       },
       {
-        "text": "29.053",
+        "text": "53.259",
         "className": "data ",
-        "html": "29.053"
+        "html": "53.259"
       },
       {
-        "text": "Redline Racing",
+        "text": "DIG Team 2",
         "className": " ",
-        "html": "Redline Racing"
+        "html": "DIG Team 2"
+      },
+      {
+        "text": "",
+        "className": "ctr ",
+        "html": ""
+      }
+    ],
+    [
+      {
+        "text": "28",
+        "className": "data pinned-left",
+        "html": "28"
+      },
+      {
+        "text": "89",
+        "className": "data pinned-left",
+        "html": "89"
+      },
+      {
+        "text": "TREVOR ASWARNAUTH",
+        "className": "bold nowrap driver_name pinned-left",
+        "html": "<a href=\"driver_stats.php?driver_id=10188&amp;season_id=28433\">Trevor <span>Aswarnauth</span></a>"
+      },
+      {
+        "text": "-99L",
+        "className": "data ",
+        "html": "-99L"
+      },
+      {
+        "text": "9",
+        "className": "data ",
+        "html": "9"
+      },
+      {
+        "text": "9",
+        "className": "data ",
+        "html": "9"
+      },
+      {
+        "text": "",
+        "className": "bns rgt ",
+        "html": ""
+      },
+      {
+        "text": "",
+        "className": "data ",
+        "html": ""
+      },
+      {
+        "text": "14",
+        "className": "data ",
+        "html": "14"
+      },
+      {
+        "text": "48.612",
+        "className": "data ",
+        "html": "48.612"
+      },
+      {
+        "text": "0",
+        "className": "data ",
+        "html": "0"
+      },
+      {
+        "text": "Disconnected",
+        "className": " ",
+        "html": "Disconnected"
+      },
+      {
+        "text": "2",
+        "className": "data ",
+        "html": "2"
+      },
+      {
+        "text": "53.204",
+        "className": "data ",
+        "html": "53.204"
+      },
+      {
+        "text": "",
+        "className": " ",
+        "html": ""
       },
       {
         "text": "",
