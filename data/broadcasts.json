@@ -1,21 +1,34 @@
 {
   "schemaVersion": 1,
   "playlistId": "PLjydJbqa-gB6SKdCrgnkAoI4wZUbMjemU",
-  "lastUpdated": "2026-11-12T00:55:23.978Z",
+  "lastUpdated": "2026-11-12T04:17:04.026Z",
   "featured": {
     "videoId": "nnXeWvErt64",
     "title": "🔴 Season Finale 300 | Moonshiners Racing League | Homestead-Miami | iRacing",
     "description": "🏁 LIVE at 8:00 PM ET! The GMD Janitorial Cup Series, part of the Moonshiners Racing League, heads to Homestead-Miami Speedway. Who will win the title?\n-- EVENT DETAILS --\n🔹 League: Moonshiners Racing League (MRL)\n🔹 Series: GMD Janitorial Cup Series\n🔹 Event: Season Finale 300\n🔹 Track: Homestead-Miami Speedway\n🔹 Game: iRacing\n🔹 Start Time: 8:00 PM ET\n\n-- ABOUT US --\nPrecision Entertainment (PE) is where broadcast-quality esports meets race-craft. We provide full event coverage with professional commentary and graphics for sim racing leagues. Whether you're here to watch your favorite drivers, improve your own race-craft, or just enjoy the action, you're in the right paddock.\n\nWatch. Learn. Go faster.\n\n-- CONNECT WITH US --\n🌐 Website: https://watchprecision.live\n➡️ SUBSCRIBE for more live sim racing action: @watchpes\n👍 LIKE the video to help support the channel and the league!\n💬 COMMENT below with your favorite moment from the race!\n\nLearn more about the Moonshiners Racing League: https://discord.gg/pq7g2vGbwK\n\n#iRacing #SimRacing #Esports #MoonshinersRacingLeague #VirtualRacing #NASCARiRacing",
-    "status": "upcoming",
+    "status": "replay",
     "thumbnail": "https://i.ytimg.com/vi/nnXeWvErt64/maxresdefault.jpg?v=6af4a988",
     "publishedAt": "2026-11-11T17:43:12Z",
     "scheduledStartTime": "2026-11-12T01:00:00Z",
-    "actualStartTime": null,
-    "actualEndTime": null,
+    "actualStartTime": "2026-11-12T00:59:32Z",
+    "actualEndTime": "2026-11-12T03:43:35Z",
     "embedUrl": "https://www.youtube.com/embed/nnXeWvErt64",
     "watchUrl": "https://www.youtube.com/watch?v=nnXeWvErt64"
   },
   "recentReplays": [
+    {
+      "videoId": "nnXeWvErt64",
+      "title": "🔴 Season Finale 300 | Moonshiners Racing League | Homestead-Miami | iRacing",
+      "description": "🏁 LIVE at 8:00 PM ET! The GMD Janitorial Cup Series, part of the Moonshiners Racing League, heads to Homestead-Miami Speedway. Who will win the title?\n-- EVENT DETAILS --\n🔹 League: Moonshiners Racing League (MRL)\n🔹 Series: GMD Janitorial Cup Series\n🔹 Event: Season Finale 300\n🔹 Track: Homestead-Miami Speedway\n🔹 Game: iRacing\n🔹 Start Time: 8:00 PM ET\n\n-- ABOUT US --\nPrecision Entertainment (PE) is where broadcast-quality esports meets race-craft. We provide full event coverage with professional commentary and graphics for sim racing leagues. Whether you're here to watch your favorite drivers, improve your own race-craft, or just enjoy the action, you're in the right paddock.\n\nWatch. Learn. Go faster.\n\n-- CONNECT WITH US --\n🌐 Website: https://watchprecision.live\n➡️ SUBSCRIBE for more live sim racing action: @watchpes\n👍 LIKE the video to help support the channel and the league!\n💬 COMMENT below with your favorite moment from the race!\n\nLearn more about the Moonshiners Racing League: https://discord.gg/pq7g2vGbwK\n\n#iRacing #SimRacing #Esports #MoonshinersRacingLeague #VirtualRacing #NASCARiRacing",
+      "status": "replay",
+      "thumbnail": "https://i.ytimg.com/vi/nnXeWvErt64/maxresdefault.jpg?v=6af4a988",
+      "publishedAt": "2026-11-11T17:43:12Z",
+      "scheduledStartTime": "2026-11-12T01:00:00Z",
+      "actualStartTime": "2026-11-12T00:59:32Z",
+      "actualEndTime": "2026-11-12T03:43:35Z",
+      "embedUrl": "https://www.youtube.com/embed/nnXeWvErt64",
+      "watchUrl": "https://www.youtube.com/watch?v=nnXeWvErt64"
+    },
     {
       "videoId": "vH6G5HUIHlk",
       "title": "🔴 PayRVA 250 | Moonshiners Racing League | Martinsville | iRacing",
@@ -500,7 +513,7 @@
   ],
   "diagnostics": {
     "playlistVideosFound": 39,
-    "completedReplaysFound": 37,
+    "completedReplaysFound": 38,
     "previousFeaturedVideoId": "nnXeWvErt64"
   }
 }
